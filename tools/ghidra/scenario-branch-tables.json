@@ -1,0 +1,9 @@
+{
+  "schema":1,
+  "elf_sha256":"50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id":"r5900:LE:32:default",
+  "anchors":[
+    {"address":"00100f18","role":"Signed scenario-variable arithmetic via table 227F80","creation_candidate":false},
+    {"address":"00100fd8","role":"Signed scenario-variable comparison via table 227FC0","creation_candidate":false}
+  ]
+}

@@ -1,0 +1,4 @@
+{"schema":1,"elf_sha256":"50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160","language_id":"r5900:LE:32:default","anchors":[
+  {"address":"001686d0","creation_candidate":false,"role":"16AF48 tail target, original format+0x24 store in JR delay slot"},
+  {"address":"00169e58","creation_candidate":false,"role":"16B668 tail target, original format+0x24 store preserving v0"}
+]}

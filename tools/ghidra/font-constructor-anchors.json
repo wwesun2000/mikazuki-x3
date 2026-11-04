@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00168190",
+      "role": "Source font object construction closure under 16A098",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168318",
+      "role": "Source font object construction closure under 16A098",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168380",
+      "role": "Source font object construction closure under 16A098",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168390",
+      "role": "Source font object construction closure under 16A098",
+      "creation_candidate": false
+    },
+    {
+      "address": "001683a0",
+      "role": "Source font object construction closure under 16A098",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169b78",
+      "role": "Source font object construction closure under 16A098",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169d10",
+      "role": "Source font object construction closure under 16A098",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a650",
+      "role": "Source font object construction closure under 16A098",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a680",
+      "role": "Source font constructor leaf or tail target",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a9f0",
+      "role": "Source font constructor leaf or tail target",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168340",
+      "role": "Source font constructor leaf or tail target",
+      "creation_candidate": false
+    },
+    {
+      "address": "001683c8",
+      "role": "Tail setter, real indirect getter or GS upload helper reached in the source constructor",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016c1a0",
+      "role": "Tail setter, real indirect getter or GS upload helper reached in the source constructor",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168338",
+      "role": "Tail setter, real indirect getter or GS upload helper reached in the source constructor",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169e58",
+      "role": "Tail setter, real indirect getter or GS upload helper reached in the source constructor",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169c38",
+      "role": "Tail setter, real indirect getter or GS upload helper reached in the source constructor",
+      "creation_candidate": false
+    }
+  ]
+}

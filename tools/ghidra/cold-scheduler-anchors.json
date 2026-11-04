@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00139150",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "00139338",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "001395a8",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "001390a0",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "00139678",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138d70",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "00139550",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a610",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016d1f8",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a9c8",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "00186bc0",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "00186cf0",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "00186da0",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "00186fc0",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "00181110",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "00104e10",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010eca0",
+      "role": "Active cold path: cue scheduler, RNG clock, source effect and autosave admission",
+      "creation_candidate": false
+    }
+  ]
+}

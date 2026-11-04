@@ -1,0 +1,392 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "boundary_manifest_sha256": "8666324d142b2aae80a29b8520c097acfe2f96f1cafe410d1991ccc905c73f02",
+  "anchors": [
+    {
+      "address": "00113430",
+      "label": "choice_runtime_00113430",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00115d50",
+      "label": "choice_runtime_00115d50",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00115e48",
+      "label": "choice_runtime_00115e48",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117d00",
+      "label": "choice_runtime_00117d00",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117d08",
+      "label": "choice_runtime_00117d08",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117d10",
+      "label": "choice_runtime_00117d10",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117d28",
+      "label": "choice_runtime_00117d28",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117d40",
+      "label": "choice_runtime_00117d40",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117d58",
+      "label": "choice_runtime_00117d58",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117d60",
+      "label": "choice_runtime_00117d60",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117db8",
+      "label": "choice_runtime_00117db8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117e08",
+      "label": "choice_runtime_00117e08",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117e18",
+      "label": "choice_runtime_00117e18",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117e30",
+      "label": "choice_runtime_00117e30",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117ee8",
+      "label": "choice_runtime_00117ee8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117f68",
+      "label": "choice_runtime_00117f68",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118010",
+      "label": "choice_runtime_00118010",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118088",
+      "label": "choice_runtime_00118088",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118138",
+      "label": "choice_runtime_00118138",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118150",
+      "label": "choice_runtime_00118150",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118200",
+      "label": "choice_runtime_00118200",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118250",
+      "label": "choice_runtime_00118250",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118288",
+      "label": "choice_runtime_00118288",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118308",
+      "label": "choice_runtime_00118308",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118338",
+      "label": "choice_runtime_00118338",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118568",
+      "label": "choice_runtime_00118568",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "001185b8",
+      "label": "choice_runtime_001185b8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118628",
+      "label": "choice_runtime_00118628",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "001186e8",
+      "label": "choice_runtime_001186e8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "001189f8",
+      "label": "choice_runtime_001189f8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118b08",
+      "label": "choice_runtime_00118b08",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118bf8",
+      "label": "choice_runtime_00118bf8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118d68",
+      "label": "choice_runtime_00118d68",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118e20",
+      "label": "choice_runtime_00118e20",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118e28",
+      "label": "choice_runtime_00118e28",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118e30",
+      "label": "choice_runtime_00118e30",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118e40",
+      "label": "choice_runtime_00118e40",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119e70",
+      "label": "choice_runtime_00119e70",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e4b0",
+      "label": "choice_runtime_0011e4b0",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e4e8",
+      "label": "choice_runtime_0011e4e8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e508",
+      "label": "choice_runtime_0011e508",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e608",
+      "label": "choice_runtime_0011e608",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e678",
+      "label": "choice_runtime_0011e678",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e6a8",
+      "label": "choice_runtime_0011e6a8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e6c8",
+      "label": "choice_runtime_0011e6c8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e710",
+      "label": "choice_runtime_0011e710",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e748",
+      "label": "choice_runtime_0011e748",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e830",
+      "label": "choice_runtime_0011e830",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e860",
+      "label": "choice_runtime_0011e860",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011eaf8",
+      "label": "choice_runtime_0011eaf8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011eb28",
+      "label": "choice_runtime_0011eb28",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015fe30",
+      "label": "choice_runtime_0015fe30",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015fe80",
+      "label": "choice_runtime_0015fe80",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015fec8",
+      "label": "choice_runtime_0015fec8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016cc38",
+      "label": "choice_runtime_0016cc38",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019caa8",
+      "label": "choice_runtime_0019caa8",
+      "reason": "Existing function boundary, runtime slot7 choice input/confirm closure",
+      "creation_candidate": false
+    },
+    {
+      "address": "00112f78",
+      "label": "choice_input_dependency",
+      "creation_candidate": false,
+      "reason": "Actual direct dependency; existing function boundary"
+    },
+    {
+      "address": "0015f168",
+      "label": "choice_input_dependency",
+      "creation_candidate": false,
+      "reason": "Actual direct dependency; existing function boundary"
+    },
+    {
+      "address": "00175e70",
+      "label": "choice_input_dependency",
+      "creation_candidate": false,
+      "reason": "Actual direct dependency; existing function boundary"
+    },
+    {
+      "address": "0016cc50",
+      "label": "choice_input_dependency",
+      "creation_candidate": false,
+      "reason": "Actual direct dependency; existing function boundary"
+    },
+    {
+      "address": "0016cc78",
+      "label": "choice_input_dependency",
+      "creation_candidate": false,
+      "reason": "Actual direct dependency; existing function boundary"
+    },
+    {
+      "address": "0016cbf8",
+      "label": "choice_input_dependency",
+      "creation_candidate": false,
+      "reason": "Actual direct dependency; existing function boundary"
+    },
+    {
+      "address": "0019cad8",
+      "label": "choice_input_dependency",
+      "creation_candidate": false,
+      "reason": "Actual direct dependency; existing function boundary"
+    },
+    {
+      "address": "00119f80",
+      "label": "choice_input_dependency",
+      "creation_candidate": false,
+      "reason": "Actual direct dependency; existing function boundary"
+    }
+  ]
+}

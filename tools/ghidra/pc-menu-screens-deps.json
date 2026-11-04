@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001a8728",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a8a20",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a8a40",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a8870",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135a68",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135a98",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013d080",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013d098",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a1b18",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a028",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a090",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ab468",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ab490",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001abb48",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001adcd0",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af818",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a26a8",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a2738",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a2a18",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019cfa8",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00100418",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00100128",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00107fc8",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010c8f8",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019d5c0",
+      "role": "System menu screens, save confirm, original transition and preference state",
+      "creation_candidate": false
+    }
+  ]
+}

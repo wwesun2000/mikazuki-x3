@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00102e00",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "00102f30",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "001030a0",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "001031c8",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "001032b8",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "00104678",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "00104e10",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010bd50",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "00101080",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019ce48",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "001abfa0",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "001adab0",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af4b0",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "00106690",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    },
+    {
+      "address": "00106338",
+      "role": "Original memory-card work area and 104E10 scenario checkpoint chain",
+      "creation_candidate": false
+    }
+  ]
+}

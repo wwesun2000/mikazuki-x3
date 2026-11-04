@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001a5de8",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a89e0",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00106100",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00106178",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00104038",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00104260",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00104450",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00104678",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00105538",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "001057b8",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00105928",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00105a48",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00104ce0",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00103e5c",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00102e00",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a2520",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0370",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00154398",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b05f8",
+      "role": "Enabled automatic save storage, card choice and original source queue",
+      "creation_candidate": false
+    }
+  ]
+}

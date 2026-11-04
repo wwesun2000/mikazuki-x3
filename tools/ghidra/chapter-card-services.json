@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "language_id": "r5900:LE:32:default",
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "anchors": [
+    {
+      "creation_candidate": false,
+      "address": "001a7c88",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a4650",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a4720",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001049f0",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "00105538",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a3f08",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a4140",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a4328",
+      "role": "Chapter-card menu or device dispatch"
+    }
+  ]
+}

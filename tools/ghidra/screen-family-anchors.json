@@ -1,0 +1,295 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0018d5c8",
+      "creation_candidate": true,
+      "role": "Original command 108 factory"
+    },
+    {
+      "address": "0018d7c8",
+      "creation_candidate": true,
+      "role": "Callback registered by command 108",
+      "registration_pc": "0018d600",
+      "registration_callee": "00179c40",
+      "lui_pc": "0018d5f4",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018d9f0",
+      "creation_candidate": true,
+      "role": "Callback registered by command 108",
+      "registration_pc": "0018d610",
+      "registration_callee": "00179c48",
+      "lui_pc": "0018d608",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018dd38",
+      "creation_candidate": true,
+      "role": "Callback registered by command 108",
+      "registration_pc": "0018d620",
+      "registration_callee": "00179c58",
+      "lui_pc": "0018d618",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018a710",
+      "creation_candidate": true,
+      "role": "Original command 110 factory"
+    },
+    {
+      "address": "0018a890",
+      "creation_candidate": true,
+      "role": "Callback registered by command 110",
+      "registration_pc": "0018a748",
+      "registration_callee": "00179c40",
+      "lui_pc": "0018a73c",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018a9f0",
+      "creation_candidate": true,
+      "role": "Callback registered by command 110",
+      "registration_pc": "0018a758",
+      "registration_callee": "00179c48",
+      "lui_pc": "0018a750",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018aac0",
+      "creation_candidate": true,
+      "role": "Callback registered by command 110",
+      "registration_pc": "0018a768",
+      "registration_callee": "00179c58",
+      "lui_pc": "0018a760",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018aad8",
+      "creation_candidate": true,
+      "role": "Original command 111 factory"
+    },
+    {
+      "address": "0018ad18",
+      "creation_candidate": true,
+      "role": "Callback registered by command 111",
+      "registration_pc": "0018ab10",
+      "registration_callee": "00179c40",
+      "lui_pc": "0018ab04",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018aef8",
+      "creation_candidate": true,
+      "role": "Callback registered by command 111",
+      "registration_pc": "0018ab20",
+      "registration_callee": "00179c48",
+      "lui_pc": "0018ab18",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018b028",
+      "creation_candidate": true,
+      "role": "Callback registered by command 111",
+      "registration_pc": "0018ab30",
+      "registration_callee": "00179c58",
+      "lui_pc": "0018ab28",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018ce40",
+      "creation_candidate": true,
+      "role": "Original command 112 factory"
+    },
+    {
+      "address": "0018d028",
+      "creation_candidate": true,
+      "role": "Callback registered by command 112",
+      "registration_pc": "0018ce78",
+      "registration_callee": "00179c40",
+      "lui_pc": "0018ce6c",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018d250",
+      "creation_candidate": true,
+      "role": "Callback registered by command 112",
+      "registration_pc": "0018ce88",
+      "registration_callee": "00179c48",
+      "lui_pc": "0018ce80",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018d5b0",
+      "creation_candidate": true,
+      "role": "Callback registered by command 112",
+      "registration_pc": "0018ce98",
+      "registration_callee": "00179c58",
+      "lui_pc": "0018ce90",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018bc40",
+      "creation_candidate": true,
+      "role": "Original command 113 factory"
+    },
+    {
+      "address": "0018bef8",
+      "creation_candidate": true,
+      "role": "Callback registered by command 113",
+      "registration_pc": "0018bc78",
+      "registration_callee": "00179c40",
+      "lui_pc": "0018bc6c",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018c1c0",
+      "creation_candidate": true,
+      "role": "Callback registered by command 113",
+      "registration_pc": "0018bc88",
+      "registration_callee": "00179c48",
+      "lui_pc": "0018bc80",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018c320",
+      "creation_candidate": true,
+      "role": "Callback registered by command 113",
+      "registration_pc": "0018bc98",
+      "registration_callee": "00179c58",
+      "lui_pc": "0018bc90",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018ef38",
+      "creation_candidate": true,
+      "role": "Original command 116 factory"
+    },
+    {
+      "address": "0018f230",
+      "creation_candidate": true,
+      "role": "Callback registered by command 116",
+      "registration_pc": "0018ef74",
+      "registration_callee": "00179c40",
+      "lui_pc": "0018ef68",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018f3e8",
+      "creation_candidate": true,
+      "role": "Callback registered by command 116",
+      "registration_pc": "0018ef84",
+      "registration_callee": "00179c48",
+      "lui_pc": "0018ef7c",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018f718",
+      "creation_candidate": true,
+      "role": "Callback registered by command 116",
+      "registration_pc": "0018ef94",
+      "registration_callee": "00179c58",
+      "lui_pc": "0018ef8c",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018f730",
+      "creation_candidate": true,
+      "role": "Original command 117 factory"
+    },
+    {
+      "address": "0018f9c0",
+      "creation_candidate": true,
+      "role": "Callback registered by command 117",
+      "registration_pc": "0018f76c",
+      "registration_callee": "00179c40",
+      "lui_pc": "0018f760",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018fc58",
+      "creation_candidate": true,
+      "role": "Callback registered by command 117",
+      "registration_pc": "0018f77c",
+      "registration_callee": "00179c48",
+      "lui_pc": "0018f774",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018ff78",
+      "creation_candidate": true,
+      "role": "Callback registered by command 117",
+      "registration_pc": "0018f78c",
+      "registration_callee": "00179c58",
+      "lui_pc": "0018f784",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "0018ff90",
+      "creation_candidate": true,
+      "role": "Original command 118 factory"
+    },
+    {
+      "address": "001900b0",
+      "creation_candidate": true,
+      "role": "Callback registered by command 118",
+      "registration_pc": "0018ffc4",
+      "registration_callee": "00179c40",
+      "lui_pc": "0018ffb8",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "00190220",
+      "creation_candidate": true,
+      "role": "Callback registered by command 118",
+      "registration_pc": "0018ffd4",
+      "registration_callee": "00179c48",
+      "lui_pc": "0018ffcc",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "001904b8",
+      "creation_candidate": true,
+      "role": "Callback registered by command 118",
+      "registration_pc": "0018ffe4",
+      "registration_callee": "00179c58",
+      "lui_pc": "0018ffdc",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "001904d0",
+      "creation_candidate": true,
+      "role": "Original command 119 factory"
+    },
+    {
+      "address": "00190ed8",
+      "creation_candidate": true,
+      "role": "Callback registered by command 119",
+      "registration_pc": "0019058c",
+      "registration_callee": "00179c40",
+      "lui_pc": "00190584",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "00191168",
+      "creation_candidate": true,
+      "role": "Callback registered by command 119",
+      "registration_pc": "001905a0",
+      "registration_callee": "00179c48",
+      "lui_pc": "00190598",
+      "lui_word": "3c050019"
+    },
+    {
+      "address": "00191418",
+      "creation_candidate": true,
+      "role": "Callback registered by command 119",
+      "registration_pc": "001905b0",
+      "registration_callee": "00179c58",
+      "lui_pc": "001905ac",
+      "lui_word": "3c050019"
+    }
+  ]
+}

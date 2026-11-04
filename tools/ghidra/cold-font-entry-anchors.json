@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {"address":"001686e0","role":"Font object creation from the original manager constructor","creation_candidate":false},
+    {"address":"0016a098","role":"Initialize the font object needed by cold page handler 22","creation_candidate":false},
+    {"address":"0016a740","role":"Initialize the ruby style needed by 12F1D0","creation_candidate":false},
+    {"address":"00113b30","role":"Apply original font preferences during 12F1D0","creation_candidate":false},
+    {"address":"00113b98","role":"Apply original font preferences during 12F1D0","creation_candidate":false},
+    {"address":"00113bd0","role":"Apply original font preferences during 12F1D0","creation_candidate":false},
+    {"address":"00113c08","role":"Apply original font preferences during 12F1D0","creation_candidate":false}
+  ]
+}

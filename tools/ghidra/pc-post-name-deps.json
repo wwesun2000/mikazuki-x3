@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0010d5d8",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d750",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fb38",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133a8",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00132db0",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "00153de8",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019c9b8",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b00e8",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b05a8",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0f58",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b3840",
+      "role": "SN4 post-name instruction and original output-mode queue",
+      "creation_candidate": false
+    }
+  ]
+}

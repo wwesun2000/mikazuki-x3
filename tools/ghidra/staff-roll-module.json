@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {"address":"001f82f0","creation_candidate":false,"role":"Decimal conversion arithmetic, original 1F82D8 call"},
+    {"address":"001f89d8","creation_candidate":false,"role":"Decimal conversion arithmetic, original 1F89B8 call"},
+    {"address":"00141f10","creation_candidate":false,"role":"Parse original AT commands including oya staffroll_start/end"},
+    {"address":"00194660","creation_candidate":false,"role":"Restore original display flag on staff-roll release"},
+    {"address":"00194680","creation_candidate":false,"role":"Clear original display flag on staff-roll start"},
+    {"address":"0016bf88","creation_candidate":false,"role":"Return installed font's default size"},
+    {"address":"0016bfa8","creation_candidate":false,"role":"Raster source CP932 glyph into the original 4-bit credit row"},
+    {"address":"00135cc0","creation_candidate":false,"role":"Initialize GS draw context for rolling staff lines"},
+    {"address":"00136548","creation_candidate":false,"role":"Emit staff texture state to the GIF chain"},
+    {"address":"001363c8","creation_candidate":false,"role":"Upload a live credit row"},
+    {"address":"001361f0","creation_candidate":false,"role":"Row upload DMA subsequence"},
+    {"address":"00136258","creation_candidate":false,"role":"Row upload packet construction"},
+    {"address":"00135cf8","creation_candidate":false,"role":"Emit visible credit row sprite"},
+    {"address":"001fc6d8","creation_candidate":false,"role":"Clear a free staff row buffer"},
+    {"address":"001fb958","creation_candidate":false,"role":"Parse decimal layout operand"},
+    {"address":"001ff420","creation_candidate":false,"role":"Decimal conversion entry"},
+    {"address":"001ff1e0","creation_candidate":false,"role":"Original strtol"},
+    {"address":"001f89b8","creation_candidate":false,"role":"strtol library dependency"},
+    {"address":"001f82d8","creation_candidate":false,"role":"strtol library dependency"},
+    {"address":"001f6f80","creation_candidate":false,"role":"strtol library dependency"},
+    {"address":"00136f10","creation_candidate":false,"role":"14D8C0 source line copy and next byte position"},
+    {"address":"00136808","creation_candidate":false,"role":"14D8C0 token cursor initialization"},
+    {"address":"00136810","creation_candidate":false,"role":"14D8C0 token boundaries in copied staff lines"},
+    {
+      "address": "0014d5c8",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014d630",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014d680",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014d6c0",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014d6e8",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014d868",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014d890",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014d8c0",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014db90",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014dba8",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014de50",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014df38",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014e1e0",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014e248",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    },
+    {
+      "address": "0014e2d8",
+      "creation_candidate": false,
+      "role": "Staff-roll resource selection, parser, update and render function neighborhood; inspect original calls before assigning semantics."
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0019d0c0",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019d7f8",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019d810",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a1c60",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a1d70",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a1e00",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a1ec8",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a1fe0",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010c8f8",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121878",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001225e0",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019cf30",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af2d0",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af2e0",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af3b0",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ada40",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ada28",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad758",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad768",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001aca08",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad2c0",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    },
+    {
+      "address": "001003f8",
+      "role": "System menu input, option table and game-to-menu handoff",
+      "creation_candidate": false
+    }
+  ]
+}

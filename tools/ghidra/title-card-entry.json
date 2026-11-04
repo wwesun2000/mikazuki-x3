@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {"address":"001a89a0","role":"Title new-game card operation polled by 10B488"},
+    {"address":"001a89c0","role":"Title continue card operation polled by 10B668"},
+    {"address":"001a8878","role":"Common title card-state initializer"},
+    {"address":"001a8870","role":"Return from title card operation"},
+    {"address":"001a8a00","role":"Memory-card state dispatch and initial mode"},
+    {"address":"001a4d40","role":"New-game card flow which returns to the title polling loop"},
+    {"address":"001a57e0","role":"Continue card flow which returns to the title polling loop"}
+  ]
+}

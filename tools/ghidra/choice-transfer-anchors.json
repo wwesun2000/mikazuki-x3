@@ -1,0 +1,73 @@
+{
+  "anchors": [
+    {
+      "address": "0019cb50",
+      "label": "choice_transfer_0019cb50",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019c4c0",
+      "label": "choice_transfer_0019c4c0",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019c538",
+      "label": "choice_transfer_0019c538",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019c6b8",
+      "label": "choice_transfer_0019c6b8",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169c40",
+      "label": "choice_transfer_00169c40",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113368",
+      "label": "choice_transfer_00113368",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120410",
+      "label": "choice_transfer_00120410",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    },
+    {
+      "address": "00134d08",
+      "label": "choice_transfer_00134d08",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d868",
+      "label": "choice_transfer_0010d868",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010eca0",
+      "label": "choice_transfer_0010eca0",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f198",
+      "label": "choice_transfer_0010f198",
+      "reason": "Existing function boundary for real choice transfer and progress state recovery",
+      "creation_candidate": false
+    }
+  ],
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default"
+}

@@ -1,0 +1,23 @@
+"""Recompile scenario and media restart after a successful original card load."""
+from generate_sound_recomp import export,pilot
+
+entries=(
+    0x10c4e8,0x112670,0x116ea8,0x117580,0x11def8,0x11de28,0x11dca0,
+    0x10f168,0x10f260,0x11e4b0,0x101a58,0x101b58,0x101dc0,0x101aa8,0x101b10,0x101f38,
+    0x111560,0x1114f0,0x117d00,0x119de8,0x138b30,0x138b48,0x138b80,0x138ba8,0x138bc8,
+    0x1407d0,0x140988,0x13f700,0x13fe10,0x13fe30,0x1402d8,
+    0x1206e8,0x120698,0x120768,0x120280,0x120230,0x11e230,0x116bf0,0x115aa8,0x115ae0,0x115bd8,
+    0x1061c0,0x1061d0,0x1126c0,0x1126d0,0x138f70,0x139010,0x11e3d8,
+    0x11e3b8,0x138e30,0x138fb0,0x1375b8,
+    0x139028,0x138eb8,0x138f08,0x139078,0x13f740,
+    0x10c8d0,0x117030,0x138b98,0x17a028,0x17a198,0x114348,0x1143b0,0x119df8,
+    0x179d48,0x179c80,0x113690,0x113680,
+)
+if __name__=="__main__":
+    iso=pilot.ROOT/"Kamaitachi no Yoru X3 - Mikazuki-jima Jiken no Shinsou (Japan).iso"
+    run=pilot.generate(iso,pilot.EVAL/"ee-pilot/build/ps2xRecomp/ps2_recomp.exe",entries=entries,
+        work=pilot.ROOT/"local/pc-core/ps2recomp-card-resume",callback_export=pilot.ROOT/"analysis/ghidra/chapter-card-resume-v2",
+        reviewed_switches=(0x117580,0x11def8))
+    export(run,entries,"card_resume","generate_card_resume_recomp.py")
+    (pilot.ROOT/"port/core/card_resume_entries.hpp").write_text(
+        "".join(f"KX3_MENU_ENTRY(0x{a:x},FUN_{a:08x}_0x{a:x})\n" for a in entries),encoding="ascii")

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001f0838",
+      "creation_candidate": true,
+      "role": "Original bounded visual trigonometry dependency"
+    },
+    {
+      "address": "001f08f0",
+      "creation_candidate": true,
+      "role": "Original bounded visual trigonometry dependency"
+    },
+    {
+      "address": "001f29d8",
+      "creation_candidate": true,
+      "role": "Original bounded visual trigonometry dependency"
+    },
+    {
+      "address": "001f3cb0",
+      "creation_candidate": true,
+      "role": "Original bounded visual trigonometry dependency"
+    },
+    {
+      "address": "001f4620",
+      "creation_candidate": true,
+      "role": "Original bounded visual trigonometry dependency"
+    },
+    {
+      "address": "001f4718",
+      "creation_candidate": true,
+      "role": "Original bounded visual trigonometry dependency"
+    }
+  ]
+}

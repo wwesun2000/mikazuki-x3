@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {"address":"00135858","role":"Original fixed blend coefficient from the selected brightness"},
+    {"address":"001358f8","role":"Original level setter"},
+    {"address":"00135908","role":"Emit the black background sprite after the scene pass"},
+    {"address":"00135f48","role":"Emit the field rectangle and vertex color"},
+    {"address":"00136548","role":"Write the GS A+D registers"},
+    {"address":"00114bb0","role":"Original directional input and brightness overlay state"}
+  ]
+}

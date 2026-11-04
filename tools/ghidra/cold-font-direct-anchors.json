@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0016bd30",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016c168",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168430",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168600",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168810",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016bb70",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016bf88",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016bf98",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a830",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a758",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a770",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016aa98",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a860",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    },
+    {
+      "address": "001684f0",
+      "role": "Direct font cold constructor dependency at 0016A098/0016A740",
+      "creation_candidate": false
+    }
+  ]
+}

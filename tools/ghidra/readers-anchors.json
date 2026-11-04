@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "boundary_manifest_sha256": "4a84653b2f8dbf69067224cd89eb6ae82ab47ae30d99c3ea6fecae9e74998a37",
+  "anchors": [
+    {
+      "address": "0010d590",
+      "role": "FUN_0010d590",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d5d8",
+      "role": "FUN_0010d5d8",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d610",
+      "role": "FUN_0010d610",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d638",
+      "role": "FUN_0010d638",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d680",
+      "role": "FUN_0010d680",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d6c8",
+      "role": "FUN_0010d6c8",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d700",
+      "role": "FUN_0010d700",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d720",
+      "role": "FUN_0010d720",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d728",
+      "role": "FUN_0010d728",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d738",
+      "role": "FUN_0010d738",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d740",
+      "role": "FUN_0010d740",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d748",
+      "role": "FUN_0010d748",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d750",
+      "role": "FUN_0010d750",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d780",
+      "role": "FUN_0010d780",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d788",
+      "role": "FUN_0010d788",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d7b0",
+      "role": "FUN_0010d7b0",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d7d0",
+      "role": "FUN_0010d7d0",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d800",
+      "role": "FUN_0010d800",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d830",
+      "role": "FUN_0010d830",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    },
+    {
+      "address": "0010d868",
+      "role": "FUN_0010d868",
+      "creation_candidate": false,
+      "entry_confidence": "existing baseline-v2 Ghidra function",
+      "evidence": [
+        "analysis/ghidra/baseline-v2/functions.csv"
+      ]
+    }
+  ]
+}

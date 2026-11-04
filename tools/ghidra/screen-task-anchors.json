@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001269a8",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "001266b8",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113610",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113680",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113d28",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179b58",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c40",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c60",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c80",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "001799a8",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179de0",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179eb8",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179f00",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a198",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a1a8",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0018e840",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0018e978",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0018ea98",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0018ec68",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0018ed58",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0018ed90",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0018ee78",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013d098",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010c368",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00111568",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00101398",
+      "role": "Original visual task command, scheduler, phase update or draw",
+      "creation_candidate": false
+    }
+  ]
+}

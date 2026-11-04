@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001b0f58",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b2940",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b3c18",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b3f80",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0c40",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0c60",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b02f0",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b02f8",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0000",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0228",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "001542d8",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "00154348",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "00154318",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    },
+    {
+      "address": "00154500",
+      "role": "Output-mode worker after dequeue and streaming sound channels",
+      "creation_candidate": false
+    }
+  ]
+}

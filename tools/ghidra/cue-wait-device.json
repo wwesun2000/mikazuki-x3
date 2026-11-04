@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001b1f08",
+      "role": "SE_WAIT device query and SE stop-all device dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b00a8",
+      "role": "SE_WAIT device query and SE stop-all device dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b3f88",
+      "role": "SE_WAIT device query and SE stop-all device dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b27d8",
+      "role": "SE_WAIT device query and SE stop-all device dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b1a88",
+      "role": "SE_WAIT device query and SE stop-all device dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b2158",
+      "role": "SE_WAIT device query and SE stop-all device dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b1638",
+      "role": "SE_WAIT device query and SE stop-all device dispatch",
+      "creation_candidate": true
+    }
+  ]
+}

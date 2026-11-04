@@ -1,0 +1,37 @@
+{
+  "anchors": [
+    {
+      "role": "Chapter-end card UI state table and original input services",
+      "address": "001a7c88",
+      "creation_candidate": false
+    },
+    {
+      "role": "Chapter-end card UI state table and original input services",
+      "address": "001a8a40",
+      "creation_candidate": false
+    },
+    {
+      "role": "Chapter-end card UI state table and original input services",
+      "address": "00104da8",
+      "creation_candidate": false
+    },
+    {
+      "role": "Chapter-end card UI state table and original input services",
+      "address": "0015fde0",
+      "creation_candidate": false
+    },
+    {
+      "role": "Chapter-end card UI state table and original input services",
+      "address": "0015fe30",
+      "creation_candidate": false
+    },
+    {
+      "role": "Chapter-end card UI state table and original input services",
+      "address": "0019d0c0",
+      "creation_candidate": false
+    }
+  ],
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "schema": 1
+}

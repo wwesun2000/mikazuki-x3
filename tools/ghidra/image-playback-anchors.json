@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0013f048",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00152090",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00152180",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00153568",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00153a70",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00194600",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "001947e8",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00194bc8",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00194ca0",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00194da8",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00194e70",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00194ed0",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00194f68",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00194fe8",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "001951b0",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00195248",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "001952e0",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00195378",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00195410",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "001954a8",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "001958f8",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "00195990",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019ad20",
+      "role": "Decoder status publication and playback-completion transition",
+      "creation_candidate": false
+    }
+  ]
+}

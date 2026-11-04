@@ -1,0 +1,267 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001007d8",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fad0",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a688",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a718",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a868",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a890",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a8f0",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a990",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011aa60",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011ac10",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011ad50",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011ad88",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011af18",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b338",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b358",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b420",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b450",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b588",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b640",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b6f0",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b768",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b7e8",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011bde0",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011bdf8",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011be28",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c338",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c398",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c3f8",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c628",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c630",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c640",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c650",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c6a0",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c748",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c770",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c800",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c960",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011caa0",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011cb10",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011cbc0",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011d018",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011d4c0",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011d500",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011d5b0",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011d790",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011d840",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a830",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179b58",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a560",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00184d18",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00184f58",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00185990",
+      "role": "Name editor source-only constructors, key handling and completion",
+      "creation_candidate": false
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {"address":"001115b8","creation_candidate":false,"role":"Original VM handler dependency"},
+    {"address":"001116f8","creation_candidate":false,"role":"Original VM handler dependency"},
+    {"address":"001133f0","creation_candidate":false,"role":"Original VM handler dependency"},
+    {"address":"001163e8","creation_candidate":false,"role":"Original VM handler dependency"},
+    {"address":"00120880","creation_candidate":false,"role":"Original VM handler dependency"},
+    {"address":"00120d78","creation_candidate":false,"role":"Original VM handler dependency"},
+    {"address":"00120830","creation_candidate":false,"role":"Original VM handler dependency"},
+    {"address":"00120d28","creation_candidate":false,"role":"Original VM handler dependency"},
+    {"address":"00135b50","creation_candidate":false,"role":"Original VM handler dependency"},
+    {"address":"00135bf8","creation_candidate":false,"role":"Original VM handler dependency"},
+    {
+      "address": "00123928",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "00124500",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "00124fb0",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "00125440",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "00125ff0",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "00126208",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "0012cb48",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "0012d228",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "0012d960",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "0012dc70",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "0012e640",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "0012f968",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "0012fe98",
+      "creation_candidate": false,
+      "role": "Used ScenarioLink opcode and context handler"
+    },
+    {
+      "address": "00112068",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "00119270",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "001192c8",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "00119398",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "001196b8",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "0011a0e8",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "0011a148",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "0011a3d0",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "00115e58",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "0019cb08",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "00135c78",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "00135c90",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    },
+    {
+      "address": "00125f60",
+      "creation_candidate": false,
+      "role": "Original VM handler dependency"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001278e8",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011dda8",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00101ca8",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00101928",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00101dc0",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138c90",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138d28",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138d70",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138e10",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138eb8",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138f08",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001395a8",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001397d8",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00139550",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013eff0",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00140aa8",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00139150",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00139338",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00140bb0",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b2350",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010c760",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "001536a8",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "00153a70",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e498",
+      "role": "Cold scene cue lookup, enqueue, interpretation and original playback state",
+      "creation_candidate": false
+    }
+  ]
+}

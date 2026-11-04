@@ -1,0 +1,862 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0010bdb8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010c110",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010c6e0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010c9c0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d780",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d830",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010db48",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010eff0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f018",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f820",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f8b0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f9b0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fa48",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fa88",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fad0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fb38",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00110628",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001114f0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001114f8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001132a8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133a8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113460",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00115e58",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00116370",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119c60",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120a00",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120aa0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135080",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00136630",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00140068",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001453a8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145958",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145b98",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145c30",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145ca8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00146018",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00146330",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00146640",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014a048",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014a080",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014bc48",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014f000",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014f118",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00152b30",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001536a8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00153a70",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00160f98",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00162210",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001622a8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00162470",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001635f8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001636c0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001642b0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00164340",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00164540",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00164610",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00164748",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001647d0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001682d8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001682e0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001686d8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168968",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168b60",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169b08",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169b10",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169cc0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169e68",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a420",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a430",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a830",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a860",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a950",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b7b0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b7f0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b8a0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016f650",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016f728",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016f860",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016f908",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016f910",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016f958",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016fa50",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016fab0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00175f78",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a8b0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a9c8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017aa28",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b50f0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b5150",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b5160",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b5190",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b5280",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b52a0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b5960",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001bdf50",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001bdfa0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001c0400",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001c04b0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001c04b8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f82d8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f82f0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f89b8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f89d8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f9178",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f93a0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f93f8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f9460",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f94b8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f96b0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f9708",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f9800",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f9850",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f9900",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fb500",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fb5d8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fb668",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fba18",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fba70",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fbcc8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fc3b0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fc490",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fc524",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fc5d4",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fc6d8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fc798",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fc7f0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fd2d8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fd6e0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fd750",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fd87c",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fda0c",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fdb50",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fdc64",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fe108",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ff450",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ff498",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ff548",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ff5c0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00200b20",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00200cc8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00200d98",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00200e40",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00200f50",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00201180",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00202360",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00202470",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00202658",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "002026d8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "002029b8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00202b18",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00202ee0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00202ff8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203030",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203050",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "002031a0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "002031d0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203278",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "002032a8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "002034e0",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203560",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203620",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203658",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203860",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203968",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203ac8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203b30",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00203f18",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "002043c8",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00204410",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00204610",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    },
+    {
+      "address": "00204718",
+      "role": "Source hero panel callbacks, root format stack and indirect UI text",
+      "creation_candidate": false
+    }
+  ]
+}

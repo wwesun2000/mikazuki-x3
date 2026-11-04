@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {"address":"00182308","creation_candidate":true,"role":"Original ScenePack effect factory reached at sn4 update 41063"},
+    {"address":"001824c8","creation_candidate":true,"role":"Update registered at 182350","registration_pc":"00182350","registration_callee":"00179c40","lui_pc":"00182344","lui_word":"3c050018"},
+    {"address":"001825b8","creation_candidate":true,"role":"Draw registered at 182360"},
+    {"address":"001826a0","creation_candidate":true,"role":"Cleanup registered at 182370"},
+    {"address":"001826b8","creation_candidate":true,"role":"Adjacent paired effect constructor"},
+    {"address":"00182870","creation_candidate":true,"role":"Update registered at 1826E8","registration_pc":"001826e8","registration_callee":"00179c40","lui_pc":"001826dc","lui_word":"3c050018"},
+    {"address":"00182908","creation_candidate":true,"role":"Adjacent paired effect draw"},
+    {"address":"001829f0","creation_candidate":true,"role":"Adjacent paired effect cleanup"}
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00185978",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00185b40",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "001852a8",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00185ab8",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179cc0",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00118540",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179000",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "001169c0",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b100",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "001125c8",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117580",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011dca0",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011de28",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138b48",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138b80",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138bc8",
+      "role": "Source name drawing tasks and cross-scene jump completion",
+      "creation_candidate": false
+    }
+  ]
+}

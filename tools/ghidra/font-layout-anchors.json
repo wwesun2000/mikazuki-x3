@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0011ff20",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "00134d80",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "00134d78",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "00134868",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "001346f0",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "00134c68",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "00128af0",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "001326e0",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "001284f8",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b670",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169ab0",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168fc0",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019d7f0",
+      "role": "Source page wait, font style, spacing and rule stroke",
+      "creation_candidate": false
+    }
+  ]
+}

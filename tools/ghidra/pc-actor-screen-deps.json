@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00100ec8",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d610",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d700",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d740",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d748",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d868",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010daf0",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fb38",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "001114f0",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "001114f8",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "00111550",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "00111560",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133a8",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133d0",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133f0",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119820",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119a18",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119b60",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120880",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135bd8",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "00149f00",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014bc98",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014bcc0",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014bd18",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014bd70",
+      "role": "Source protagonist selector eligibility, initial actor and callback",
+      "creation_candidate": false
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001b43a0",
+      "role": "Original request queue, active BGM worker and track replacement envelope",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b40c8",
+      "role": "Original request queue, active BGM worker and track replacement envelope",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b26b8",
+      "role": "Original request queue, active BGM worker and track replacement envelope",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b2808",
+      "role": "Original request queue, active BGM worker and track replacement envelope",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b25f8",
+      "role": "Original request queue, active BGM worker and track replacement envelope",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b3f88",
+      "role": "Original request queue, active BGM worker and track replacement envelope",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b4a28",
+      "role": "Original request queue, active BGM worker and track replacement envelope",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b2420",
+      "role": "Original request queue, active BGM worker and track replacement envelope",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b2600",
+      "role": "Original request queue, active BGM worker and track replacement envelope",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b2788",
+      "role": "Original request queue, active BGM worker and track replacement envelope",
+      "creation_candidate": true
+    }
+  ]
+}

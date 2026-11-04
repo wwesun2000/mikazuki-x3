@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0017e570",
+      "creation_candidate": true,
+      "role": "Original cue 11/12/14 factory or shared constructor"
+    },
+    {
+      "address": "0017e698",
+      "creation_candidate": true,
+      "role": "Callback registered by 0017e570",
+      "registration_pc": "0017e5a0",
+      "registration_callee": "00179c40",
+      "lui_pc": "0017e594",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "0017e728",
+      "creation_candidate": true,
+      "role": "Callback registered by 0017e570",
+      "registration_pc": "0017e5b0",
+      "registration_callee": "00179c48",
+      "lui_pc": "0017e5a8",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "0017ea98",
+      "creation_candidate": true,
+      "role": "Callback registered by 0017e570",
+      "registration_pc": "0017e5c0",
+      "registration_callee": "00179c58",
+      "lui_pc": "0017e5b8",
+      "lui_word": "3c050018"
+    }
+  ]
+}

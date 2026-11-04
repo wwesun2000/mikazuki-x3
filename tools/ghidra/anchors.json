@@ -1,0 +1,333 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0010D5D8",
+      "role": "ScriptData big-endian operand reader",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0010EDC0",
+      "role": "Current-label history bit31",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "001186E8",
+      "role": "Normal choice setup",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "001203E0",
+      "role": "Default context slot15 dispatcher",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00113148",
+      "role": "Manager update loop",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "001126E0",
+      "role": "Inline text pump",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0011E508",
+      "role": "Choice preview dispatcher",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0010D868",
+      "role": "Ordinary transfer and history",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0010D7D0",
+      "role": "Runtime template selector",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0010ECA0",
+      "role": "History seen marker",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00117560",
+      "role": "Manager04 object+4 predicate",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00113448",
+      "role": "Manager58 task bridge",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0017D380",
+      "role": "Choice task transition",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00118338",
+      "role": "Preview16 finalization",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00118628",
+      "role": "Preview1B target dispatch",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00118568",
+      "role": "Choice cursor indicator",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00118288",
+      "role": "Confirmation-start side effects",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0011E748",
+      "role": "Interactive choice input",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0011E608",
+      "role": "Confirmation completion guard",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00118D68",
+      "role": "Choice commit",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00118088",
+      "role": "Option read-state predicate",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00117EE8",
+      "role": "Selected glyph ranges",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0016BA10",
+      "role": "Glyph animation predicate",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0016A788",
+      "role": "Font state push",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0016A7E8",
+      "role": "Font state pop",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0019C910",
+      "role": "Choice entry observation callback",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0019CAD8",
+      "role": "Selection focus callback",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "0019CAA8",
+      "role": "Selection commit callback",
+      "entry_confidence": "prior static call/prologue evidence; verify actual Ghidra function",
+      "creation_candidate": true,
+      "evidence": [
+        "analysis/vm_handlers.json",
+        "analysis/choice_runtime_audit.json",
+        "analysis/vm_page_semantics.json"
+      ]
+    },
+    {
+      "address": "00117658",
+      "role": "previously identified large switch site; may be interior, never assume function start",
+      "entry_confidence": "interior dispatch candidate",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/vm_flow.json"
+      ]
+    },
+    {
+      "address": "00122F9C",
+      "role": "previously identified large switch site; may be interior, never assume function start",
+      "entry_confidence": "interior dispatch candidate",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/vm_flow.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00101b58",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00101dc0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d5d8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d610",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d638",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d680",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d700",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d720",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d740",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d748",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010daf0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010e8d8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f168",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f260",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f9b0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fa88",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fab8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fac0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fac8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fb38",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001114f0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001114f8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00111560",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00111738",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001125c8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133a8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133b0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113468",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113470",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001134c0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00116bf0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00116ea8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117580",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117d00",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119de8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011dac0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011dca0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011de28",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011def8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e230",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e310",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001206e8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120768",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001207b8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001207c0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001207f0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00137318",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00137350",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00137578",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00137598",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001375b8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001375d8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138b30",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138b48",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138b80",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138bc8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f700",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013fe10",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013fe30",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001402d8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001407d0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "00140988",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016cb10",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016cb28",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016cbc8",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016cbe0",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016cc38",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016cc78",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fda0c",
+      "role": "Selected chapter/timeline label lookahead, original cross-scene restore and return context",
+      "creation_candidate": false
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0011b100",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b1b0",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b238",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b378",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b3d8",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b4e8",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b7e8",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b930",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011bde0",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011bdf8",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c628",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011c7c0",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015fe30",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    },
+    {
+      "address": "00160148",
+      "role": "Original edit, delete, confirm and matrix cursor operations",
+      "creation_candidate": false
+    }
+  ]
+}

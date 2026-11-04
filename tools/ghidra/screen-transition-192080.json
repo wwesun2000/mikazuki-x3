@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00192080",
+      "role": "SN2 original screen transition factory, mode-2 frame callback and render paths",
+      "creation_candidate": true
+    },
+    {
+      "address": "00192258",
+      "role": "SN2 original screen transition factory, mode-2 frame callback and render paths",
+      "creation_candidate": true
+    },
+    {
+      "address": "00192460",
+      "role": "SN2 original screen transition factory, mode-2 frame callback and render paths",
+      "creation_candidate": true
+    },
+    {
+      "address": "001928a8",
+      "role": "SN2 original screen transition factory, mode-2 frame callback and render paths",
+      "creation_candidate": true
+    },
+    {
+      "address": "00193558",
+      "role": "SN2 original screen transition factory, mode-2 frame callback and render paths",
+      "creation_candidate": true
+    },
+    {
+      "address": "00193008",
+      "role": "SN2 original screen transition factory, mode-2 frame callback and render paths",
+      "creation_candidate": true
+    },
+    {
+      "address": "00192cb0",
+      "role": "SN2 original screen transition factory, mode-2 frame callback and render paths",
+      "creation_candidate": true
+    }
+  ]
+}

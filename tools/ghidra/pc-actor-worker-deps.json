@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00100ec8",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010c6e0",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001163e8",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00116470",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00135030",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00135ab0",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00135ab8",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00135cf8",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001360d8",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001363c8",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00136548",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145388",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001456f8",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00149ed0",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00149f00",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014a050",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014a098",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014b120",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014b290",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014b298",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014b2a0",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014bc40",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014bc60",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014bc98",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00159778",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00159790",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00159ab8",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00159bf8",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016fa50",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016fab0",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b15f0",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fc524",
+      "role": "Hero selection descriptor at 22c378 and its five original callbacks",
+      "creation_candidate": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001769e0",
+      "creation_candidate": true,
+      "role": "Original post-effect phase or draw-state dependency"
+    },
+    {
+      "address": "0017aee8",
+      "creation_candidate": true,
+      "role": "Original post-effect phase or draw-state dependency"
+    },
+    {
+      "address": "00176818",
+      "creation_candidate": true,
+      "role": "Original post-effect phase or draw-state dependency"
+    },
+    {
+      "address": "00179b58",
+      "creation_candidate": true,
+      "role": "Original post-effect phase or draw-state dependency"
+    },
+    {
+      "address": "00179d48",
+      "creation_candidate": true,
+      "role": "Original post-effect phase or draw-state dependency"
+    },
+    {
+      "address": "00135858",
+      "creation_candidate": true,
+      "role": "Original post-effect phase or draw-state dependency"
+    },
+    {
+      "address": "001358a8",
+      "creation_candidate": true,
+      "role": "Original post-effect phase or draw-state dependency"
+    }
+  ]
+}

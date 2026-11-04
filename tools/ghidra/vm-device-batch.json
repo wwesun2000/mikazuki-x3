@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00147890",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014b0b0",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014cd10",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145388",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "00149f00",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "00149f50",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016fa50",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016fab0",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016f860",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016f650",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016f958",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135b50",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135bf8",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135c78",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135c90",
+      "role": "Direct dependencies of used VM context and presentation calls",
+      "creation_candidate": false
+    }
+  ]
+}

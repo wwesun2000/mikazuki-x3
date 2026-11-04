@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00179748",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179cbc",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "0018ec50",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "0018ef20",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013d040",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00176638",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00176970",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00177ff8",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00177658",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00176f78",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00178910",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00177f48",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00177490",
+      "role": "Native task cleanup, ordering, GS texture and blend setup",
+      "creation_candidate": false
+    }
+  ]
+}

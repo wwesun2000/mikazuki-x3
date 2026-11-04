@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001769f0",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00176c48",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179b58",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c40",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c48",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c58",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c68",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a560",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a5f8",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a8b0",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a9c8",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00183258",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "001833f8",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "001836d8",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    },
+    {
+      "address": "00183808",
+      "role": "Source 183258 scene effect factory, update and draw",
+      "creation_candidate": false
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00192478",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "001c1d70",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "001c1888",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "001c17e0",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "001c1590",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "001c1928",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "0017ad38",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "0017adb8",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f08f0",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "001925f8",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "00192810",
+      "role": "Original screen projection, matrix, or trig callee",
+      "creation_candidate": true
+    },
+    {
+      "address": "001c18b0",
+      "role": "Original tangent and VU0 rotation coefficients",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f29d8",
+      "role": "Original tangent and VU0 rotation coefficients",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f4718",
+      "role": "Original tangent and VU0 rotation coefficients",
+      "creation_candidate": true
+    }
+  ]
+}

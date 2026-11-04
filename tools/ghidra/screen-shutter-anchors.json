@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {"address":"0018aad8","creation_candidate":true,"role":"Original command 111 factory, two arguments"},
+    {"address":"0018ad18","creation_candidate":true,"role":"Update registered at 18AB10"},
+    {"address":"0018aef8","creation_candidate":true,"role":"Draw registered at 18AB20"},
+    {"address":"0018b028","creation_candidate":true,"role":"Cleanup registered at 18AB30"}
+  ]
+}

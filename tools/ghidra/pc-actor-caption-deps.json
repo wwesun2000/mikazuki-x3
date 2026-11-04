@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0010d5d8",
+      "role": "Protagonist caption context 120B28 and narrowed dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010d610",
+      "role": "Protagonist caption context 120B28 and narrowed dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "00111738",
+      "role": "Protagonist caption context 120B28 and narrowed dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "001133a8",
+      "role": "Protagonist caption context 120B28 and narrowed dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "001133b0",
+      "role": "Protagonist caption context 120B28 and narrowed dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "00120970",
+      "role": "Protagonist caption context 120B28 and narrowed dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "00120b28",
+      "role": "Protagonist caption context 120B28 and narrowed dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "00121370",
+      "role": "Protagonist caption context 120B28 and narrowed dispatch",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016b8a0",
+      "role": "Protagonist caption context 120B28 and narrowed dispatch",
+      "creation_candidate": true
+    }
+  ]
+}

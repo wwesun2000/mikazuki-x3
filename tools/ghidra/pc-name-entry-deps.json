@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00100410",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010b278",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "001134b0",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a868",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a8f0",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011b640",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011be28",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011cbc0",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011d018",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011d5b0",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011d840",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120c88",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120cb0",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120cb8",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120ce8",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168968",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016a830",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179b58",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c40",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c48",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c58",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c60",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a560",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00184d18",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00184f58",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    },
+    {
+      "address": "00185990",
+      "role": "Original special input page, text entry resources, vtables and source input",
+      "creation_candidate": false
+    }
+  ]
+}

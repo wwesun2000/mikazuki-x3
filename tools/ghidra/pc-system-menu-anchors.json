@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00121760",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121648",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121730",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121850",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121900",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121980",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121e50",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121f58",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121f98",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121fc8",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "001225b0",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "001225c8",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00122620",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00122688",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00112dc0",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00112e48",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "001162d8",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a0e0",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a148",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00175d38",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00175d68",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019d5c0",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133c0",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "001125c8",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e748",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121fb0",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    },
+    {
+      "address": "00122030",
+      "role": "Original system menu manager gate, saved context, open/return and system screen",
+      "creation_candidate": false
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00101a58",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00101b58",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00101ca8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00101f38",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001061c0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001061d0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010daf0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010e630",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010eed0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010ef18",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010ef90",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010f110",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010f168",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010f260",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0010fb38",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001114f0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001126c0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001126d0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001133a8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00115aa8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00115ae0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00115bd8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00116bf0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0011dac0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0011db50",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0011dca0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0011e310",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0011e3b8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0011e3d8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0011e4b0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00120280",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00135080",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00135108",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00135618",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00137350",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00137d78",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138b30",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138ba8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138e30",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138eb8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138f08",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138f70",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138fb0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00139010",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00139028",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00139078",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013ceb0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f700",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f740",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013fe10",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013fe30",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001402d8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001407d0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00140988",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00140b30",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "001536a8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00153a70",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0015f040",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0015f168",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0015fec8",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016fa50",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016fab0",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    },
+    {
+      "address": "00175e70",
+      "role": "Chapter jump scene lookup, ready gates, history and full-screen fade callbacks",
+      "creation_candidate": true
+    }
+  ]
+}

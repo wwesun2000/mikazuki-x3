@@ -1,0 +1,977 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0010fb38",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001114f0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00113460",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00113468",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001165b8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00120880",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00120b48",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0012f1a8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0012f6c0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0012f9a8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001324e8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00134c90",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00135080",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00135108",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00136630",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00136778",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00136a50",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00137308",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001373c8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001374c0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001378b0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00137a00",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00137aa8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00137ae0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00137b40",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00137b98",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00137ca8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00137d78",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138478",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001384b0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138930",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138eb8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00138f08",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00139028",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00139078",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00139568",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013c018",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013ceb0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013d048",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013d080",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013d3f8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013d4d0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013ebf8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013ecb0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013efb8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f010",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f038",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f040",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f068",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f0a0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f1c8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f700",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f740",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013fd20",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013fe10",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013fe30",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013fe98",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00140068",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001402d8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001407d0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00140858",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00140988",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00140b30",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00142648",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001439f0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00143a18",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001448a0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145350",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001453a8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001456f8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145958",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145980",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145a18",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145a80",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145b80",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145b98",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145c30",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145ca8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145d30",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00145dc0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00146018",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00146330",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00146640",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00146910",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00146950",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00147880",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00147928",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00149f50",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014d4b8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00152b30",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001536a8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00153a70",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0015ece0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0015f040",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0015f168",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0015f9e0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0015fec8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00160f98",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00162210",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00162470",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001635f8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001636c0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001642b0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00164340",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00164540",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00164610",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00164748",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001647d0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016a9f0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016aa98",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016f650",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016f860",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016f908",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016f910",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016f958",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016fa50",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016fab0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00175e70",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00175f78",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00194ea8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001950f0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00195a80",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b1598",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b1fd0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b50f0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b5150",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b5190",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b5280",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b52a0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b52b0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001c04b0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001c04b8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001d2ee4",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001d3858",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001d3890",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f82d8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f89b8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f93a0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f93f8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f9460",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f96b0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f9800",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f9850",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001f9900",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fba18",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fbcc8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fc3b0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fc490",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fc524",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fc6d8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fc798",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fc7f0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fd2d8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fd6e0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fd750",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fd87c",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fda0c",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fdb50",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fdc64",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001fe108",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001ff450",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001ff498",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001ff548",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "001ff5c0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00200b20",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00200cc8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00200d98",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00200e40",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00200f50",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00201180",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00202470",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00202658",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "002026d8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "002029b8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00202ff8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203030",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203050",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "002031a0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "002031d0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203278",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "002032a8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "002034e0",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203560",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203620",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203658",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203860",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203968",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203ac8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203b30",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00203f18",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "002043c8",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00204410",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00204610",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    },
+    {
+      "address": "00204718",
+      "role": "Source hero caption 0x22/0x1B and outer-frame callback ordering",
+      "creation_candidate": true
+    }
+  ]
+}

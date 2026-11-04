@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00141f10",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "001009d8",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "00101398",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "0014e104",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "00135cf8",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "00135cc0",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "001363c8",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "00136548",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "0016bf88",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "0016bfa8",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "00194660",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    },
+    {
+      "address": "00194680",
+      "creation_candidate": false,
+      "role": "Trace staff-roll command, update, row raster and render edges from original callers."
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00139678",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f700",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f718",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f738",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f750",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013f808",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013fe10",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "0013fe30",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "00140118",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001402d8",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "00140540",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "0014f0f0",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "00152be8",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b0028",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b05f8",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b0670",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b06f8",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b0958",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b15f0",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b1748",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b1780",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b1858",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b18c0",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b1958",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b19f0",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b1a88",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b2200",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b2498",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b24c0",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b2590",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b2600",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b5150",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b5180",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b51b0",
+      "role": "ky1035b_20 SE_STOP 30 with the wait bit, source worker completion and sound counter",
+      "creation_candidate": true
+    }
+  ]
+}

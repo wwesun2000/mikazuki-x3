@@ -1,0 +1,178 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001133c0",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "001133d0",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "001133f0",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "00113410",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "00113430",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "00113448",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "00113460",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "00113468",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "00113478",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "00113480",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "00113488",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "00113490",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "00113498",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "001134a0",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "001134a8",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "001134b0",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "001134b8",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "001134d0",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    },
+    {
+      "address": "001134e8",
+      "role": "Existing manager state/mode family; inspect dependencies before native recovery",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions.csv",
+        "analysis/ghidra/vm-dependencies-v1/functions/00125c40.json"
+      ]
+    }
+  ]
+}

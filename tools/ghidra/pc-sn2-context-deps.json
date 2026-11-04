@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0010d5d8",
+      "role": "Cold SN2 special context preflight into second name entry",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d610",
+      "role": "Cold SN2 special context preflight into second name entry",
+      "creation_candidate": false
+    },
+    {
+      "address": "00111738",
+      "role": "Cold SN2 special context preflight into second name entry",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133a8",
+      "role": "Cold SN2 special context preflight into second name entry",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133b0",
+      "role": "Cold SN2 special context preflight into second name entry",
+      "creation_candidate": false
+    },
+    {
+      "address": "001204a8",
+      "role": "Cold SN2 special context preflight into second name entry",
+      "creation_candidate": false
+    },
+    {
+      "address": "001204d0",
+      "role": "Cold SN2 special context preflight into second name entry",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120528",
+      "role": "Cold SN2 special context preflight into second name entry",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120618",
+      "role": "Cold SN2 special context preflight into second name entry",
+      "creation_candidate": false
+    }
+  ]
+}

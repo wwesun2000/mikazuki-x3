@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001a2608",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a2520",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "00106050",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015dec0",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015dfe8",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015df98",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ab5e8",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001aba00",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001aba60",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001abb00",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001abab0",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "00100830",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001009d8",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "00100c50",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ab430",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af6e0",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af3b0",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af320",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad2c0",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001adbd8",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001adcd0",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ae388",
+      "role": "System options, ending progression and scenario mode",
+      "creation_candidate": false
+    }
+  ]
+}

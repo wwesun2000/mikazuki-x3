@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00176970",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "00176c48",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "001787f0",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c68",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a560",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a8b0",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a9c8",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017ba58",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017bb60",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017bda0",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017c498",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017c698",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017c960",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017ca80",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f0838",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f90a0",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f93f8",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f99d0",
+      "role": "SN4 ScenePack effect 3 factory and actual callback dependencies",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017c100",
+      "role": "Mime effect transient registered callback or exact source math leaf",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017c598",
+      "role": "Mime effect transient registered callback or exact source math leaf",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f4620",
+      "role": "Mime effect transient registered callback or exact source math leaf",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f3cb0",
+      "role": "Mime effect transient registered callback or exact source math leaf",
+      "creation_candidate": false
+    },
+    {
+      "address": "001f29d8",
+      "role": "Mime effect transient registered callback or exact source math leaf",
+      "creation_candidate": false
+    },
+    {
+      "address": "00177a50",
+      "role": "Original textured mesh quad dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "00177138",
+      "role": "Original textured mesh quad dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "00177038",
+      "role": "Original textured mesh quad dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "00177f78",
+      "role": "Original textured mesh quad dispatch",
+      "creation_candidate": false
+    }
+  ]
+}

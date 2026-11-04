@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0013cd20",
+      "role": "Global source framebuffer capture field, IRQ or draw pass",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013cec0",
+      "role": "Global source framebuffer capture field, IRQ or draw pass",
+      "creation_candidate": false
+    },
+    {
+      "address": "00150758",
+      "role": "Global source framebuffer capture field, IRQ or draw pass",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013cca0",
+      "role": "Global source framebuffer capture field, IRQ or draw pass",
+      "creation_candidate": false
+    }
+  ]
+}

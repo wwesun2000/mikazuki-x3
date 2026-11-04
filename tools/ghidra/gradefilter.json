@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001812a8",
+      "role": "Grade filter factory, callbacks and render helpers",
+      "creation_candidate": true
+    },
+    {
+      "address": "001814c0",
+      "role": "Grade filter factory, callbacks and render helpers",
+      "creation_candidate": true
+    },
+    {
+      "address": "00181660",
+      "role": "Grade filter factory, callbacks and render helpers",
+      "creation_candidate": true
+    },
+    {
+      "address": "00181858",
+      "role": "Grade filter factory, callbacks and render helpers",
+      "creation_candidate": true
+    },
+    {
+      "address": "001819b8",
+      "role": "Grade filter factory, callbacks and render helpers",
+      "creation_candidate": true
+    },
+    {
+      "address": "001787d0",
+      "role": "Grade filter factory, callbacks and render helpers",
+      "creation_candidate": true
+    },
+    {
+      "address": "00176970",
+      "role": "Grade filter factory, callbacks and render helpers",
+      "creation_candidate": true
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00134af0",
+      "label": "choice_readback_00134af0",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "00134bd0",
+      "label": "choice_readback_00134bd0",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "00114b28",
+      "label": "choice_readback_00114b28",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "001195a8",
+      "label": "choice_readback_001195a8",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "001165b0",
+      "label": "choice_readback_001165b0",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "001165d8",
+      "label": "choice_readback_001165d8",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "00116840",
+      "label": "choice_readback_00116840",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "001169c0",
+      "label": "choice_readback_001169c0",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "00116a98",
+      "label": "choice_readback_00116a98",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "00116e10",
+      "label": "choice_readback_00116e10",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "00117a90",
+      "label": "choice_readback_00117a90",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019cca8",
+      "label": "choice_readback_0019cca8",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "001126d8",
+      "label": "choice_readback_001126d8",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133f0",
+      "label": "choice_readback_001133f0",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "001163e8",
+      "label": "choice_readback_001163e8",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "00186050",
+      "label": "choice_readback_00186050",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "001136f8",
+      "label": "choice_readback_001136f8",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113778",
+      "label": "choice_readback_00113778",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "00101190",
+      "label": "choice_readback_00101190",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a210",
+      "label": "choice_readback_0011a210",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a220",
+      "label": "choice_readback_0011a220",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010eaa8",
+      "label": "choice_readback_0010eaa8",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010ead0",
+      "label": "choice_readback_0010ead0",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010dc30",
+      "label": "choice_readback_0010dc30",
+      "reason": "Existing function for original readback closure or parent transfer bridge",
+      "creation_candidate": false
+    }
+  ]
+}

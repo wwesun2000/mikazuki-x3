@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001929c8",
+      "role": "Source transition triangle coordinates, framebuffer copy and GS primitive assembly",
+      "creation_candidate": true
+    },
+    {
+      "address": "00192da0",
+      "role": "Source transition triangle coordinates, framebuffer copy and GS primitive assembly",
+      "creation_candidate": true
+    },
+    {
+      "address": "00193130",
+      "role": "Source transition triangle coordinates, framebuffer copy and GS primitive assembly",
+      "creation_candidate": true
+    },
+    {
+      "address": "00193670",
+      "role": "Source transition triangle coordinates, framebuffer copy and GS primitive assembly",
+      "creation_candidate": true
+    },
+    {
+      "address": "001925f8",
+      "role": "Source transition triangle coordinates, framebuffer copy and GS primitive assembly",
+      "creation_candidate": true
+    },
+    {
+      "address": "00192810",
+      "role": "Source transition triangle coordinates, framebuffer copy and GS primitive assembly",
+      "creation_candidate": true
+    },
+    {
+      "address": "00178030",
+      "role": "Source transition triangle coordinates, framebuffer copy and GS primitive assembly",
+      "creation_candidate": true
+    },
+    {
+      "address": "00178910",
+      "role": "Source transition triangle coordinates, framebuffer copy and GS primitive assembly",
+      "creation_candidate": true
+    },
+    {
+      "address": "00179de0",
+      "role": "Source transition triangle coordinates, framebuffer copy and GS primitive assembly",
+      "creation_candidate": true
+    },
+    {
+      "address": "00176970",
+      "role": "Source transition triangle coordinates, framebuffer copy and GS primitive assembly",
+      "creation_candidate": true
+    }
+  ]
+}

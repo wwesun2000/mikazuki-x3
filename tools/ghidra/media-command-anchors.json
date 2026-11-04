@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0011dac0",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "0011dc40",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "0011e310",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "00137318",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "00137350",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "001373b8",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "00137568",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "00137578",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "00137598",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "001375d8",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "00101b58",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "00101a70",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "00101aa8",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "00101b10",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    },
+    {
+      "address": "001384b0",
+      "role": "Opcode72 source request, registry lookup, readiness and loader boundary",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/vm-dependencies-v1/functions/00127520.json",
+        "analysis/vm_resource_semantics.json"
+      ]
+    }
+  ]
+}

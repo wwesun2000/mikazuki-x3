@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001378b0",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00137a00",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00137aa8",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00137ae0",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00137b98",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00137ca8",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00136778",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00146768",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00140068",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00140858",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00136a50",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "001b1598",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "00145388",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    },
+    {
+      "address": "001467b8",
+      "role": "1375D8 active media preparation direct dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-command-v1/functions/001375d8.json",
+        "analysis/ghidra/media-command-v1/functions/001384b0.json"
+      ]
+    }
+  ]
+}

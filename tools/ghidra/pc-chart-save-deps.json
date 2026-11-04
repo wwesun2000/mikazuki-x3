@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001ad3d8",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "00184e58",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "00184ea0",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "00184ef8",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "00184fd8",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "00184fe8",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "00185b58",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "00185b68",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c80",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016cbe0",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016cc38",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016cc50",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016aa98",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168968",
+      "role": "Source timechart save and original keyboard presentation callbacks",
+      "creation_candidate": false
+    }
+  ]
+}

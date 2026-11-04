@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00138f08",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138eb8",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "00139078",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "00139568",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013d3f8",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "00146910",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "00147928",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "00147880",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014d4b8",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013ecb0",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "00142630",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "00195a80",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "001950f0",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f208",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    },
+    {
+      "address": "001946e0",
+      "role": "Source scene worker: readiness, renderer reset and decoder request",
+      "creation_candidate": false
+    }
+  ]
+}

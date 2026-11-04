@@ -1,0 +1,11 @@
+{
+  "schema":1,
+  "language_id":"r5900:LE:32:default",
+  "elf_sha256":"50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "anchors":[
+    {"address":"00189870","tail_jump":"001223e0"},
+    {"address":"00122310","vtable_word":"00223c84"},
+    {"address":"00122328","vtable_word":"00223c88"},
+    {"address":"001224e8","vtable_word":"00223c8c"}
+  ]
+}

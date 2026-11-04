@@ -1,0 +1,25 @@
+{
+  "anchors": [
+    {
+      "address": "0019c638",
+      "label": "choice_transfer_dependency_0019c638",
+      "reason": "Existing functions directly called by chapter tracking, no boundary creation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fdf50",
+      "label": "choice_transfer_dependency_001fdf50",
+      "reason": "Existing functions directly called by chapter tracking, no boundary creation",
+      "creation_candidate": false
+    },
+    {
+      "address": "00134d88",
+      "label": "choice_transfer_dependency_00134d88",
+      "reason": "Existing functions directly called by chapter tracking, no boundary creation",
+      "creation_candidate": false
+    }
+  ],
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default"
+}

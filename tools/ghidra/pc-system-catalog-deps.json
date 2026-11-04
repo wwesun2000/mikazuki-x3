@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001ab330",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ab578",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ab260",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ab1c0",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "00100ec8",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af010",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af550",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ac108",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001adb48",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "00100548",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010b0a8",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015de60",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015ded0",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015dfc8",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015f9e0",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "00106178",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a2738",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a2750",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001219e0",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019cf30",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af2e0",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af2d0",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ada28",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ada40",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad758",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad768",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    },
+    {
+      "address": "001aca08",
+      "role": "Game mode, ending/chapter data loaders and configuration writes",
+      "creation_candidate": false
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0015de60",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0ed0",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0670",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b06f8",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0280",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0f10",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "001d0648",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "001d0d18",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "00154218",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "00154460",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0028",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b00d8",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "00103f10",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "00105f80",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "00106050",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "00106178",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a89e0",
+      "role": "Original stereo command and optional auto-record consent path",
+      "creation_candidate": false
+    }
+  ]
+}

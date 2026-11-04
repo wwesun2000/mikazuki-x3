@@ -1,0 +1,6 @@
+{"schema":1,"elf_sha256":"50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160","language_id":"r5900:LE:32:default","anchors":[
+  {"address":"0011fa48","creation_candidate":false,"role":"Readback context step in vtable 223970"},
+  {"address":"001195b0","creation_candidate":false,"role":"Timed input sequence for context 2239D0"},
+  {"address":"00115548","creation_candidate":false,"role":"Alternative context progression below 1154E0"},
+  {"address":"001157c0","creation_candidate":false,"role":"Alternative context progression below 1154E0"}
+]}

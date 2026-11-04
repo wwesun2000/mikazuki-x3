@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0016a490",
+      "role": "0x5F",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016a4a0",
+      "role": "0x5D",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016a570",
+      "role": "0x61",
+      "creation_candidate": true
+    },
+    {
+      "address": "0016a640",
+      "role": "0x63",
+      "creation_candidate": true
+    },
+    {
+      "address": "001390a8",
+      "role": "delayed cue flag test",
+      "creation_candidate": true
+    },
+    {
+      "address": "00140118",
+      "role": "pending SE start check",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b1f80",
+      "role": "source SE wait device",
+      "creation_candidate": true
+    },
+    {
+      "address": "001b26f0",
+      "role": "source BGM wait device",
+      "creation_candidate": true
+    },
+    {
+      "address": "001407d0",
+      "role": "SE stop all enqueue",
+      "creation_candidate": true
+    }
+  ]
+}

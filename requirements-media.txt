@@ -1,0 +1,3 @@
+# Optional local preview dependency; analysis and tests use only Python stdlib.
+# Install with --target local/dependencies. Do not install globally.
+imageio-ffmpeg==0.7.0

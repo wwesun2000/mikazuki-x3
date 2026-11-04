@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0010ee18",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fc490",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "00100ee0",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015f528",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "00100ec8",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "001d2ed0",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "001d2f00",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0670",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b06f8",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad2c0",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    },
+    {
+      "address": "001afa08",
+      "role": "Chart source external leaves and scoped hardware calls",
+      "creation_candidate": false
+    }
+  ]
+}

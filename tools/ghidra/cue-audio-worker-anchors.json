@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0013f808",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0028",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b2590",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b1a88",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0670",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b06f8",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0958",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0c40",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b2158",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0c60",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f700",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f718",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013fde8",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138c28",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "00114598",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "00114348",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f4b8",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f750",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0158",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b04f0",
+      "role": "Source audio-worker command dequeue, device requests and active sound list",
+      "creation_candidate": false
+    }
+  ]
+}

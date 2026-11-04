@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00113898",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113938",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "001139a8",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113a48",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0012b300",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0012ba68",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0012bdd0",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168990",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168a60",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168b60",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168bc8",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00168c60",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169b08",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169b10",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169cb0",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "00169cc0",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b750",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b768",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b7b0",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b7f0",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b830",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b8a0",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b8e0",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016b8f8",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    },
+    {
+      "address": "0016ba10",
+      "role": "Source glyph fade setup, region update, query",
+      "creation_candidate": false
+    }
+  ]
+}

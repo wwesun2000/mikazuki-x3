@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0010bba0",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010bbf8",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113c40",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "00114ed8",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "001160d8",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011a098",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f4e0",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "00204a70",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019c638",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019c6b0",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015dff8",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010c850",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "001012e0",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ab7c8",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019cf48",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019cf78",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad3d8",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "001adaa0",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019cf38",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "00106d90",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "001074a0",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "00102548",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "001061f0",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "00102788",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    },
+    {
+      "address": "001025e0",
+      "role": "Registry serialization callback, file header metadata or memory-card worker initialization",
+      "creation_candidate": false
+    }
+  ]
+}

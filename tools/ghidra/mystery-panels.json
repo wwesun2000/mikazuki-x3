@@ -1,0 +1,252 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {"address":"00147880","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"00147890","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"00147928","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"00147958","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"00147a48","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"00148e60","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"00148e88","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"00148ea0","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"00148ea8","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"00148ec8","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"001358e8","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"001358f8","role":"Scenario 47 04 original descriptor and callbacks","creation_candidate":false},
+    {"address":"0012f9e8","role":"Memory caption opcode 22 in original vtable slot 21","creation_candidate":false},
+    {"address":"001325b0","role":"Memory caption opcode 1B in original vtable slot 21","creation_candidate":false},
+    {"address":"00119460","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00119470","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00119820","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00120a00","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00120ed8","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00120df8","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00120e50","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00120e80","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00121000","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00121020","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00121050","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00204950","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"001133d0","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"00116470","role":"Original panel context switch, caption consumer or branch return","creation_candidate":false},
+    {"address":"001193c0","role":"Memory panel caption delivery","creation_candidate":false},
+    {"address":"00119920","role":"Culprit panel caption delivery","creation_candidate":false},
+    {"address":"00120f78","role":"Memory panel caption context accessor","creation_candidate":false},
+    {"address":"00120aa0","role":"Culprit panel caption context accessor","creation_candidate":false},
+    {"address":"001132c0","role":"Original memory panel update destination","creation_candidate":false},
+    {"address":"00113290","role":"Original culprit panel update destination","creation_candidate":false},
+    {"address":"00113460","role":"Original font accessor","creation_candidate":false},
+    {"address":"0014b058","role":"Panel manager dispatch, callback and resource service evidence","creation_candidate":false},
+    {"address":"0014ccb8","role":"Panel manager dispatch, callback and resource service evidence","creation_candidate":false},
+    {"address":"00149f58","role":"Panel manager dispatch, callback and resource service evidence","creation_candidate":false},
+    {"address":"00149fb0","role":"Panel manager dispatch, callback and resource service evidence","creation_candidate":false},
+    {"address":"0014a008","role":"Panel manager dispatch, callback and resource service evidence","creation_candidate":false},
+    {"address":"0010c690","role":"Panel manager dispatch, callback and resource service evidence","creation_candidate":false},
+    {"address":"0010c730","role":"Panel manager dispatch, callback and resource service evidence","creation_candidate":false},
+    {"address":"0010c9c0","role":"Panel manager dispatch, callback and resource service evidence","creation_candidate":false},
+    {"address":"001591f0","role":"Panel manager dispatch, callback and resource service evidence","creation_candidate":false},
+    {"address":"00145590","role":"Panel manager dispatch, callback and resource service evidence","creation_candidate":false},
+    {
+      "address": "0014b0b0",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014cd10",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00149f00",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00149f50",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00149ed0",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014a048",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014a050",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014a080",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014a098",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014a0c8",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014a270",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014a278",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014a280",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014b020",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014b028",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014b070",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014bda8",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014be38",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014be40",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014be48",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014cb80",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014cb88",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "0014ccd0",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00135ab0",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00135ab8",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00135cc0",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00135cf8",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "001360d8",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00136168",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "001363c8",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00136548",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00136d48",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00136e00",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00145388",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00135030",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00135080",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00159778",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00159790",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00159ab8",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    },
+    {
+      "address": "00159bf8",
+      "creation_candidate": false,
+      "role": "Original culprit and memory panel vtable, input, texture and sprite calls"
+    }
+  ]
+}

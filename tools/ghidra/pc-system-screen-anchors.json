@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001215f8",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017a1c0",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "001a1eb0",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "001adbd8",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af6e0",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "00100410",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121b78",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "00121be8",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "00122018",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019d640",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019d658",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019d668",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019d630",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "00175f78",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119fa0",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119520",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad358",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    },
+    {
+      "address": "001746a0",
+      "role": "System-menu resource and current-scenario initialization, task restore",
+      "creation_candidate": false
+    }
+  ]
+}

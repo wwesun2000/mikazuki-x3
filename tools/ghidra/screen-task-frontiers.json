@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {"creation_candidate": true, "role": "Command 111 factory and registered callbacks", "address": "0018aad8"},
+    {"creation_candidate": true, "role": "Callback bound by factory 18AAD8", "address": "0018ad18"},
+    {"creation_candidate": true, "role": "Callback bound by factory 18AAD8", "address": "0018aef8"},
+    {"creation_candidate": true, "role": "Callback bound by factory 18AAD8", "address": "0018b028"},
+    {
+      "creation_candidate": true,
+      "role": "Retail screen-task factory and registered callbacks",
+      "address": "0018b040"
+    },
+    {
+      "creation_candidate": true,
+      "role": "Retail screen-task factory and registered callbacks",
+      "address": "0018b290"
+    },
+    {
+      "creation_candidate": true,
+      "role": "Retail screen-task factory and registered callbacks",
+      "address": "0018b408"
+    },
+    {
+      "creation_candidate": true,
+      "role": "Retail screen-task factory and registered callbacks",
+      "address": "0018b580"
+    },
+    {
+      "creation_candidate": true,
+      "role": "Retail screen-task factory and registered callbacks",
+      "address": "00193978"
+    },
+    {
+      "creation_candidate": true,
+      "role": "Retail screen-task factory and registered callbacks",
+      "address": "00193bf0"
+    },
+    {
+      "creation_candidate": true,
+      "role": "Retail screen-task factory and registered callbacks",
+      "address": "00193cb8"
+    },
+    {
+      "creation_candidate": true,
+      "role": "Retail screen-task factory and registered callbacks",
+      "address": "001944a8"
+    }
+  ]
+}

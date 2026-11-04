@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001b00e8",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b02e8",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0388",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b05a8",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0468",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "00154218",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001543a0",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001540f8",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0740",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b07a8",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0900",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b0ad0",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b00b8",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f718",
+      "role": "Audio message queue and device worker dispatch",
+      "creation_candidate": false
+    }
+  ]
+}

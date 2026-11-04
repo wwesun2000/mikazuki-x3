@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001976e8",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "001977d0",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197860",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "001978e8",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197998",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197a30",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197a70",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197b08",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197b30",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197b58",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197b80",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197c10",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197c38",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197c60",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197e60",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00197f20",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00198000",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00198038",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00198050",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00198058",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "001980d8",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00198140",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "00198158",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    },
+    {
+      "address": "001982e8",
+      "role": "MMV decoder member selection and playback lifecycle",
+      "creation_candidate": false
+    }
+  ]
+}

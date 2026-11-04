@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "0017e0c0",
+      "role": "SN2 ScenePack effect 5 source scheduling, GS draw and cleanup",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017e0e8",
+      "role": "SN2 ScenePack effect 5 source scheduling, GS draw and cleanup",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017e108",
+      "role": "SN2 ScenePack effect 5 source scheduling, GS draw and cleanup",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017e288",
+      "role": "SN2 ScenePack effect 5 source scheduling, GS draw and cleanup",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017e3d8",
+      "role": "SN2 ScenePack effect 5 source scheduling, GS draw and cleanup",
+      "creation_candidate": false
+    },
+    {
+      "address": "0017e558",
+      "role": "SN2 ScenePack effect 5 source scheduling, GS draw and cleanup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00176970",
+      "role": "SN2 ScenePack effect 5 source scheduling, GS draw and cleanup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00176c48",
+      "role": "SN2 ScenePack effect 5 source scheduling, GS draw and cleanup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00177ff8",
+      "role": "SN2 ScenePack effect 5 source scheduling, GS draw and cleanup",
+      "creation_candidate": false
+    },
+    {
+      "address": "00179c60",
+      "role": "SN2 ScenePack effect 5 source scheduling, GS draw and cleanup",
+      "creation_candidate": false
+    }
+  ]
+}

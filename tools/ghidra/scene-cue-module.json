@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {"address":"00140b30","role":"Wake the two queued source audio workers","creation_candidate":false},
+    {"address":"001b1598","role":"SE lookup in alternate cue mode","creation_candidate":false},
+    {"address":"001b0888","role":"Scan both original sound packet queues","creation_candidate":false},
+    {"address":"00154160","role":"Iterate a locked queue in its original order","creation_candidate":false},
+    {"address":"001b2788","role":"Inspect pending BGM start or stop packets","creation_candidate":false},
+    {
+      "address": "001397d8",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00139338",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00139150",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00139118",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001390a8",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00139678",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00139698",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001396b0",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001397b0",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00139550",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "0013eff0",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00140478",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00140540",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001405d8",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00140680",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00140728",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001408c0",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00140a10",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00140aa8",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00140118",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001402b8",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00140bb0",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001b2350",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001b26f0",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001b0068",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001b0070",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001b00a8",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001b27d8",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001b3f88",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001b4a28",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "001fdc64",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    },
+    {
+      "address": "00137b20",
+      "creation_candidate": false,
+      "role": "ScenePack interpreter, scheduler and direct sound service dependencies"
+    }
+  ]
+}

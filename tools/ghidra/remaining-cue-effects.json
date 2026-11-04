@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001819d0",
+      "creation_candidate": true,
+      "factory_table_index": 11,
+      "role": "Original ScenePack effect 11 constructor"
+    },
+    {
+      "address": "00181a20",
+      "creation_candidate": true,
+      "entry_jump_pc": "001819ec",
+      "role": "Original shared ripple constructor reached by effect 11 tail jump"
+    },
+    {
+      "address": "00181bc8",
+      "creation_candidate": true,
+      "role": "Original effect 11 callback",
+      "registration_pc": "00181a60",
+      "registration_callee": "00179c40",
+      "lui_pc": "00181a54",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "00181d98",
+      "creation_candidate": true,
+      "role": "Original effect 11 callback",
+      "registration_pc": "00181a70",
+      "registration_callee": "00179c48",
+      "lui_pc": "00181a68",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "00181f78",
+      "creation_candidate": true,
+      "role": "Original effect 11 callback",
+      "registration_pc": "00181a80",
+      "registration_callee": "00179c58",
+      "lui_pc": "00181a78",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "0017f008",
+      "creation_candidate": true,
+      "factory_table_index": 26,
+      "role": "Original ScenePack effect 26 constructor"
+    },
+    {
+      "address": "0017f1a8",
+      "creation_candidate": true,
+      "role": "Original effect 26 callback",
+      "registration_pc": "0017f058",
+      "registration_callee": "00179c40",
+      "lui_pc": "0017f04c",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "0017f230",
+      "creation_candidate": true,
+      "role": "Original effect 26 callback",
+      "registration_pc": "0017f068",
+      "registration_callee": "00179c48",
+      "lui_pc": "0017f060",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "0017f658",
+      "creation_candidate": true,
+      "role": "Original effect 26 callback",
+      "registration_pc": "0017f078",
+      "registration_callee": "00179c58",
+      "lui_pc": "0017f070",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "0017f670",
+      "creation_candidate": true,
+      "factory_table_index": 27,
+      "role": "Original ScenePack effect 27 constructor"
+    },
+    {
+      "address": "0017f7f0",
+      "creation_candidate": true,
+      "role": "Original effect 27 callback",
+      "registration_pc": "0017f6b0",
+      "registration_callee": "00179c40",
+      "lui_pc": "0017f6a4",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "0017fe70",
+      "creation_candidate": true,
+      "role": "Original effect 27 callback",
+      "registration_pc": "0017f6c0",
+      "registration_callee": "00179c48",
+      "lui_pc": "0017f6b8",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "0017fe98",
+      "creation_candidate": true,
+      "role": "Original effect 27 callback",
+      "registration_pc": "0017f6d0",
+      "registration_callee": "00179c58",
+      "lui_pc": "0017f6c8",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "00183820",
+      "creation_candidate": true,
+      "factory_table_index": 31,
+      "role": "Original ScenePack effect 31 constructor"
+    },
+    {
+      "address": "00183b10",
+      "creation_candidate": true,
+      "role": "Original effect 31 callback",
+      "registration_pc": "00183878",
+      "registration_callee": "00179c40",
+      "lui_pc": "0018386c",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "00183d30",
+      "creation_candidate": true,
+      "role": "Original effect 31 callback",
+      "registration_pc": "00183888",
+      "registration_callee": "00179c48",
+      "lui_pc": "00183880",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "001840a0",
+      "creation_candidate": true,
+      "role": "Original effect 31 callback",
+      "registration_pc": "00183898",
+      "registration_callee": "00179c58",
+      "lui_pc": "00183890",
+      "lui_word": "3c050018"
+    }
+  ]
+}

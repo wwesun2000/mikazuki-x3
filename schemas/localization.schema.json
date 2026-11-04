@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:kamaitachi-x3:localization:v1",
+  "title": "Source baseline or localization catalog",
+  "type": "object",
+  "required": ["schema_version", "kind", "artifact_sha256", "entry_count", "entries"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "kind": {"enum": ["source-baseline", "localization-catalog"]},
+    "artifact_sha256": {"$ref": "#/$defs/sha256"},
+    "entry_count": {"type": "integer", "minimum": 0},
+    "source_digest": {"$ref": "#/$defs/sha256"},
+    "baseline_digest": {"$ref": "#/$defs/sha256"},
+    "coverage": {
+      "type": "object", "required": ["status", "evidence"],
+      "properties": {
+        "status": {"enum": ["partial", "complete"]},
+        "evidence": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "entries": {"type": "array", "items": {"$ref": "#/$defs/entry"}},
+    "holistic_reviews": {
+      "type": "object", "additionalProperties": false,
+      "properties": {"zh-Hans": {"$ref": "#/$defs/holistic"}, "en": {"$ref": "#/$defs/holistic"}}
+    }
+  },
+  "allOf": [
+    {"if": {"properties": {"kind": {"const": "source-baseline"}}}, "then": {"required": ["source_digest", "coverage"]}},
+    {"if": {"properties": {"kind": {"const": "localization-catalog"}}}, "then": {
+      "required": ["baseline_digest", "holistic_reviews"],
+      "properties": {"entries": {"items": {"required": ["targets"]}}}
+    }}
+  ],
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "entry": {
+      "type": "object", "required": ["entry_id", "original", "source_hash", "context", "location", "tokens"],
+      "properties": {
+        "entry_id": {"type": "string", "minLength": 1},
+        "original": {"type": "string"},
+        "source_hash": {"$ref": "#/$defs/sha256"},
+        "context": {"type": "string"},
+        "location": {
+          "type": "object", "required": ["path", "offset", "length"],
+          "properties": {
+            "path": {"type": "string", "minLength": 1},
+            "offset": {"type": "integer", "minimum": 0},
+            "length": {"type": "integer", "minimum": 0}
+          }
+        },
+        "tokens": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "targets": {
+          "type": "object", "required": ["zh-Hans", "en"], "additionalProperties": false,
+          "properties": {"zh-Hans": {"$ref": "#/$defs/target"}, "en": {"$ref": "#/$defs/target"}}
+        }
+      }
+    },
+    "target": {
+      "type": "object", "required": ["status", "text"],
+      "properties": {
+        "status": {"enum": ["untranslated", "draft", "reviewed"]},
+        "text": {"type": "string"},
+        "reviewed_by": {"type": "string", "minLength": 1},
+        "reviewed_at": {"type": "string", "format": "date-time"},
+        "reviewed_source_hash": {"$ref": "#/$defs/sha256"},
+        "reviewed_text_hash": {"$ref": "#/$defs/sha256"}
+      },
+      "allOf": [
+        {"if": {"properties": {"status": {"const": "reviewed"}}}, "then": {"required": ["reviewed_by", "reviewed_at", "reviewed_source_hash", "reviewed_text_hash"]}},
+        {"if": {"properties": {"status": {"const": "untranslated"}}}, "then": {"properties": {"text": {"const": ""}}}},
+        {"if": {"properties": {"status": {"enum": ["draft", "reviewed"]}}}, "then": {"properties": {"text": {"minLength": 1}}}}
+      ]
+    },
+    "holistic": {
+      "type": "object", "required": ["status", "scope", "reviewed_by", "reviewed_at", "catalog_digest"],
+      "properties": {
+        "status": {"const": "approved"}, "scope": {"const": "full-project"},
+        "reviewed_by": {"type": "string", "minLength": 1},
+        "reviewed_at": {"type": "string", "format": "date-time"},
+        "catalog_digest": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  }
+}

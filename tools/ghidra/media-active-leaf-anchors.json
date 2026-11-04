@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001453a8",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "00145958",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "00136630",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "001366a8",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "00136718",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "001403c0",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "0013fe10",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "0013fe30",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "001402d8",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "001b1fd0",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "001d2ee4",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    },
+    {
+      "address": "001369e8",
+      "role": "Active resource loader and audio leaf dependency",
+      "creation_candidate": false,
+      "evidence": [
+        "analysis/ghidra/media-active-v1/functions/001378b0.json",
+        "analysis/ghidra/media-active-v1/functions/00145388.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Local-only inputs, generated data and gameplay evidence
+/local/
+/analysis/
+/captures/
+/build/
+*.iso
+*.7z
+*.zip
+*.elf
+*.exe
+*.dll
+*.obj
+*.o
+*.kx3save
+*.ram
+*.ps2
+*.p2s
+*.inc
+*_generated.hpp
+__pycache__/
+.env*
+*.tmp

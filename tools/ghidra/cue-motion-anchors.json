@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001819d0",
+      "creation_candidate": true,
+      "role": "Original cue 11/12/14 factory or shared constructor"
+    },
+    {
+      "address": "001819f8",
+      "creation_candidate": true,
+      "role": "Original cue 11/12/14 factory or shared constructor"
+    },
+    {
+      "address": "00181a20",
+      "creation_candidate": true,
+      "role": "Original cue 11/12/14 factory or shared constructor"
+    },
+    {
+      "address": "00181bc8",
+      "creation_candidate": true,
+      "role": "Callback registered by 00181a20",
+      "registration_pc": "00181a60",
+      "registration_callee": "00179c40",
+      "lui_pc": "00181a54",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "00181d98",
+      "creation_candidate": true,
+      "role": "Callback registered by 00181a20",
+      "registration_pc": "00181a70",
+      "registration_callee": "00179c48",
+      "lui_pc": "00181a68",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "00181f78",
+      "creation_candidate": true,
+      "role": "Callback registered by 00181a20",
+      "registration_pc": "00181a80",
+      "registration_callee": "00179c58",
+      "lui_pc": "00181a78",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "00181f90",
+      "creation_candidate": true,
+      "role": "Original cue 11/12/14 factory or shared constructor"
+    },
+    {
+      "address": "00182078",
+      "creation_candidate": true,
+      "role": "Callback registered by 00181f90",
+      "registration_pc": "00181fc8",
+      "registration_callee": "00179c40",
+      "lui_pc": "00181fbc",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "00182188",
+      "creation_candidate": true,
+      "role": "Callback registered by 00181f90",
+      "registration_pc": "00181fd8",
+      "registration_callee": "00179c48",
+      "lui_pc": "00181fd0",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "001822f0",
+      "creation_candidate": true,
+      "role": "Callback registered by 00181f90",
+      "registration_pc": "00181fe8",
+      "registration_callee": "00179c58",
+      "lui_pc": "00181fe0",
+      "lui_word": "3c050018"
+    },
+    {
+      "address": "0017a8b0",
+      "creation_candidate": true,
+      "role": "Original shared float random function"
+    },
+    {
+      "address": "0017a9c8",
+      "creation_candidate": true,
+      "role": "Original shared float random function"
+    }
+  ]
+}

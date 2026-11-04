@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "language_id": "r5900:LE:32:default",
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "anchors": [
+    {"creation_candidate":false,"address":"00138b98","role":"Fade flag setter reached by the 117078 tail jump"},
+    {"creation_candidate":false,"address":"0010c8d0","role":"Game callback registered at 100910, applied by 135284"},
+    {"creation_candidate":false,"address":"00117030","role":"Readback cleanup tail-called by 10C8D0"},
+    {"creation_candidate":false,"address":"00117580","role":"Post-load scenario prescan, 134-entry opcode table"},
+    {"creation_candidate":false,"address":"0011def8","role":"Post-load media predecessor scan with a four-byte alignment gap"},
+    {"creation_candidate":false,"address":"00113c88","role":"Checkpoint reader pointed to by 223644"},
+    {"creation_candidate":false,"address":"001160f8","role":"Checkpoint reader pointed to by 223624"},
+    {"creation_candidate":false,"address":"0011a0a8","role":"Checkpoint reader pointed to by 223664"},
+    {"creation_candidate":false,"address":"0010f550","role":"Checkpoint reader pointed to by 2235FC"},
+    {
+      "creation_candidate": false,
+      "address": "00103ca0",
+      "role": "Card request thread descriptor at 204C58 with 3 eight-entry dispatch tables"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a7c88",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a4650",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a4720",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001049f0",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "00105538",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a3f08",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a4140",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001a4328",
+      "role": "Chapter-card menu or device dispatch"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001aa920",
+      "role": "Chapter card slot list scroll, two verified basic-block ranges"
+    },
+    {
+      "creation_candidate": false,
+      "address": "001aa9b8",
+      "role": "Chapter card slot list scroll, two verified basic-block ranges"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00114a68",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011dcf8",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0011e3b8",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00127c20",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00127e10",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135618",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135660",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00137308",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "001373c8",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "001374c0",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "001378b0",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00137ae0",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00137b40",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00137d78",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138478",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "001384b0",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138930",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138b30",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00138ba8",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00139028",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013c018",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013d048",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013d080",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013ea88",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013ebf8",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013efb8",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f010",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f038",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f040",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f068",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f0a0",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013f1c8",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "0013fd20",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00140068",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00140858",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "001448a0",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145350",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "001453a8",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145980",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145a80",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145b80",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145d30",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00145dc0",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00146768",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "00146950",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "001b1598",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fdb50",
+      "role": "Deferred scene command, loading worker and direct dependency",
+      "creation_candidate": false
+    }
+  ]
+}

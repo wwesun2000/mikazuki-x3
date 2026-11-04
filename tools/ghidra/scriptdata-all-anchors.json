@@ -1,0 +1,438 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "source_functions_sha256": "4a84653b2f8dbf69067224cd89eb6ae82ab47ae30d99c3ea6fecae9e74998a37",
+  "anchors": [
+    {
+      "address": "0010d038",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d260",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d3d0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d3e8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d400",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d468",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d4c8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d590",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d5d8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d610",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d638",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d680",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d6c8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d700",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d720",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d728",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d738",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d740",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d748",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d750",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d780",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d788",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d7b0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d7d0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d800",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d830",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d868",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010dae8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010daf0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010db48",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010dbd8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010dc30",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010dc80",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010dde0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010dfd8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010e150",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010e630",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010e640",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010e658",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010e708",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010e748",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010e878",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010e8d8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010e9d8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010eaa8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010ead0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010eca0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010edc0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010edf0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010ee18",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010eea0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010eed0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010eee8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010ef18",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010ef48",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010ef60",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010ef90",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010efc0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010eff0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f018",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f070",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f0c0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f100",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f110",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f168",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f198",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f260",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f318",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f3c8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f628",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f678",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f6e0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f768",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f820",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f898",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f8b0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f938",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010f9b0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fa28",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fa48",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fa68",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fa88",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fab8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fac0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fac8",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fad0",
+      "role": "ScriptData original analyzed function",
+      "creation_candidate": false
+    }
+  ]
+}

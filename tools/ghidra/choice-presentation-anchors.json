@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001689a8",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    },
+    {
+      "address": "00168ac8",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    },
+    {
+      "address": "00168bc8",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    },
+    {
+      "address": "00168c60",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    },
+    {
+      "address": "001697d0",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    },
+    {
+      "address": "0016ba10",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    },
+    {
+      "address": "0017d3b8",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    },
+    {
+      "address": "0017d3e0",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": true,
+      "evidence": [
+        "actual call target in17D3B8"
+      ]
+    },
+    {
+      "address": "0016c790",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    },
+    {
+      "address": "0016c898",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    },
+    {
+      "address": "0016c978",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    },
+    {
+      "address": "0016c710",
+      "label": "choice-presentation-leaf",
+      "creation_candidate": false,
+      "evidence": [
+        "existing function"
+      ]
+    }
+  ]
+}

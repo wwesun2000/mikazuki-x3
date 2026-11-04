@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "001af188",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ac598",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015f558",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "0015f528",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001af3b0",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019c4c0",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019c538",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010c7e0",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ac7c0",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019cf38",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001aca08",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad2c0",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001add40",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001add08",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001adeb0",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ad688",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ac588",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    },
+    {
+      "address": "001062e0",
+      "role": "Source label callbacks and original chart navigation",
+      "creation_candidate": false
+    }
+  ]
+}

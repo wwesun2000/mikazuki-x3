@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "elf_sha256": "50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160",
+  "language_id": "r5900:LE:32:default",
+  "anchors": [
+    {
+      "address": "00100ec8",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00100ee0",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010c898",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d5d8",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d610",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d638",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d680",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d700",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d740",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d748",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010d868",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010daf0",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fad0",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0010fb38",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "001114f0",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "001114f8",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00111550",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00111560",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133a8",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133d0",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "001133f0",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113490",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00113498",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00115e58",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119820",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119a10",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119a18",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00119b60",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120830",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120880",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120900",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120970",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00120978",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "001209a8",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0012e180",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00135bd8",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014bcc0",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0014bd18",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "00175f78",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "0019cf38",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "001ac690",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "001aca08",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fc490",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    },
+    {
+      "address": "001fda0c",
+      "role": "Cold SN4G selector 17 original timed/special route selection",
+      "creation_candidate": false
+    }
+  ]
+}
