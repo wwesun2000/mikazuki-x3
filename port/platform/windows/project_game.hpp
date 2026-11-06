@@ -36,6 +36,8 @@ public:
     const StereoBlock& last_audio() const { return audio_block_; }
     const ProjectMixer& mixer() const { return mixer_; }
     void enable_audio_output() { audio_enabled_=true; audio_error_.clear(); }
+    // A host lifecycle pause closes only the device. Guest/mixer positions stay owned by the session.
+    void suspend_audio_output() { audio_enabled_=false; output_.reset(); }
     void set_system_record_file(std::filesystem::path file);
     const std::string& record_export_error() const {return record_export_error_;}
     std::span<const std::uint8_t> last_system_record() const {return last_system_record_;}

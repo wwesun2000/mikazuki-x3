@@ -1,7 +1,9 @@
 #include "project_audio.hpp"
+#ifdef _WIN32
 #define NOMINMAX
 #include <windows.h>
 #include <mmsystem.h>
+#endif
 #include <algorithm>
 #include <cmath>
 #include <condition_variable>
@@ -20,10 +22,12 @@ bool finished(const PlayingVoice& v) {
     return (!v.loop && (v.position_q12>>12)>=stream.samples.size()) ||
            (v.stopping && v.ramp_elapsed>=v.ramp_length);
 }
+#ifdef _WIN32
 void check_mm(MMRESULT result,const char* action) {
     if(result!=MMSYSERR_NOERROR)
         throw std::runtime_error(std::string(action)+" (Windows audio error "+std::to_string(result)+")");
 }
+#endif
 }
 
 bool ProjectMixer::effect_active(std::uint32_t id) const {
@@ -190,6 +194,7 @@ StereoBlock ProjectMixer::mix_tick(const PreparedMovie* movie,const MoviePositio
     return block;
 }
 
+#ifdef _WIN32
 struct WaveOutput::Device {
     struct Slot { std::array<StereoBlock,2> data{}; WAVEHDR header{}; bool prepared=false; };
     std::array<Slot,3> slots{};
@@ -282,4 +287,5 @@ void WaveOutput::submit(const StereoBlock& samples) {
     d.pending.push_back(samples);
     guard.unlock();d.changed.notify_all();
 }
+#endif
 }

@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.wwesun2000.mikazukix3" android:versionCode="2" android:versionName="0.1.1-test">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="35" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <application android:label="镰鼬之夜 ×3" android:theme="@style/AppTheme" android:allowBackup="false" android:largeHeap="true" android:extractNativeLibs="true" android:debuggable="true" android:icon="@drawable/ic_launcher">
+        <activity android:name=".MainActivity" android:exported="true" android:screenOrientation="sensorLandscape" android:configChanges="orientation|screenSize|keyboardHidden|uiMode" android:resizeableActivity="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity>
+    </application>
+</manifest>

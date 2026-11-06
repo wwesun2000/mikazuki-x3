@@ -1,0 +1,27 @@
+Mikazuki X3 Android test 0.1.0
+
+This APK contains native port code and translations. The original Japanese
+game ISO is supplied by the player and read on the device. Original game
+content belongs to Chunsoft and its respective rights holders.
+
+FFmpeg n7.1.5-1-g7d0e84200 (shared LGPL build)
+Copyright (c) the FFmpeg developers and other contributors.
+FFmpeg is dynamically linked. Its LGPL license is included as FFmpeg-LGPL.txt.
+Upstream source: https://github.com/FFmpeg/FFmpeg
+Corresponding build project, scripts and pinned artifact provenance:
+https://github.com/tqk2811/FFmpegBuild/releases/tag/Release-Android-2026-08-06
+https://github.com/tqk2811/FFmpegBuild
+The library retains its original license and redistribution rights; the
+project's noncommercial-use statement does not replace third-party licenses.
+
+LLVM libc++ runtime: https://github.com/llvm/llvm-project/tree/main/libcxx
+Apache License 2.0 with LLVM Exceptions.
+
+Project: https://github.com/wwesun2000/mikazuki-x3
+wwesun2000: project direction and playtesting.
+OpenAI Codex: reverse engineering, native port, interface and validation.
+Claude: technical consultation and English translation collaboration.
+Gemini: Chinese proofreading and creative collaboration.
+
+Test APKs use a development certificate. No game ISO, BIOS or player save is
+included. No Internet permission is requested.

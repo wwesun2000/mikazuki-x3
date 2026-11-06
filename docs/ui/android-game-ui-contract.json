@@ -1,0 +1,279 @@
+{
+  "contract_version": 1,
+  "project": {
+    "name": "Mikazuki X3 Android test player",
+    "build": "0.1.1-test; shared PC core, touch-only moonlit UI",
+    "target_devices": [
+      "ARM64 Android 8+ phones; primary trial device iQOO Z9 Turbo",
+      "Landscape tablets",
+      "Android 11 x86_64 local emulator for host integration checks"
+    ],
+    "input_methods": [
+      "Single-finger touch",
+      "Android system back gesture"
+    ],
+    "locales": [
+      "ja",
+      "zh-Hans",
+      "en"
+    ]
+  },
+  "player_decisions": [
+    {
+      "decision": "Mount the original disc and start or resume an edition",
+      "required_information": "Supported ISO, real available editions and save slots",
+      "urgency": "current decision support"
+    },
+    {
+      "decision": "Choose an original branch or menu action",
+      "required_information": "Only revealed text, original valid options and focus",
+      "urgency": "current decision support"
+    },
+    {
+      "decision": "Save progress or capture a reproducible issue",
+      "required_information": "Original save eligibility, write result and visible source location",
+      "urgency": "critical"
+    }
+  ],
+  "screens": [
+    {
+      "id": "disc-title",
+      "type": "title",
+      "decision": "Choose disc, edition or save",
+      "states": [
+        "unmounted",
+        "checking",
+        "mounted",
+        "invalid or inaccessible ISO",
+        "empty or populated save slots"
+      ],
+      "entry": "Mount a retained SAF descriptor and validate the original PVD, root and resource index",
+      "exit": "Create or load the shared ProjectGame session",
+      "back_behavior": "Subpage returns to title; system back from title leaves the Activity",
+      "initial_focus": "Touch target order follows the source edition list"
+    },
+    {
+      "id": "game",
+      "type": "shared original gameplay",
+      "decision": "Read, confirm, choose or inspect original menus",
+      "states": [
+        "revealing",
+        "wait",
+        "ordinary branch",
+        "name or answer input",
+        "actor choice",
+        "chapter card",
+        "endings",
+        "chapters",
+        "time chart",
+        "original settings",
+        "original save"
+      ],
+      "entry": "Original C++ state only; no screenshot or walkthrough chooses progression",
+      "exit": "Original actions or host settings",
+      "back_behavior": "System back sends the original menu action, or cancel when an original menu is open",
+      "initial_focus": "Original focus, chapter row and actor index are read from core state"
+    },
+    {
+      "id": "host-settings",
+      "type": "paused integrated page",
+      "decision": "Choose text language, scanlines or read credits",
+      "states": [
+        "settings",
+        "about"
+      ],
+      "entry": "Pause the tick queue, release held input and close the audio endpoint without resetting the mixer",
+      "exit": "Restore the same game session and audio mixer",
+      "back_behavior": "About returns to settings; settings returns to its prior title or game",
+      "initial_focus": "Touch rows: language, scanlines, about"
+    },
+    {
+      "id": "host-error",
+      "type": "recoverable error",
+      "decision": "Retry the preserved source operation or capture the failure",
+      "states": [
+        "native operation failure",
+        "Java presentation failure",
+        "save failure"
+      ],
+      "entry": "Expose the real error while retaining original state",
+      "exit": "Resume audio before restoring the failed save input, then restart the tick loop",
+      "back_behavior": "No automatic branch selection or successful-save claim",
+      "initial_focus": "Retry and capture remain visible"
+    }
+  ],
+  "information_hierarchy": {
+    "critical": [
+      "Save errors and overwrite confirmation",
+      "Current valid branch choices"
+    ],
+    "current": [
+      "Revealed dialogue",
+      "Original menu and input focus"
+    ],
+    "contextual": [
+      "Language and filters",
+      "About and third-party notices",
+      "Small screenshot location code"
+    ],
+    "hidden": [
+      "Unrevealed script text",
+      "Locked ending titles",
+      "Unvisited time-chart cells"
+    ]
+  },
+  "navigation": {
+    "methods": [
+      "touch",
+      "system back gesture"
+    ],
+    "focus_order": [
+      "Original core focus",
+      "Left rail semantic game actions",
+      "Center direct choices and swipe lists",
+      "Right rail settings, capture and context-specific return"
+    ],
+    "device_switch": "Android gameplay uses touch only. Semantic touch and swipe requests still share original ChoiceInput with PC. No virtual D-pad or physical game-key mappings.",
+    "modal_behavior": "Host settings pause original ticks; overwrite confirmation blocks gameplay; blank name/menu cells never become confirm",
+    "destructive_behavior": "Replacing an existing PC-format slot requires confirmation; original card confirmations retain original yes/no indices"
+  },
+  "layout": {
+    "aspect_families": [
+      "16:9 landscape",
+      "20:9 landscape",
+      "4:3 landscape tablet"
+    ],
+    "safe_area": "Inset actionable content using Android cutout and system-bar insets; landscape is enforced",
+    "anchors": [
+      "Centered complete 4:3 scene, full safe height when rails fit",
+      "Game actions on left",
+      "Settings, screenshot and contextual return on right",
+      "Small source location code in lower left rail"
+    ],
+    "text_scaling": "Use density and safe height; fit localized rows without opaque dialogue panels; original eight-row name pages reserve their bottom toolbar",
+    "reflow": "Preserve the complete scene; shrink it when two rails cannot fit beside a full-height image",
+    "scrolling": "Up/down swipes enqueue original direction edges in chapter/time-chart/name grids. Horizontal name swipes send original group changes; ordinary page taps only confirm outside modal menus. No local script pagination."
+  },
+  "localization": {
+    "externalized": "Shared validated story_locale_data.inc and system_locale_data.inc; small Android host labels currently live alongside their three language variants in MainActivity",
+    "expansion": "Wrap dialogue at word or CJK boundaries and fit all visible option rows; hit regions cover the entire displayed option",
+    "bidirectional": "Only the existing left-to-right ja/zh-Hans/en locales are declared",
+    "fonts": "Android system fonts with explicit text locale; original font atlas retained for Japanese source presentation and artwork",
+    "input_glyphs": "Semantic touch labels and line icons; no controller circle/cross or directional pad"
+  },
+  "accessibility": {
+    "signals": [
+      "Focus has both a gold marker and a background distinction",
+      "Errors retain written explanations",
+      "Touch grid blanks do not submit the focused character"
+    ],
+    "settings_entry": "Settings available at title after disc mount and on the right rail during gameplay",
+    "motion": "No added UI transitions; original scene transitions remain core-driven",
+    "media_alternatives": "Original audio remains unchanged; current dialogue is visible. Per-control TalkBack semantics and a separate large-text mode are not implemented in this test build"
+  },
+  "data_bindings": [
+    {
+      "element": "Game scene, dialogue and menus",
+      "source": "Shared ProjectGame, committed glyph events and original memory state",
+      "initial_state": "Render selected language before exposing the first playable frame",
+      "update": "One serial process-wide engine queue executes original ticks; publish an immutable JSON snapshot with its bitmap under frameLock",
+      "stale": "Pause on lifecycle loss; no concurrent Activity can enter the native core",
+      "error": "Preserve state and display the actual error",
+      "permission": "Only core-exposed revealed text and valid choices are presented"
+    },
+    {
+      "element": "ISO resource transport",
+      "source": "Persistable ACTION_OPEN_DOCUMENT descriptor",
+      "initial_state": "Validate length, PVD, root and FAD index",
+      "update": "pread on an owned descriptor; per-resource size and SHA validation unchanged",
+      "stale": "Ask the player to reselect an unavailable URI",
+      "error": "Report unsupported or nonseekable input; do not copy or extract the full disc",
+      "permission": "Read permission for the selected local file only; no Internet or broad storage permission"
+    },
+    {
+      "element": "Save and screenshot",
+      "source": "Original save eligibility and current immutable rendered state",
+      "initial_state": "Only offer real slot files; separate background suspend snapshot",
+      "update": "Atomic shared checkpoint writing; PNG via MediaStore on API29+ or create-document on API26-28",
+      "stale": "A capture filename and visible code come from the same frameLock snapshot",
+      "error": "Never report a failed write as a saved game",
+      "permission": "Private app saves; user-visible screenshots with source locator, locale and filter in filename"
+    }
+  ],
+  "verification": {
+    "matrix": [
+      {
+        "state": "Cold start, dialogue, save and cross-process resume",
+        "device": "Android11 x86_64 emulator 1280x720",
+        "input": "touch injection through actual Activity",
+        "locale": "zh-Hans",
+        "setting": "System-selected local ISO",
+        "expected": "Load original scene and restore sn2 11-0-9Y-FH8 after process restart",
+        "status": "passed; analysis/android"
+      },
+      {
+        "state": "Paused language and filter changes",
+        "device": "Android11 x86_64 emulator",
+        "input": "touch",
+        "locale": "zh-Hans to en",
+        "setting": "0.1.0 historical baseline: smooth to Scale2x; 0.1.1 exposes scanlines only",
+        "expected": "Language switch retains tick6660 and location; filtered image and screenshot render",
+        "status": "passed; 05-settings-before.json and 06-settings-english.json"
+      },
+      {
+        "state": "Real phone compatibility and sustained play",
+        "device": "iQOO Z9 Turbo",
+        "input": "physical touch",
+        "locale": "ja/zh-Hans/en",
+        "setting": "ARM64 APK",
+        "expected": "Install, select ISO, play and save with usable safe areas and audio",
+        "status": "pending-user-device"
+      },
+      {
+        "state": "16KB pages, API26 screenshots and varied GPU drivers",
+        "device": "Other Android phones/tablets",
+        "input": "touch",
+        "locale": "ja/zh-Hans/en",
+        "setting": "Standard Canvas, AAudio and 16KB ELF alignment",
+        "expected": "No ABI, permission or display-specific dependency",
+        "status": "static checks plus later real-device coverage; not claimed universally verified"
+      },
+      {
+        "state": "Touch-only UI, direct interval target and original-input adapter",
+        "device": "Android11 ARM64 translated emulator 2400x1080 density420",
+        "input": "touch / vertical and horizontal swipes",
+        "locale": "zh-Hans/en/ja",
+        "setting": "0.1.1-test, scanlines only",
+        "expected": "No virtual Dpad or physical game keys; source-compatible actions and unchanged paused story position",
+        "status": "Static ABI/JNI/source checks passed; see 0.1.1 report for dynamic evidence and limitations"
+      }
+    ],
+    "acceptance": [
+      "Deliver an installable ARM64 test APK that reads the original ISO",
+      "Preserve shared story, wait, branch, voice and save semantics",
+      "Report emulator, translated ARM and real-phone evidence separately"
+    ],
+    "evidence": "analysis/android records APK hash, source fingerprint, exact start or save fixture, actions, capture code, JSON state and limits"
+  },
+  "decisions": [
+    {
+      "decision": "Reuse the PC core and translations; replace only platform I/O, decoding/output and touch presentation",
+      "basis": "Project continuity and no independent story implementation",
+      "owner": "native port"
+    },
+    {
+      "decision": "Start with ARM64 API26+; add compatibility only after specific evidence",
+      "basis": "User's iQOO Z9 Turbo test target and broad long-term compatibility preference",
+      "owner": "Android integration"
+    },
+    {
+      "decision": "Generated moonlit-island art is confined to host menus/rails; Canvas renders all text and thin-line controls",
+      "basis": "User requests a thematic drawn UI, touch-only controls and scanlines only; no replacement of original game images",
+      "owner": "Android presentation"
+    }
+  ],
+  "route_out": {
+    "next_owner": "Android runtime and user device validation",
+    "reason": "First-test integration; full mobile accessibility and device matrix remain later work"
+  }
+}

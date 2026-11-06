@@ -37,6 +37,7 @@
 #include <fstream>
 #include "../../core/name_entry.hpp"
 #include <chrono>
+#include <cstdlib>
 #include "../../core/audio_worker.hpp"
 #include "../../core/system_menu.hpp"
 #include "../../core/system_charts.hpp"
@@ -694,7 +695,7 @@ StoryFrameResult ProjectGame::advance(std::optional<ChoiceInput> input) {
     // Submit a given logical tick only once, after every retryable stage.
     output_submit_us_=0;
     if(audio_enabled_) {
-        static const bool measure=_wgetenv(L"KX3_FRAME_TRACE")!=nullptr;
+        static const bool measure=std::getenv("KX3_FRAME_TRACE")!=nullptr;
         const auto started=measure?std::chrono::steady_clock::now():std::chrono::steady_clock::time_point{};
         try {
             if(!output_ && (!mixer_.voices().empty() || mixer_.music() ||

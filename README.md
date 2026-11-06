@@ -6,9 +6,20 @@
 
 **中文** · 《镰鼬之夜×3 三日月岛事件的真相》的非官方 Windows 原生移植。游戏资源从自备日版 PS2 原盘镜像读取，保留日语原声和原图，可切换日中英文字。
 
+## Downloads
+
+Ready-to-run packages are provided under [GitHub Releases](https://github.com/wwesun2000/mikazuki-x3/releases).
+
+- **Windows:** extract the portable ZIP and launch `MikazukiX3.exe`. A command-script launcher is not required.
+- **Android 0.1.1 test:** install the ARM64 APK on Android 8.0 or newer, then select your own ISO using the system file picker. Landscape touch controls, a centered scene, moonlit side menus, direct branch selection, Japanese/Chinese/English text, saves, scanlines and screenshot location codes are included. No virtual D-pad or controller buttons are shown. See the [Android test guide](docs/ANDROID_TEST.md).
+- **中文：** Windows 压缩包解压后双击 EXE；安卓直接安装 APK，触屏操作，画面居中、两侧菜单，仅保留扫描线滤镜。两个版本均需自备日版原盘 ISO，不需要 BIOS。安卓目前为测试版。
+- **日本語：** Windows は ZIP を展開して EXE を実行、Android は ARM64 APK をインストールしてください。日本版 ISO は各自で用意してください。Android はタッチ操作・走査線フィルター対応のテスト版です。
+
+Packages contain no ISO, BIOS or personal save data. Android has been checked in an emulator, including ARM64 execution under translation; physical iQOO Z9 Turbo, other devices and 16KB-page execution still need real-device feedback. Static 16KB ELF alignment checks alone are not a claim of device validation.
+
 ## What you can build
 
-This repository contains the host runtime and game logic, the Windows UI, ISO and FAD tools, generators, Ghidra scripts and tests. Run the Python disc tools with Python 3.13. Their isolated tests create small synthetic fixtures.
+This repository contains the host runtime and game logic, the Windows and Android UIs, ISO and FAD tools, generators, Ghidra scripts and tests. Run the Python disc tools with Python 3.13. Their isolated tests create small synthetic fixtures.
 
 ```console
 python -B -m unittest discover -s tests -p test_iso9660.py
@@ -29,6 +40,6 @@ At runtime, place your locally obtained `ffmpeg-win-x86_64-v7.1.exe` under `loca
 
 ## Scope and contributions
 
-This project is for technical exchange and noncommercial use. Game rights belong to their respective holders. Third-party tools retain their own licenses. The public tree carries project source and tooling. Full game scripts, translation manuscripts, disc images, BIOS, personal saves and prebuilt player binaries stay outside it. Some technical documents reference evidence generated only in a private working tree.
+This project is for technical exchange and noncommercial use. Game rights belong to their respective holders. Third-party tools retain their own licenses. The public tree carries project source and tooling; prebuilt players are Release attachments. Full game scripts, translation manuscripts, disc images, BIOS and personal saves are not published as repository files. Some technical documents reference evidence generated only in a private working tree. The Android build shares the existing local generated-input requirements described above; public source alone does not regenerate the reviewed translation tables.
 
 **wwesun2000** initiated the project, set its direction and provided playtesting feedback. **OpenAI Codex** worked on reverse engineering, native implementation, Chinese translation and verification. **Claude** contributed technical consultation and English translation. **Gemini** contributed Chinese copyediting and proofreading.

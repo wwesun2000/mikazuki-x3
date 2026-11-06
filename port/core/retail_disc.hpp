@@ -2,6 +2,7 @@
 #include <cstdint>
 #include <filesystem>
 #include <fstream>
+#include <functional>
 #include <map>
 #include <span>
 #include <stdexcept>
@@ -12,10 +13,16 @@
 namespace kx3 {
 // Read-only ISO9660 and main FAD bank for the supported Japanese edition.
 class RetailDisc {
+public:
+    // SAF grants an open descriptor, not permission to reopen its filesystem
+    // path. The caller owns that descriptor and supplies bounded random reads.
+    using ReadAt=std::function<void(std::uint64_t,std::span<std::uint8_t>)>;
+private:
     using Bytes=std::vector<std::uint8_t>;
     using Digest=std::string(*)(std::span<const std::uint8_t>);
     struct Extent {std::uint64_t offset,size;};
     std::ifstream stream_;
+    ReadAt reader_;
     std::map<std::string,Extent,std::less<>> resources_;
     static constexpr std::uint64_t sector=2048, disc_bytes=3594551296;
     static std::uint32_t le32(const std::uint8_t* p){
@@ -24,6 +31,7 @@ class RetailDisc {
     Bytes read_at(Extent e){
         if(e.offset>disc_bytes || e.size>disc_bytes-e.offset)throw std::runtime_error("ISO extent outside disc");
         Bytes bytes(static_cast<std::size_t>(e.size));
+        if(reader_){reader_(e.offset,bytes);return bytes;}
         stream_.clear();
         if(!stream_.seekg(e.offset) || !stream_.read(reinterpret_cast<char*>(bytes.data()),bytes.size()))
             throw std::runtime_error("Incomplete read from game ISO");
@@ -38,6 +46,14 @@ public:
     RetailDisc(const std::filesystem::path& iso,Digest digest):stream_(iso,std::ios::binary|std::ios::ate){
         if(!stream_)throw std::runtime_error("Game ISO could not be opened: "+iso.string());
         if(stream_.tellg()!=std::streamoff(disc_bytes))throw std::runtime_error("Incorrect game ISO size");
+        initialize(digest);
+    }
+    RetailDisc(ReadAt reader,std::uint64_t size,Digest digest):reader_(std::move(reader)){
+        if(!reader_ || size!=disc_bytes)throw std::runtime_error("Incorrect game ISO size or reader");
+        initialize(digest);
+    }
+private:
+    void initialize(Digest digest){
         auto pvd=read_at({16*sector,sector});
         if(digest(pvd)!="b4a960a329d1ee99152a93d824192f46312abbdd2b04a1652fdb9fca650f6ba9")
             throw std::runtime_error("Unsupported ISO volume (expected SLPM-66452)");
@@ -74,6 +90,7 @@ public:
                 throw std::runtime_error("Invalid main FAD file: "+key);
         }
     }
+public:
     std::uint64_t member_size(std::string_view key) const {
         const auto it=resources_.find(key);
         if(it==resources_.end())throw std::runtime_error("Unknown disc resource: "+std::string(key));
