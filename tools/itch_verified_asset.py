@@ -40,7 +40,7 @@ def stage(archive, expected, dest):
     dest.mkdir(parents=True,exist_ok=False)
     for n,data in files.items():
         p=dest/n;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(data)
-    print('PASS: exact reviewed ZIP, 15 allowlisted files, decoder/source identity, per-file hashes; no disc/BIOS/media/cache paths.')
+    print(f'PASS: exact reviewed ZIP, {len(allowed)} allowlisted files, decoder/source identity, per-file hashes; no disc/BIOS/media/cache paths.')
 
 def main():
     asset=os.environ['ITCH_ASSET_ID'];expected=os.environ['ITCH_ASSET_SHA256'].lower()
@@ -65,7 +65,10 @@ def main():
                 total+=len(chunk)
                 if total>128*1024*1024:raise ValueError('Oversized download')
                 out.write(chunk)
-    except Exception:
+    except urllib.error.HTTPError as e:
+        raise SystemExit('Reviewed asset download HTTP status '+str(e.code)+' (response/URLs suppressed)') from None
+    except Exception as e:
+        print('Download failure category: '+type(e).__name__)
         raise SystemExit('Reviewed asset download failed (credential and signed URLs suppressed)') from None
     stage(path,expected,Path('build/MikazukiX3-Windows'))
 

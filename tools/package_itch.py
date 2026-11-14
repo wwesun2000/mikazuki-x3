@@ -12,7 +12,7 @@ SOURCE_SHA256 = '40973d44970dbc83ef302b0609f2e74982be2d85916dd2ee7472d30678a7abe
 DECODER_SHA256 = '797b8ae343e9b2222976e6ac6d71b983e8a04b9036e94f982a233d877071e419'
 LEGAL_TEXTS = ('FFmpeg-LICENSE.txt', 'FFmpeg-SOURCE.txt', 'THIRD-PARTY-NOTICES.txt',
                'FFmpeg-config.log', 'FFmpeg-imports.txt', 'build_itch_decoder.sh',
-               'MinGW-w64-COPYING.txt', 'GCC-COPYING.txt')
+               'MinGW-w64-COPYING.txt', 'GCC-COPYING.txt', 'WINDOWS-RUNTIME-LICENSES.txt')
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
