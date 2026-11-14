@@ -1,0 +1,26 @@
+name: Build source-included itch decoder
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  decoder:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Install cross compiler
+        run: sudo apt-get update && sudo apt-get install -y gcc-mingw-w64-x86-64 make nasm curl xz-utils zip
+      - name: Build only required codecs with source
+        run: bash tools/build_itch_decoder.sh
+      - name: Include runtime licenses
+        run: |
+          cp /usr/share/doc/mingw-w64-common/copyright build/itch-decoder/package/licenses/MinGW-w64-COPYING.txt
+          cp /usr/share/doc/gcc-mingw-w64-x86-64/copyright build/itch-decoder/package/licenses/GCC-COPYING.txt
+          cd build/itch-decoder/package
+          sha256sum ffmpeg.exe licenses/* > SHA256SUMS.txt
+          zip -r -FS ../MikazukiX3-decoder-source.zip .
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: MikazukiX3-decoder-source
+          path: build/itch-decoder/MikazukiX3-decoder-source.zip
+          if-no-files-found: error

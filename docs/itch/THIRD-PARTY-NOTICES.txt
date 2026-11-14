@@ -1,0 +1,15 @@
+FFmpeg 7.1
+Copyright (c) the FFmpeg developers. Licensed under LGPL 2.1 or later.
+License text, unmodified corresponding source and the build script accompany
+this decoder. No GPL/nonfree options or external codec libraries are enabled.
+See FFmpeg-LICENSE.txt and FFmpeg-SOURCE.txt.
+
+MinGW-w64 runtime
+The Windows cross-build uses the MinGW-w64 runtime/system headers. Its upstream
+copyright and permission notices are included separately as MinGW-w64-COPYING.txt.
+The corresponding GCC runtime exception and license are included when supplied
+by the build toolchain. Standard Windows system DLLs are supplied by Windows,
+not by this package. See FFmpeg-imports.txt for the built executable's imports.
+
+Third-party software retains its own license. The project's noncommercial
+statement does not amend or supersede those third-party licenses.

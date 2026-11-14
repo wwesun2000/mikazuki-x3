@@ -1,0 +1,21 @@
+Mikazuki X3 minimal media decoder: FFmpeg 7.1, LGPL version 2.1 or later.
+This is a separate-process command-line tool, not the Gyan essentials binary.
+
+Corresponding source is included here as ffmpeg-7.1.tar.xz, unmodified upstream
+release source. SHA256:
+40973d44970dbc83ef302b0609f2e74982be2d85916dd2ee7472d30678a7abe6
+Upstream: https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz
+
+build_itch_decoder.sh contains the complete configure and build commands.
+FFmpeg-config.log records the actual configure run. Build on Ubuntu 24.04
+with gcc-mingw-w64-x86-64, make, nasm, curl, xz-utils and zip installed.
+No third-party codec libraries are enabled. The source contains its copyright
+notices and LGPL text. The build uses the MinGW-w64 compiler/runtime; see the
+separate runtime notice and included imports list. This source is sufficient
+to modify the decoder and rebuild it; it contains no game material.
+
+The player pins its supported decoder SHA256 to detect accidental substitution.
+To use a modified decoder, rebuild the publicly available player with your new
+decoder hash in port/platform/windows/source_codec.cpp. This does not restrict
+the license rights to modify or redistribute FFmpeg. Project noncommercial
+notices do not impose additional restrictions on FFmpeg or its runtime.
