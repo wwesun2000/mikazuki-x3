@@ -15,7 +15,7 @@ cd ffmpeg-7.1
   --disable-shared --enable-static --enable-ffmpeg \
   --enable-protocol=file,pipe --enable-demuxer=ipu,ogg,mpegps,mpegvideo \
   --enable-decoder=ipu,vorbis,mpeg1video,mpeg2video \
-  --enable-parser=mpegvideo,vorbis --enable-encoder=rawvideo,pcm_s16le \
+  --enable-parser=ipu,mpegvideo,vorbis --enable-encoder=rawvideo,pcm_s16le \
   --enable-muxer=rawvideo,pcm_s16le \
   --enable-filter=scale,format,aresample,aformat,null,anull \
   --enable-swscale --enable-swresample --extra-ldflags=-static
