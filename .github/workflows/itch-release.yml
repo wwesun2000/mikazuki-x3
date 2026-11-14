@@ -1,0 +1,93 @@
+name: Windows itch release
+on:
+  push:
+    tags: ['v*']
+  release:
+    types: [published]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: itch-windows
+  cancel-in-progress: false
+jobs:
+  windows:
+    # Default to Release events. Set ITCH_TRIGGER=tag to use tags instead;
+    # this avoids publishing twice when a tag is followed by a Release.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'push' && vars.ITCH_TRIGGER == 'tag') ||
+      (github.event_name == 'release' && vars.ITCH_TRIGGER != 'tag' && !github.event.release.prerelease)
+    runs-on: windows-2022
+    environment: itch-production
+    env:
+      PYTHONUTF8: '1'
+      ITCH_TARGET: wwesun2000/mikazuki-x3:windows
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.13'
+      - name: Test packaging boundary
+        run: python -B tests/test_itch_package.py
+      - name: Check release configuration
+        shell: pwsh
+        env:
+          INPUT_URL: ${{ secrets.ITCH_INPUTS_URL }}
+          INPUT_SHA: ${{ vars.ITCH_INPUTS_SHA256 }}
+          RIGHTS: ${{ vars.ITCH_RELEASE_REVIEWED }}
+          ZIG_SHA: ${{ vars.ITCH_ZIG_SHA256 }}
+          BUTLER_SHA: ${{ vars.ITCH_BUTLER_SHA256 }}
+          BUTLER_VERSION: ${{ vars.ITCH_BUTLER_VERSION }}
+        run: |
+          if (!$env:INPUT_URL -or !$env:INPUT_SHA -or !$env:ZIG_SHA -or !$env:BUTLER_SHA -or !$env:BUTLER_VERSION) { throw 'Configure protected inputs and tool checksums; see docs/itch/RELEASE.md' }
+          if ($env:RIGHTS -ne 'true') { throw 'Complete the release rights and third-party source review before enabling publication' }
+      - name: Fetch pinned toolchain
+        shell: pwsh
+        env:
+          ZIG_SHA: ${{ vars.ITCH_ZIG_SHA256 }}
+          BUTLER_SHA: ${{ vars.ITCH_BUTLER_SHA256 }}
+          BUTLER_VERSION: ${{ vars.ITCH_BUTLER_VERSION }}
+        run: |
+          if ($env:BUTLER_VERSION -notmatch '^\d+\.\d+\.\d+$') { throw 'Use an exact butler version' }
+          New-Item -ItemType Directory local/itch-tools -Force | Out-Null
+          Invoke-WebRequest 'https://ziglang.org/download/0.15.2/zig-x86_64-windows-0.15.2.zip' -OutFile local/itch-tools/zig.zip
+          Invoke-WebRequest "https://broth.itch.zone/butler/windows-amd64/$env:BUTLER_VERSION/archive/default" -OutFile local/itch-tools/butler.zip
+          if ((Get-FileHash local/itch-tools/zig.zip -Algorithm SHA256).Hash -ne $env:ZIG_SHA) { throw 'Zig hash mismatch' }
+          if ((Get-FileHash local/itch-tools/butler.zip -Algorithm SHA256).Hash -ne $env:BUTLER_SHA) { throw 'Butler hash mismatch' }
+          Expand-Archive local/itch-tools/zig.zip local/itch-tools
+          Expand-Archive local/itch-tools/butler.zip local/itch-tools/butler
+      - name: Fetch reviewed private compile inputs (never a disc image)
+        env:
+          ITCH_INPUTS_URL: ${{ secrets.ITCH_INPUTS_URL }}
+          ITCH_INPUTS_SHA256: ${{ vars.ITCH_INPUTS_SHA256 }}
+        run: python -B tools/itch_ci_inputs.py
+      - name: Compile native player and launcher
+        shell: pwsh
+        run: |
+          $zig = 'local/itch-tools/zig-x86_64-windows-0.15.2/zig.exe'
+          python -B tools/build_public_player.py --inputs local/itch-inputs --zig $zig
+          if ($LASTEXITCODE -ne 0) { throw 'Player build failed' }
+          & $zig c++ -std=c++20 -target x86_64-windows-gnu -O2 -municode '-Wl,--subsystem,windows' port/platform/windows/portable_launcher.cpp -luser32 -o local/MikazukiX3.exe
+          if ($LASTEXITCODE -ne 0) { throw 'Launcher build failed' }
+      - name: Package explicit files and verify archive
+        run: python -B tools/package_itch.py --player local/pc-core/player/KamaitachiX3.exe --launcher local/MikazukiX3.exe --decoder local/itch-inputs/runtime/ffmpeg.exe --legal local/itch-inputs/legal --output build/MikazukiX3-Windows
+      - name: Validate itch launch manifest
+        run: local/itch-tools/butler/butler.exe validate --platform windows --arch amd64 build/MikazukiX3-Windows
+      - name: Retain release ZIP, hashes and audit
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: MikazukiX3-Windows
+          path: |
+            build/MikazukiX3-Windows.zip
+            build/MikazukiX3-Windows.sha256
+            build/MikazukiX3-Windows.audit.json
+          if-no-files-found: error
+      - name: Push only isolated distribution
+        shell: pwsh
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+        run: |
+          if (!$env:BUTLER_API_KEY) { throw 'BUTLER_API_KEY is missing' }
+          & local/itch-tools/butler/butler.exe push build/MikazukiX3-Windows $env:ITCH_TARGET --userversion "$env:GITHUB_REF_NAME-$env:GITHUB_SHA"
+          if ($LASTEXITCODE -ne 0) { throw 'Butler publication failed' }

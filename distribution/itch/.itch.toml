@@ -1,0 +1,9 @@
+[[actions]]
+name = "play"
+path = "MikazukiX3.exe"
+platform = "windows"
+args = []
+
+[[actions]]
+name = "manual"
+path = "README.txt"
