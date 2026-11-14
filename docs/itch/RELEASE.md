@@ -12,12 +12,20 @@ The YouTube video, original promotional cover and bilingual usage page are saved
 
 For this draft, use `itch-draft-upload.yml`: upload the locally verified ZIP to
 a **draft GitHub Release**, then dispatch on `main` with its numeric asset ID and
-the SHA256 from the package audit. The job uses the read-only GitHub job token to
+the SHA256 from the package audit. **Current blocker:** runs `43564729820` and
+`43565003681` could not download the unpublished draft asset; the latter records
+HTTP 403. The proposed `contents: write` token change was rejected by automatic
+approval review and was not pushed. The job retains `contents: read`, performs
+only GET requests for retrieval and does not persist checkout credentials.
+Owner approval is required before expanding its permissions. No Butler upload
+has succeeded yet; the actual itch draft ZIP was uploaded through the website.
+The job is designed to
 fetch that asset, verifies the exact 16-file allowlist, all per-file checksums,
 decoder and source identity, and the pinned Butler binary. It verifies the itch
 account/project is still unpublished before and after pushing `:windows`.
 It does not change visibility or publish the GitHub draft. This is the usable
-update route without uploading private compile inputs to a remote build service.
+update route without uploading private compile inputs to a remote build service,
+but is not operational until the draft-asset permission issue is resolved.
 
 `itch-release.yml` retains the requested Windows source-build/tag/Release route.
 It additionally needs a private compile-input hosting URL and reviewed bundle
