@@ -1,6 +1,6 @@
 # itch.io release operations
 
-Target: `wwesun2000/mikazuki-x3:windows`. Expected page: https://wwesun2000.itch.io/mikazuki-x3 (configuration target, not evidence of an existing publication).
+Target: `wwesun2000/mikazuki-x3:windows`. Page: https://wwesun2000.itch.io/mikazuki-x3 (exists as an unpublished draft).
 
 ## Verified draft deployment (2026-11-14)
 
@@ -9,6 +9,16 @@ The itch project exists as ID `5357914` and must remain **Draft**. Environment
 `BUTLER_API_KEY` is inherited by these jobs; its value was not retrieved.
 Read-only credential run `43562718737` passed for `wwesun2000` and this draft.
 The YouTube video, original promotional cover and bilingual usage page are saved.
+
+Final uploaded file: `MikazukiX3-Windows-itch-preview-20261114.zip`, upload ID
+`20508038`; SHA256 `f090322dc98ed7cb5bad00ef72e858dd0d92d528900663938289d6a7ad9ff1e5`.
+Downloaded back from itch and matched byte-for-byte by SHA256. The checksum
+file is also available; superseded 20261113 staging upload is hidden. Native
+EXE launch, cold new-game scene, mouse menus, Japanese/Chinese/English switching
+at the same wait and F12 screenshot were checked in a real window. The player
+binary is `de7da4cad7baafe6995dd43d420e42ac6a8f6767669550915ad2f6ffe2a4f2b2`.
+The historical formal player was not overwritten. These are smoke checks, not
+full-route, itch Desktop App or updater/save-migration acceptance.
 
 For this draft, use `itch-draft-upload.yml`: upload the locally verified ZIP to
 a **draft GitHub Release**, then dispatch on `main` with its numeric asset ID and
