@@ -8,6 +8,11 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 DECODER = 'local/dependencies/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v7.1.exe'
+SOURCE_SHA256 = '40973d44970dbc83ef302b0609f2e74982be2d85916dd2ee7472d30678a7abe6'
+DECODER_SHA256 = '797b8ae343e9b2222976e6ac6d71b983e8a04b9036e94f982a233d877071e419'
+LEGAL_TEXTS = ('FFmpeg-LICENSE.txt', 'FFmpeg-SOURCE.txt', 'THIRD-PARTY-NOTICES.txt',
+               'FFmpeg-config.log', 'FFmpeg-imports.txt', 'build_itch_decoder.sh',
+               'MinGW-w64-COPYING.txt', 'GCC-COPYING.txt')
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
@@ -31,13 +36,19 @@ def package(player, launcher, decoder, legal, output):
     }
     for name in ('MikazukiX3.exe', 'local/pc-core/player/KamaitachiX3.exe', DECODER):
         pe64(payload[name])
+    if sha(payload[DECODER]) != DECODER_SHA256:
+        raise ValueError('Decoder does not match the reviewed source-included build')
     # Explicit legal filenames only: no recursive copying, nested archives or wildcard binaries.
-    for name in ('FFmpeg-LICENSE.txt', 'FFmpeg-SOURCE.txt', 'THIRD-PARTY-NOTICES.txt'):
+    for name in LEGAL_TEXTS:
         data = (legal/name).read_bytes()
         if len(data) < 40 or b'\0' in data:
             raise ValueError('Missing or invalid legal text: ' + name)
         data.decode('utf-8')
         payload['licenses/'+name] = data
+    source = (legal/'ffmpeg-7.1.tar.xz').read_bytes()
+    if sha(source) != SOURCE_SHA256:
+        raise ValueError('FFmpeg corresponding source hash mismatch')
+    payload['licenses/ffmpeg-7.1.tar.xz'] = source
     hashes = {name: sha(data) for name, data in sorted(payload.items())}
     payload['SHA256SUMS.txt'] = ''.join(f'{digest}  {name}\n' for name, digest in hashes.items()).encode()
     output.mkdir(parents=True)

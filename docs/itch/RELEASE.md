@@ -2,11 +2,45 @@
 
 Target: `wwesun2000/mikazuki-x3:windows`. Expected page: https://wwesun2000.itch.io/mikazuki-x3 (configuration target, not evidence of an existing publication).
 
-## Scope and current blockers
+## Verified draft deployment (2026-11-14)
+
+The itch project exists as ID `5357914` and must remain **Draft**. Environment
+`itch-production` permits `main` and `v*`. The existing repository Secret
+`BUTLER_API_KEY` is inherited by these jobs; its value was not retrieved.
+Read-only credential run `43562718737` passed for `wwesun2000` and this draft.
+The YouTube video, original promotional cover and bilingual usage page are saved.
+
+For this draft, use `itch-draft-upload.yml`: upload the locally verified ZIP to
+a **draft GitHub Release**, then dispatch on `main` with its numeric asset ID and
+the SHA256 from the package audit. The job uses the read-only GitHub job token to
+fetch that asset, verifies the exact 15-file allowlist, all per-file checksums,
+decoder and source identity, and the pinned Butler binary. It verifies the itch
+account/project is still unpublished before and after pushing `:windows`.
+It does not change visibility or publish the GitHub draft. This is the usable
+update route without uploading private compile inputs to a remote build service.
+
+`itch-release.yml` retains the requested Windows source-build/tag/Release route.
+It additionally needs a private compile-input hosting URL and reviewed bundle
+hash; those are **not configured**. It fails closed. `ITCH_RELEASE_REVIEWED=false`
+keeps automatic public release disabled. Do not fabricate rights clearance or
+upload the original disc to make that gate pass. Draft staging and third-party
+license checks are not permission from the original game rights holders.
+
+## Source-build route and remaining conditions
 
 The workflow builds the native player, not an emulator or a downloaded replacement EXE. Public source currently requires the private files listed with SHA256 fingerprints in `local-build-inputs.json`; a clean public clone alone cannot build. Do not upload the ISO or BIOS to CI, GitHub or itch. The private build bundle must contain only those generated inputs and the four explicit runtime/legal files below. Their redistribution rights still need review; absence of ISO is not full copyright clearance.
 
-The current decoder is Gyan's FFmpeg 7.1 essentials build, configured with `--enable-gpl --enable-version3`. The imageio wrapper's license does not license this decoder. Complete the decoder's corresponding-source/license obligations and review translations/recovered-code distribution before enabling `ITCH_RELEASE_REVIEWED`. A generic source homepage alone is not proof of corresponding-source availability. Existing package auditing is not a legal certification.
+The itch decoder is a separately built, minimal FFmpeg 7.1 LGPL 2.1-or-later executable,
+not the historical Gyan GPL essentials binary. Run `43563580316` builds it from
+checksum-pinned, unmodified FFmpeg source without GPL/nonfree/external codec libraries.
+Its exact source archive, complete build script, configure log, DLL imports and
+MinGW/GCC runtime notices ship in the ZIP. Eight original-disc samples (IPU,
+Vorbis, MPEG elementary/program streams) match the historical decoder byte-for-byte.
+This is sample equivalence, not full-game regression. The player's old decoder
+identity remains accepted for existing installations; only the new identity is
+eligible for the itch packager. Project noncommercial conditions do not restrict
+third-party licenses. The project is source-available, not OSI-open-source under
+its noncommercial policy. Original-game/translation rights are a separate issue.
 
 ## One-time setup
 
@@ -25,7 +59,7 @@ Create the itch project under the confirmed account and slug. Keep visibility dr
 
 Do not supply secrets through chat. Configure environment branch/tag restrictions so untrusted branches cannot access release credentials. Actions tokens have read-only repository permissions. No pull-request trigger is present. Manual dispatch is available for controlled retries; do not retry an already successful push without checking itch build history.
 
-Protected ZIP layout: all `private_inputs` paths exactly as recorded in `local-build-inputs.json`, plus `runtime/ffmpeg.exe`, `legal/FFmpeg-LICENSE.txt`, `legal/FFmpeg-SOURCE.txt`, `legal/THIRD-PARTY-NOTICES.txt`. No directory entries or extra files. License text must be the actual applicable license; SOURCE must identify the exact binary, corresponding source/build materials and how recipients obtain them in compliance with its license. A maintainer must review these texts; the packager only checks presence/encoding, not legal sufficiency.
+Protected ZIP layout: all `private_inputs` paths exactly as recorded in `local-build-inputs.json`, plus `runtime/ffmpeg.exe`, `legal/ffmpeg-7.1.tar.xz` and every legal text listed in `tools/package_itch.py::LEGAL_TEXTS`. No directory entries or extra files. The decoder and FFmpeg source are hash-pinned. License review remains a maintainer responsibility; checksums do not establish copyright permission.
 
 The input loader verifies the entire ZIP hash, rejects extra/duplicate entries, and only writes exact reviewed paths. The existing build verifies each generated input. No runtime input bundle is retained as a public Actions artifact.
 
@@ -34,7 +68,7 @@ The input loader verifies the entire ZIP hash, rejects extra/duplicate entries, 
 1. Select either Release or tag triggering (not both) to avoid duplicate pushes.
 2. Download checksum-pinned compiler and butler; download and verify protected inputs.
 3. Compile `KamaitachiX3.exe` and native `MikazukiX3.exe` on Windows.
-4. `tools/package_itch.py` copies exactly three AMD64 executables, launch manifest, bilingual instructions and three legal texts into a new isolated directory. It never copies a workspace recursively. ISO/BIN/IMG/BIOS, media, caches, credentials and saves are not eligible paths.
+4. `tools/package_itch.py` copies exactly three AMD64 executables, launch manifest, bilingual instructions, eight legal/build texts and the exact FFmpeg source archive, then adds SHA256SUMS (15 files total). It never copies a workspace recursively. ISO/BIN/IMG/BIOS, media, caches, credentials and saves are not eligible paths.
 5. Generate per-file SHA256 checksums, ZIP digest and audit report; reopen and verify the ZIP.
 6. Run `butler validate --platform windows --arch amd64`, retain only the ZIP/digest/audit as an Actions artifact, then push only `build/MikazukiX3-Windows`.
 

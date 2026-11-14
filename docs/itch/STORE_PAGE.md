@@ -53,6 +53,8 @@ The original game, characters, artwork, audio and associated intellectual proper
 
 ## Credits
 
+This package uses the separate FFmpeg 7.1 program under LGPL 2.1 or later. Its complete corresponding source and build materials are included in `licenses/`. Third-party licenses remain unchanged. The project is source-available under its noncommercial policy, not an OSI-approved open-source license.
+
 **wwesun2000:** project direction, testing and feedback. **OpenAI Codex:** reverse engineering, native implementation, Chinese translation, integration and testing. **Claude:** technical consultation and English translation assistance. **Gemini:** Chinese proofreading assistance. Original game credits remain with the original creators.
 
 ---
@@ -87,3 +89,5 @@ The original game, characters, artwork, audio and associated intellectual proper
 本项目为独立非官方原生播放器与本地化项目，未获原开发商或发行商背书。下载不含原盘镜像、PS2 BIOS 或单独提取的原盘音视频。原作、角色、美术、音频及相关知识产权归相应权利人所有。项目包含本地化文字及恢复的程序行为，不声称拥有原作权利。项目自有内容用于非商业技术交流，第三方组件适用各自许可证；源码公开及免责声明均不构成原作授权。权利人可通过上述仓库联系维护者。
 
 **贡献：**wwesun2000 发起并主导项目、试玩反馈；OpenAI Codex 负责逆向、原生实现、中文翻译及集成验证；Claude 协助技术咨询与英文翻译；Gemini 协助中文校对。原游戏创作贡献归原制作团队。
+
+本包以独立程序调用 LGPL 2.1 或更新版本许可的 FFmpeg 7.1，完整对应源码及构建资料位于 `licenses/`。第三方许可证不受项目非商业条件限制。项目源码公开，但非商业政策不属于 OSI 批准的开源许可证。

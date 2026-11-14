@@ -37,3 +37,9 @@ Press **F12** to capture a screenshot. Include the complete screenshot, its diag
 For noncommercial technical exchange. This is an independent project, not affiliated with or endorsed by the original rights holders. Original game and asset rights belong to their respective owners. This notice grants no rights; distribution conditions for translations, recovered code and third-party components require separate review.
 
 Source: https://github.com/wwesun2000/mikazuki-x3
+
+## Third-party software / 第三方软件
+
+This package invokes FFmpeg 7.1 as a separate program, licensed under LGPL 2.1 or later. Its complete corresponding source, build script, configuration and notices are in `licenses/`. The project’s noncommercial notice does not restrict rights granted by FFmpeg or MinGW/GCC licenses. This is source-available project code; the noncommercial condition is not an OSI-approved open-source license and grants no rights in the original game.
+
+本包将 FFmpeg 7.1 作为独立程序调用，适用 LGPL 2.1 或更新版本；完整对应源码、构建脚本、配置与声明位于 `licenses/`。本项目的非商业说明不限制 FFmpeg、MinGW/GCC 许可证授予的权利。项目源码公开，但非商业条件不属于 OSI 批准的开源许可证，也不授予原作权利。

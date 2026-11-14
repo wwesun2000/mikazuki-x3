@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import urllib.request
 import zipfile
+from package_itch import LEGAL_TEXTS
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -29,8 +30,8 @@ def main():
         if hashlib.file_digest(stream, 'sha256').hexdigest() != expected:
             raise SystemExit('Protected bundle SHA256 mismatch')
     allowed = set(json.loads((ROOT/'local-build-inputs.json').read_bytes())['private_inputs'])
-    allowed.update({'runtime/ffmpeg.exe', 'legal/FFmpeg-LICENSE.txt',
-                    'legal/FFmpeg-SOURCE.txt', 'legal/THIRD-PARTY-NOTICES.txt'})
+    allowed.update({'runtime/ffmpeg.exe', 'legal/ffmpeg-7.1.tar.xz'})
+    allowed.update('legal/'+name for name in LEGAL_TEXTS)
     with zipfile.ZipFile(archive) as z:
         names = z.namelist()
         if len(names) != len(allowed) or set(names) != allowed:

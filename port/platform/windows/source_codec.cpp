@@ -51,7 +51,8 @@ std::wstring quote(const std::filesystem::path& p) {
 }
 void verify_decoder(Handle& binary) {
     LARGE_INTEGER size{};
-    if(binary.value==INVALID_HANDLE_VALUE || !GetFileSizeEx(binary.value,&size) || size.QuadPart!=87638016)
+    if(binary.value==INVALID_HANDLE_VALUE || !GetFileSizeEx(binary.value,&size) ||
+       (size.QuadPart!=87638016 && size.QuadPart!=2854912))
         throw std::runtime_error("Original-media FFmpeg binary unavailable or wrong size");
     // Keep the verified file open without write/delete sharing. A new path or
     // directory alias can reuse verification only if it opens that same file.
@@ -67,8 +68,12 @@ void verify_decoder(Handle& binary) {
     Handle mapping(CreateFileMappingW(binary.value,nullptr,PAGE_READONLY,0,0,nullptr));
     struct View {const std::uint8_t* data;~View(){if(data)UnmapViewOfFile(data);}};
     View view{static_cast<const std::uint8_t*>(MapViewOfFile(mapping.value,FILE_MAP_READ,0,0,0))};
-    if(!view.data || source_bytes_sha256({view.data,std::size_t(size.QuadPart)})!=
-        "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3")
+    // Preserve existing installations; itch distributes the minimal LGPL build
+    // with corresponding source. Both identities retain the same pinned handle.
+    const auto expected=size.QuadPart==2854912 ?
+        "797b8ae343e9b2222976e6ac6d71b983e8a04b9036e94f982a233d877071e419" :
+        "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3";
+    if(!view.data || source_bytes_sha256({view.data,std::size_t(size.QuadPart)})!=expected)
         throw std::runtime_error("Original-media FFmpeg identity mismatch");
     if(identified){
         HANDLE copy=nullptr;

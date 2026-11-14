@@ -1,0 +1,55 @@
+name: Upload reviewed Windows package to itch draft
+on:
+  workflow_dispatch:
+    inputs:
+      asset_id:
+        description: Reviewed ZIP asset ID in this repository (draft Release supported)
+        required: true
+      sha256:
+        description: SHA256 from the verified local package audit
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: itch-windows
+  cancel-in-progress: false
+jobs:
+  upload:
+    if: github.ref == 'refs/heads/main'
+    runs-on: windows-2022
+    environment: itch-production
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.13'
+      - name: Verify exact reviewed distribution
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ITCH_ASSET_ID: ${{ inputs.asset_id }}
+          ITCH_ASSET_SHA256: ${{ inputs.sha256 }}
+        run: python -B tools/itch_verified_asset.py
+      - name: Fetch pinned butler
+        shell: pwsh
+        env:
+          VERSION: ${{ vars.ITCH_BUTLER_VERSION }}
+          SHA: ${{ vars.ITCH_BUTLER_SHA256 }}
+        run: |
+          if ($env:VERSION -notmatch '^\d+\.\d+\.\d+$' -or $env:SHA -notmatch '^[0-9a-fA-F]{64}$') { throw 'Configure pinned butler' }
+          Invoke-WebRequest "https://broth.itch.zone/butler/windows-amd64/$env:VERSION/archive/default" -OutFile build/butler.zip
+          if ((Get-FileHash build/butler.zip -Algorithm SHA256).Hash -ne $env:SHA) { throw 'Butler checksum mismatch' }
+          Expand-Archive build/butler.zip build/butler
+          & build/butler/butler.exe validate --platform windows --arch amd64 build/MikazukiX3-Windows
+          if ($LASTEXITCODE -ne 0) { throw 'Manifest validation failed' }
+      - name: Verify target remains draft and push isolated package
+        shell: pwsh
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+          ASSET_SHA: ${{ inputs.sha256 }}
+        run: |
+          python -B tools/verify_itch_access.py
+          if ($LASTEXITCODE -ne 0) { throw 'Expected account or draft check failed' }
+          & build/butler/butler.exe push build/MikazukiX3-Windows wwesun2000/mikazuki-x3:windows --userversion "preview-$($env:ASSET_SHA.Substring(0,8))"
+          if ($LASTEXITCODE -ne 0) { throw 'Butler push failed' }
+          python -B tools/verify_itch_access.py
+          if ($LASTEXITCODE -ne 0) { throw 'Post-upload draft check failed' }
