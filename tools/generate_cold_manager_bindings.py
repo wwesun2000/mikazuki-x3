@@ -43,11 +43,7 @@ def context_rows(image):
     return rows
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--check', action='store_true')
-    check = parser.parse_args().check
-    image = Image((ROOT / 'local/extracted/SLPM_664.52').read_bytes())
+def render(image):
     lines = ['// Generated from the hash-verified original ELF. Regenerate with tools/generate_cold_manager_bindings.py.',
              '#pragma once', '#include <array>', '#include <cstdint>', 'namespace kx3::cold_factory {',
              'struct Binding { std::uint32_t branch, constructor, vtable, bytes; };']
@@ -68,13 +64,22 @@ def main():
         lines.append('    {' + ','.join(f'0x{x:08x}' for x in row) + '},')
     lines.append('}};')
     lines.append('}')
+    return '\n'.join(lines) + '\n'
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--check', action='store_true')
+    check = parser.parse_args().check
+    image = Image((ROOT / 'local/extracted/SLPM_664.52').read_bytes())
     output = ROOT / 'port/core/manager_handler_bindings.hpp'
-    content = '\n'.join(lines) + '\n'
+    content = render(image)
     if check:
-        if output.read_text() != content: raise ValueError('Original factory bindings differ')
+        if output.read_text() != content:
+            raise ValueError('Original factory bindings differ')
     else:
         output.write_text(content)
-    print(f'Verified 137 opcode slots, 5 auxiliary slots and {len(contexts)} context constructors.')
+    print('Verified original opcode, auxiliary and context constructor bindings.')
 
 
 if __name__ == '__main__':

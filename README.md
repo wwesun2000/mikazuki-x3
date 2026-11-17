@@ -38,6 +38,22 @@ python tools/build_public_player.py --inputs "<local input tree>" --zig "<path t
 
 At runtime, place your locally obtained `ffmpeg-win-x86_64-v7.1.exe` under `local/dependencies/imageio_ffmpeg/binaries/`. Run `Play-PC.cmd` and select your own ISO. Back up the complete `local/pc-core/player/saves/` folder to preserve both session and card records.
 
+### Build the Windows launcher from public source
+
+Run `tools\build_windows_launcher.cmd` on Windows with Visual Studio Build Tools and the x64 C++ tools installed. It writes `build/public-launcher/MikazukiX3.exe`. GitHub Actions builds this same target from public source. The launcher starts a separate player executable, so a launcher by itself is not a playable download.
+
+### Recreate part of the Windows player inputs from the retail disc
+
+Run this locally with the supported Japanese retail ISO and Python 3.13:
+
+```console
+python -B tools/prepare_disc_build_inputs.py --iso "<your ISO>" --inputs "<local input tree>"
+```
+
+This regenerates four headers: the manager bindings, context bridges, original media catalog, and panel member index. Pass `--ffmpeg "<path to the existing pinned FFmpeg 7.1 decoder>"` to also generate the movie stream index. All output headers are checked against the existing hashes. The ISO, temporary movie members, and generated inputs stay on your machine.
+
+The ISO preparation step provides five of the 57 Windows player compile inputs. The other 52 still need to be supplied in the local input tree, including the team's story and system localization tables. The remaining generated code needs its original analysis and recompilation chain. Four entries in the legacy protected bundle are for research, debug, or retired paths and are not required by the current Windows player build.
+
 ## Scope and contributions
 
 This project is for technical exchange and noncommercial use. Game rights belong to their respective holders. Third-party tools retain their own licenses. The public tree carries project source and tooling; prebuilt players are Release attachments. Full game scripts, translation manuscripts, disc images, BIOS and personal saves are not published as repository files. Some technical documents reference evidence generated only in a private working tree. The Android build shares the existing local generated-input requirements described above; public source alone does not regenerate the reviewed translation tables.

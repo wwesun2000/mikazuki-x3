@@ -23,7 +23,8 @@ def main():
     args = parser.parse_args()
     manifest = json.loads((ROOT/'local-build-inputs.json').read_bytes())
     local = args.inputs.resolve()
-    private = manifest['private_inputs']
+    private = {name: expected for name, expected in manifest['private_inputs'].items()
+               if name not in manifest.get('windows_release_unused', [])}
     problems = []
     for name, expected in private.items():
         p = local/name

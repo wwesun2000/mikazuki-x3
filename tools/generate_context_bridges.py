@@ -6,19 +6,18 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 SHA='50ba47014cf2def901d2cd0f2319459525631a6b27bc8a030ccb9a98b4f57160'
-def context_methods(word):
-    text=(ROOT/'port/core/manager_handler_bindings.hpp').read_text().split('struct Context')[1]
+def context_methods(word, bindings):
+    text=bindings.split('struct Context')[1]
     vtables={int(hexadecimal,16) for pair in re.findall(r'\{0x[0-9a-f]+,0x[0-9a-f]+,0x([0-9a-f]+),0x([0-9a-f]+)\}',text)
              for hexadecimal in pair if int(hexadecimal,16)}
     return {word(v+i) for v in vtables for i in range(0,16,4)}
 
-def main():
-    elf=(ROOT/'local/extracted/SLPM_664.52').read_bytes()
+def render(elf, bindings):
     if hashlib.sha256(elf).hexdigest()!=SHA:raise ValueError('Invalid ELF')
     u=lambda a:struct.unpack_from('<I',elf,a-0xff000)[0]
     reference=[u(0x11e860+i*4) for i in range(11)]
     bridges=[]
-    for addr in sorted(context_methods(u)):
+    for addr in sorted(context_methods(u, bindings)):
         if not 0x100000<=addr<0x204b38:continue
         if any(u(addr+4*i)!=word for i,word in enumerate(reference) if i!=5):continue
         load=u(addr+20)
@@ -31,7 +30,13 @@ def main():
          'inline constexpr std::array<ContextBridge,'+str(len(bridges))+'> context_bridges{{']
     out.extend(f'    {{0x{a:06x},0x{off:02x}}},' for a,off in bridges)
     out+=['}};','}']
-    (ROOT/'port/core/context_bridges.hpp').write_text('\n'.join(out)+'\n')
-    print(len(bridges))
+    return '\n'.join(out)+'\n'
+
+
+def main():
+    elf = (ROOT/'local/extracted/SLPM_664.52').read_bytes()
+    bindings = (ROOT/'port/core/manager_handler_bindings.hpp').read_text()
+    (ROOT/'port/core/context_bridges.hpp').write_text(render(elf, bindings))
+
 
 if __name__=='__main__':main()

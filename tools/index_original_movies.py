@@ -21,22 +21,17 @@ CODEC_SHA='2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3'
 def sha(data):return hashlib.sha256(data).hexdigest()
 
 
-def main():
-    parser=argparse.ArgumentParser()
-    parser.add_argument('--verify-all',action='store_true',help='Independently decode each unique member to EOF')
-    options=parser.parse_args()
-    if sha(DECODER.read_bytes())!=CODEC_SHA:raise ValueError('Unexpected FFmpeg executable')
-    elf=Image((ROOT/'local/extracted/SLPM_664.52').read_bytes())
-    disc=next(x for x in json.loads((ROOT/'analysis/fad_manifest.json').read_bytes())['archives'] if x['name']=='DISC.FAD')
-    rows=sorted((x for x in disc['records'] if x['kind']=='file' and Path(x['path']).suffix in ('.mmv','.m2v','.pss')),
+def render(elf, records, source, decoder, folder, *, verify_all=False):
+    if sha(decoder.read_bytes())!=CODEC_SHA:
+        raise ValueError('Unexpected FFmpeg executable')
+    rows=sorted((x for x in records if x['kind']=='file' and Path(x['path']).suffix in ('.mmv','.m2v','.pss')),
                 key=lambda x:virtual_name(elf,x['path']))
-    folder=ROOT/'local/port-assets/decode-temp'
     folder.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(dir=folder) as scratch:
         encoded={}
         assets=[]
         for row in rows:
-            path=ROOT/'local/assets'/row['path']
+            path=source/row['path']
             data=path.read_bytes()
             if len(data)!=row['size'] or sha(data)!=row['sha256']:raise ValueError(path)
             spans=[(r['offset'],r['size']) for r in parse_mmv(data)] if path.suffix=='.mmv' else [(0,len(data))]
@@ -56,7 +51,7 @@ def main():
 
         def inspect(item):
             identity,path=item
-            run=[DECODER,'-hide_banner','-nostdin','-loglevel','error','-xerror','-err_detect','explode',
+            run=[decoder,'-hide_banner','-nostdin','-loglevel','error','-xerror','-err_detect','explode',
                  '-threads','2','-i',path,'-map','0:v:0','-an','-sn','-dn']
             if path.suffix=='.pss':
                 r=subprocess.run([*run,'-c:v','copy','-f','mpeg2video','pipe:1'],capture_output=True,timeout=100)
@@ -69,7 +64,7 @@ def main():
                       if m.end()+2<len(body) and body[m.end()]>>4==8]
             if not 0<frames<=36000 or len(pictures)!=frames or any(p!=3 for p in pictures):
                 raise ValueError(f'Unsupported field/frame structure: {path} {frames}, {len(pictures)}')
-            if options.verify_all:
+            if verify_all:
                 r=subprocess.run([*run,'-nostats','-progress','pipe:1','-fps_mode','passthrough','-f','null','-'],
                                  capture_output=True,timeout=180)
                 counts=re.findall(rb'^frame=(\d+)\s*$',r.stdout,re.M)
@@ -95,11 +90,22 @@ def main():
         header.append(f'    {{"{a["name"]}",{start},{n}}},')
         start+=n
     header+=['}};','}','']
-    (ROOT/'port/platform/movie_stream_index.hpp').write_text('\n'.join(header),encoding='utf-8')
-    report=dict(ffmpeg_sha256=CODEC_SHA,full_decode_checked=options.verify_all,assets=assets,unique_members=metadata)
+    report=dict(ffmpeg_sha256=CODEC_SHA,full_decode_checked=verify_all,assets=assets,unique_members=metadata)
+    return '\n'.join(header), report
+
+
+def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--verify-all',action='store_true',help='Independently decode each unique member to EOF')
+    options=parser.parse_args()
+    elf=Image((ROOT/'local/extracted/SLPM_664.52').read_bytes())
+    disc=next(x for x in json.loads((ROOT/'analysis/fad_manifest.json').read_bytes())['archives'] if x['name']=='DISC.FAD')
+    header, report = render(elf, disc['records'], ROOT/'local/assets', DECODER,
+                            ROOT/'local/port-assets/decode-temp', verify_all=options.verify_all)
+    (ROOT/'port/platform/movie_stream_index.hpp').write_text(header,encoding='utf-8')
     proof=ROOT/'analysis/native-core'/('movie-stream-verified.json' if options.verify_all else 'movie-stream-index.json')
     proof.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps(dict(assets=len(assets),unique=len(metadata),frames=sum(m['frames'] for m in metadata.values()),
+    print(json.dumps(dict(assets=len(report["assets"]),unique=len(report["unique_members"]),frames=sum(m['frames'] for m in report["unique_members"].values()),
                           full_decode=options.verify_all,report=str(proof))))
 
 

@@ -14,12 +14,9 @@ def virtual_name(elf,name):
     return elf.data[at:at+64].split(b'\0')[0].decode('ascii')+Path(name).name
 
 
-def main():
-    media=json.loads((ROOT/'analysis/fad_manifest.json').read_bytes())['archives'][0]
-    if media['name']!='DISC.FAD':raise ValueError('Expected original main archive')
-    elf=Image((ROOT/'local/extracted/SLPM_664.52').read_bytes())
+def render(elf, records):
     found={}
-    for r in media['records']:
+    for r in records:
         if r['kind']!='file' or Path(r['path']).suffix not in TYPES:continue
         name=virtual_name(elf,r['path'])
         if name in found:raise ValueError(f'Ambiguous original virtual media filename: {name}')
@@ -33,9 +30,15 @@ def main():
         '    const auto it=std::lower_bound(original_media.begin(),original_media.end(),name,',
         '        [](const OriginalMediaBinding& row,std::string_view n){return std::string_view(row.name)<n;});',
         '    return it!=original_media.end() && name==it->name ? &*it : nullptr;','}','}','']
-    target=ROOT/'port/platform/original_media_catalog.hpp'
-    target.write_text('\n'.join(h),encoding='utf-8')
-    print(f'{len(found)} original media identities indexed')
+    return '\n'.join(h)
+
+
+def main():
+    media=json.loads((ROOT/'analysis/fad_manifest.json').read_bytes())['archives'][0]
+    if media['name']!='DISC.FAD':raise ValueError('Expected original main archive')
+    elf=Image((ROOT/'local/extracted/SLPM_664.52').read_bytes())
+    (ROOT/'port/platform/original_media_catalog.hpp').write_text(
+        render(elf, media['records']), encoding='utf-8')
 
 
 if __name__=='__main__':main()

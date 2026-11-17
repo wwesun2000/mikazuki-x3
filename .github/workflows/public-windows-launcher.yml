@@ -1,0 +1,29 @@
+name: Public Windows launcher build
+
+on:
+  push:
+    branches: ['build/public-disc-inputs']
+  pull_request:
+    paths:
+      - '.github/workflows/public-windows-launcher.yml'
+      - 'port/platform/windows/portable_launcher.cpp'
+      - 'tools/build_windows_launcher.cmd'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  launcher:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Compile the standalone launcher
+        shell: cmd
+        run: tools\build_windows_launcher.cmd
+      - name: Record launcher hash
+        shell: pwsh
+        run: Get-FileHash -LiteralPath build/public-launcher/MikazukiX3.exe -Algorithm SHA256

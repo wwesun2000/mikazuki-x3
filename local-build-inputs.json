@@ -68,6 +68,12 @@
     "port/platform/windows/window_drawing.cpp",
     "port/platform/windows/story_text_layout.cpp"
   ],
+  "windows_release_unused": [
+    "port/platform/image_catalog.hpp",
+    "port/platform/movie_catalog.hpp",
+    "port/platform/windows/choice_debug_window.hpp",
+    "port/platform/windows/choice_locale.hpp"
+  ],
   "private_inputs": {
     "port/core/answer_input_generated.hpp": "6cea9c0ea1e5cb9785dd9a32f9df1baeb23ee34e736a0ffca4d3e40fe69f5dd2",
     "port/core/captured_blur_generated.hpp": "e64b9f941f8cc5f6a7f3583b201a1649f6a5785883f20900e7513559c87c4572",
