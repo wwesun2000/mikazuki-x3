@@ -26,13 +26,15 @@ def main(abi):
         for p in classes.rglob('*.class'):z.write(p,p.relative_to(classes).as_posix())
     dex=work/'dex';dex.mkdir(exist_ok=True)
     run([java/'java.exe','-cp',bt/'lib/d8.jar','com.android.tools.r8.D8','--min-api','26','--lib',android,'--output',dex,jar])
-    media=DEPEND/'ffmpeg'/abi
+    abis=['arm64-v8a','x86_64'] if abi=='universal' else [abi]
     with zipfile.ZipFile(unsigned,'a',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         z.write(dex/'classes.dex','classes.dex')
         libs=['libavutil.so','libswresample.so','libavcodec.so','libavformat.so','libswscale.so','libc++_shared.so']
-        for name in libs:z.write(media/'lib'/name,'lib/'+abi+'/'+name)
-        z.write(OUT/abi/'libmikazuki.so','lib/'+abi+'/libmikazuki.so')
-        z.write(media/'LICENSE.txt','assets/FFmpeg-LGPL.txt')
+        for arch in abis:
+            media=DEPEND/'ffmpeg'/arch
+            for name in libs:z.write(media/'lib'/name,'lib/'+arch+'/'+name)
+            z.write(OUT/arch/'libmikazuki.so','lib/'+arch+'/libmikazuki.so')
+        z.write(DEPEND/'ffmpeg'/abis[0]/'LICENSE.txt','assets/FFmpeg-LGPL.txt')
         if (APP/'assets').exists():
             for p in (APP/'assets').rglob('*'):
                 if p.is_file():z.write(p,'assets/'+p.relative_to(APP/'assets').as_posix())
@@ -45,10 +47,10 @@ def main(abi):
     run([java/'java.exe','-jar',bt/'lib/apksigner.jar','verify','--verbose',apk])
     run([bt/'zipalign.exe','-c','-P','16','4',apk])
     record={'apk':str(apk),'sha256':digest(apk),'bytes':apk.stat().st_size,'abi':abi,'min_api':26,'target_api':35,
-        'native':json.loads((OUT/abi/'build.json').read_text()),'ui_sources':{str(p.relative_to(ROOT)):digest(p) for p in sources if p.is_relative_to(APP)},
+        'native':{arch:json.loads((OUT/arch/'build.json').read_text()) for arch in abis} if abi=='universal' else json.loads((OUT/abi/'build.json').read_text()),'ui_sources':{str(p.relative_to(ROOT)):digest(p) for p in sources if p.is_relative_to(APP)},
         'app_inputs':{str(p.relative_to(ROOT)):digest(p) for p in APP.rglob('*') if p.is_file()},
         'packager_sha256':digest(Path(__file__))}
     (release/f'MikazukiX3-Android-{version}-{abi}.json').write_text(json.dumps(record,indent=2),encoding='utf-8')
     print('APK',apk,apk.stat().st_size,record['sha256'])
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--abi',choices=['arm64-v8a','x86_64'],default='arm64-v8a');a=p.parse_args();main(a.abi)
+    p=argparse.ArgumentParser();p.add_argument('--abi',choices=['arm64-v8a','x86_64','universal'],default='arm64-v8a');a=p.parse_args();main(a.abi)
