@@ -243,7 +243,8 @@ BackwardTarget backward_target(GuestMemory& m,std::uint32_t script,std::uint32_t
                                 bool notify_progress,ChoiceServices& services) {
     auto record=std::uint32_t(invoke_script_data(m,0x10e630,script,sext(m.read_u32(script+0xd4)),0));
     auto word1=m.read_u32(record+4);
-    for(;;) {
+    auto remaining=m.read_u32(script+0x134);
+    while(remaining--) {
         if((word1&31)==31 || (m.read_u32(record)&0x3fff)==0x3fff)return {};
         word1=m.read_u32(record+4);const auto word0=m.read_u32(record);
         if((word1&31)==((word1>>5)&31) && (word0&0x3fff)==((word0>>14)&0x3fff))return {};
@@ -258,6 +259,7 @@ BackwardTarget backward_target(GuestMemory& m,std::uint32_t script,std::uint32_t
         }
         word1=m.read_u32(record+4);
     }
+    return {}; // A cycle has no earlier reachable page.
 }
 void source_variable_push(GuestMemory& m) {
     const auto depth=m.read_u32(0x238684),to=0x238ef0u+(depth<<10);

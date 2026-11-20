@@ -1,0 +1,28 @@
+name: Build public Windows gameplay modules
+on:
+  push:
+    branches: [main, fix/gameplay-recovery]
+    paths: ['port/**', 'tools/build_public_objects.py', '.github/workflows/windows-gameplay.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compile:
+    runs-on: windows-2022
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Compile Windows launcher and public gameplay objects
+        shell: pwsh
+        run: |
+          curl.exe -fsSL --retry 3 https://ziglang.org/download/0.15.2/zig-x86_64-windows-0.15.2.zip -o zig.zip
+          if ((Get-FileHash zig.zip).Hash -ne '3A0ED1E8799A2F8CE2A6E6290A9FF22E6906F8227865911FB7DDEDC3CC14CB0C') { throw 'Unexpected Zig archive' }
+          7z x zig.zip -bd -bso0
+          python tools/build_public_objects.py --zig zig-x86_64-windows-0.15.2/zig.exe --output build/windows-public
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: windows-public
+          path: build/windows-public/
+          if-no-files-found: error

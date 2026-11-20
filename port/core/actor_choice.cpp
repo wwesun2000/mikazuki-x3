@@ -105,19 +105,8 @@ u64 enter(GuestMemory& m,ExecutionServices* s){ // 12E180 / 119A18
     const auto fallback=route();
     m.write_u16(0x238af0+2*0x19b,m.read_u16(0x238af8));
     (void)invoke_recovered(m,0x1ac690,0,0,0,0,s);
-    if(m.read_u32(manager+0x808)){
-        u32 total=0;
-        for(u32 i=0;i<n;++i)if(available(m,i))routes[total++]=routes[i];
-        routes[total++]=fallback;
-        std::array<u32,7> unread{};u32 remaining=0;
-        for(u32 i=0;i<total;++i)
-            if(!invoke_recovered(m,0x10f018,script,routes[i].selector,routes[i].label))unread[remaining++]=i;
-        const auto bound=remaining?remaining:total;
-        const auto random=bound==1?0:u32(invoke_recovered(m,0x17aa28,0,bound-1,0,0,s));
-        const auto selected=routes[remaining?unread[random]:random];
-        (void)invoke_recovered(m,0x10d868,script,selected.selector,selected.label,0,s);
-        return 0;
-    }
+    // Character selection also requires an explicit player decision.
+    m.write_u32(manager+0x808,0);
     m.write_u32(object+8,m.read_u32(manager+0x40));format_stack(m,manager,true);
     (void)invoke_recovered(m,0x111550,manager,0);
     m.write_u32(manager+0x40,m.read_u32(0x235f54));

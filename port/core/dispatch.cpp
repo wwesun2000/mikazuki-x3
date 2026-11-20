@@ -40,6 +40,10 @@ u64 invoke_dispatch(GuestMemory& m, u32 entry, u32 self, u64 a1, u64 a2, u64 a3,
         const u64 offset = invoke_recovered(m, 0x0010d610, script, 0);
         const u32 opcode = u32(invoke_recovered(m, 0x0010d5d8, script, 1));
         const bool special=entry==0x120528;
+        // The ordinary branch constructor selects a route itself in auto mode.
+        // Stop before entering it so the original interactive selector runs.
+        if(!special && opcode==0x6c && m.read_u32(manager+0x808))
+            m.write_u32(manager+0x808,0);
         const u32 table=special?0x235f48:0x206010;
         for (u32 i = 0; i < (special?2u:113u); ++i) {
             if (m.read_u32(table + i * 4) != opcode) continue;

@@ -140,6 +140,13 @@ std::uint64_t invoke_recovered(GuestMemory& m, std::uint32_t entry,
         return apply_script_font_margin(m,a1);
     case 0x0012fa88:
         return apply_script_font_preference(m,a1);
+    case 0x00204908: {
+        // 204908 adjusts this via vtable[-3], then jumps to 11EFD0.
+        // 11EFE8 calls the opcode handler's slot 4 with this in a1.
+        const auto context=self+m.read_u32(m.read_u32(self)-12);
+        const auto handler=std::uint32_t(a1);
+        return invoke_recovered(m,m.read_u32(m.read_u32(handler)+16),handler,context,a2,a3,services);
+    }
     case 0x00204928:case 0x0011eba8: {
         const auto adjustment=m.read_u32(m.read_u32(self)-12);
         return invoke_recovered(m,entry==0x204928?0x120b48:0x11e608,self+adjustment,a1,a2,a3,services);

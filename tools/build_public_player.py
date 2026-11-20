@@ -20,6 +20,7 @@ def main():
                         help='A local tree containing the relative paths from local-build-inputs.json.')
     parser.add_argument('--zig', type=Path, help='Path to Zig 0.15.2 (Windows x86-64).')
     parser.add_argument('--check-only', action='store_true')
+    parser.add_argument('--public-objects', type=Path, help='Verified windows-public artifact from this exact clean commit.')
     args = parser.parse_args()
     manifest = json.loads((ROOT/'local-build-inputs.json').read_bytes())
     local = args.inputs.resolve()
@@ -50,11 +51,23 @@ def main():
             shutil.copyfile(local/name,target)
             if digest(target)!=expected:
                 raise ValueError(f'Input changed during build: {name}')
+        sources=list(manifest['sources'])
+        if args.public_objects:
+            artifact=args.public_objects.resolve()
+            info=json.loads((artifact/'objects.json').read_bytes())
+            revision=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
+            if info['revision']!=revision or subprocess.call(['git','diff','--quiet','HEAD','--','port'],cwd=ROOT):
+                raise ValueError('CI objects and working sources differ')
+            for name,expected in info['objects'].items():
+                obj=artifact/(Path(name).stem+'.obj')
+                if name not in sources or digest(obj)!=expected:
+                    raise ValueError(f'Unexpected CI object: {name}')
+                sources[sources.index(name)]=str(obj)
         output=work/'KamaitachiX3.exe'
         command=[str(zig),'c++','-std=c++20','-target','x86_64-windows-gnu','-O2','-g',
                  '-I',str(work/'local/pc-core/player'),'-fno-fast-math','-ffp-contract=off',
                  '-DUNICODE','-D_UNICODE','-municode','-Wl,--subsystem,windows',
-                 *manifest['sources'],*manifest['libraries'],'-o',str(output)]
+                 *sources,*manifest['libraries'],'-o',str(output)]
         env=os.environ.copy()
         env.setdefault('ZIG_GLOBAL_CACHE_DIR',str(dest/'zig-global-cache'))
         env.setdefault('ZIG_LOCAL_CACHE_DIR',str(dest/'zig-cache'))

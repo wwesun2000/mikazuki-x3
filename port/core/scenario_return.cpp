@@ -409,6 +409,10 @@ bool PS2Runtime::dispatchGuestBranch(std::uint8_t* ram,R5900Context* c,u32 targe
             throw std::runtime_error("Unowned card thread mutex release");
         m.write_u32(lock+4,UINT32_MAX);m.write_u32(lock+8,0);c->pc=ra;return true;
     }
+    if(target==0x125778 || target==0x119a18){
+        const auto manager=m.read_u32(0x235e40);
+        if(manager && m.read_u32(manager+0x808))m.write_u32(manager+0x808,0);
+    }
     if(const auto body=menu_body(target)){
         // 11E4E8 tail-calls the original choice navigation method. Mouse
         // targeting supplies its normal directional samples until the clicked

@@ -138,7 +138,7 @@ void ProjectGame::save_auto_target(const std::filesystem::path& destination,u32 
     autosave_to_original_card_=false;
 }
 void ProjectGame::save_impl(const std::filesystem::path& destination,bool resume_story,std::optional<u32> target,
-                           bool record_committed) const {
+                           bool record_committed,std::vector<u8>* history) const {
     check(frame_complete_ && !memory_.transaction_active(),"No complete game frame to save");
     Writer w;
     w.bytes.insert(w.bytes.end(),magic.begin(),magic.end());
@@ -186,6 +186,7 @@ void ProjectGame::save_impl(const std::filesystem::path& destination,bool resume
     for(auto sample:audio_block_)w.word(std::uint16_t(sample),2);
     w.word(visible_text_.size());for(const auto& g:visible_text_)write_glyph(w,g);
     check(w.bytes.size()<=max_save_bytes-64,"Session save exceeds size limit");
+    if(history){*history=std::move(w.bytes);return;}
     const auto digest=source_bytes_sha256(w.bytes);
     w.bytes.insert(w.bytes.end(),digest.begin(),digest.end());
     // The auto publisher already owns this edition's lock through the bank
@@ -210,6 +211,57 @@ std::unique_ptr<ProjectGame> ProjectGame::load(const std::filesystem::path& root
     Reader r{std::span(encoded).first(encoded.size()-64)};
     const auto hash=source_bytes_sha256(r.data);
     check(std::equal(hash.begin(),hash.end(),encoded.end()-64),"Session save checksum mismatch");
+    auto game=decode_session(root,scenario,r.data);
+    game->loaded_checkpoint_=source;
+    game->loaded_checksum_=hash;
+    return game;
+}
+
+std::optional<ProjectGame::DialoguePosition> ProjectGame::dialogue_wait() const {
+    const auto& m=memory_;
+    const auto ctx=m.read_u32(runtime_.manager+0x40);
+    if(!ctx || (ctx!=m.read_u32(0x235f38) && ctx!=m.read_u32(0x235f34)) ||
+       system_menu_view(m,runtime_.manager).open || visible_text_.empty())return {};
+    const auto script=m.read_u32(runtime_.manager+0x38);
+    return DialoguePosition{m.read_u32(script+0xd0),m.read_u32(script+0xd4),m.read_u32(script+0xd8)};
+}
+
+StoryFrameResult ProjectGame::play_frame(std::unique_ptr<ProjectGame>& game,const std::filesystem::path& root,ChoiceInput input){
+    const auto page=game->dialogue_wait();
+    const bool back=(input.held&0x10)!=0;
+    if(page && back){
+        input.held &= ~0x10u;
+        if(!game->back_down_ && game->pages_.size()>1){
+            const auto& previous=game->pages_[game->pages_.size()-2];
+            auto restored=decode_session(root,game->scenario_,previous.bytes);
+            restored->set_system_record_file(game->system_record_file_);
+            restored->audio_enabled_=game->audio_enabled_;
+            game->pages_.pop_back();
+            restored->pages_=std::move(game->pages_);
+            restored->back_down_=true;
+            game.swap(restored);
+            return {};
+        }
+    }
+    game->back_down_=back;
+    auto result=game->advance(input);
+    const auto next=game->dialogue_wait();
+    if(next && (game->pages_.empty() || game->pages_.back().position!=*next)){
+        Page checkpoint{*next,{}};
+        game->save_impl({},false,std::nullopt,false,&checkpoint.bytes);
+        std::size_t total=checkpoint.bytes.size();
+        for(const auto& item:game->pages_)total+=item.bytes.size();
+        while(!game->pages_.empty() && total>48u*1024*1024){
+            total-=game->pages_.front().bytes.size();
+            game->pages_.pop_front();
+        }
+        game->pages_.push_back(std::move(checkpoint));
+    }
+    return result;
+}
+
+std::unique_ptr<ProjectGame> ProjectGame::decode_session(const std::filesystem::path& root,std::string_view scenario,std::span<const u8> data){
+    Reader r{data};
     auto header=r.take(magic.size());
     const unsigned version=header[6];
     check(std::equal(header.begin(),header.begin()+6,magic.begin()) && version>=1 && version<=10 && !header[7],
@@ -328,8 +380,6 @@ std::unique_ptr<ProjectGame> ProjectGame::load(const std::filesystem::path& root
     for(u32 i=0;i<glyphs;++i)game->visible_text_.push_back(read_glyph(r,game->memory_,core.manager,version));
     check(r.pos==r.data.size(),"Unexpected trailing session data");
     game->frame_complete_=true;
-    game->loaded_checkpoint_=source;
-    game->loaded_checksum_=hash;
     return game;
 }
 }

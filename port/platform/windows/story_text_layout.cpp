@@ -17,7 +17,7 @@ std::wstring utf16(std::string_view value,bool name){
 }
 // Use the same measured line for every ink run. A differently colored player
 // name can occur between two clauses, including in the middle of a wrapped line.
-int colored_text(HDC dc,RECT area,const Row& row,bool paint,int thickness){
+int colored_text(HDC dc,RECT area,const Row& row,bool paint,int thickness,std::vector<TranslatedOptionHit>* hits=nullptr){
     TEXTMETRICW tm{};GetTextMetricsW(dc,&tm);
     const int width=std::max(1L,area.right-area.left);int y=area.top;
     std::vector<WORD> glyphs(row.text.size());
@@ -62,6 +62,10 @@ int colored_text(HDC dc,RECT area,const Row& row,bool paint,int thickness){
             if(count>1 && text[count-1]>=0xd800 && text[count-1]<=0xdbff)--count;
         }
         const int line_height=fallback?std::max(tm.tmHeight,measure(text,count).cy):tm.tmHeight;
+        if(hits && row.option>=0){
+            RECT hit{area.left,y,std::min(area.right,area.left+measure(text,count).cx),y+line_height};
+            hits->push_back({hit,unsigned(row.option)});
+        }
         if(paint){
             for(int pos=0;pos<count;){
                 while(run+1<row.colors.size() && row.colors[run+1].start<=at+pos)++run;
@@ -84,7 +88,7 @@ int colored_text(HDC dc,RECT area,const Row& row,bool paint,int thickness){
     return y;
 }
 void ink(HDC dc,RECT area,const Row& row,HFONT font,int thickness){
-    if(row.colors.size()>1){
+    if(row.option>=0 || row.colors.size()>1){
         const auto old=SelectObject(dc,font);const auto mode=SetBkMode(dc,TRANSPARENT);
         colored_text(dc,area,row,true,thickness);SetBkMode(dc,mode);SelectObject(dc,old);return;
     }
@@ -151,7 +155,7 @@ unsigned draw_story_translation(HDC dc,RECT stage,std::span<const LocalizedLine>
             LONG left=stage.left+std::clamp(MulDiv(row.x,w,640),margin,int(w/2));
             LONG top=std::max(end,stage.top+MulDiv(row.y,h,448));
             RECT area{left,top,stage.right-margin,top};
-            if(row.colors.size()>1)area.bottom=colored_text(dc,area,row,false,0);
+            if(row.option>=0 || row.colors.size()>1)area.bottom=colored_text(dc,area,row,false,0);
             else DrawTextW(dc,row.text.c_str(),-1,&area,flags|DT_CALCRECT);
             row.rect={left,top,stage.right-margin,area.bottom};
             end=area.bottom+std::max(1,size/8);
@@ -165,7 +169,11 @@ unsigned draw_story_translation(HDC dc,RECT stage,std::span<const LocalizedLine>
     unsigned drawn=0;
     for(const auto& row:rows)if(row.opacity){
         paint(dc,row,font,std::max(1,size/22));++drawn;
-        if(row.option>=0)options.push_back({row.rect,unsigned(row.option)});
+        if(row.option>=0){
+            const auto old=SelectObject(dc,font);
+            colored_text(dc,row.rect,row,false,0,&options);
+            SelectObject(dc,old);
+        }
     }
     RestoreDC(dc,saved);DeleteObject(font);
     return drawn;
