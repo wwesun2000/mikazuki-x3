@@ -94,6 +94,9 @@ StoryFrameResult StoryFrameDriver::advance(GuestMemory& m,u32 manager,MediaComma
     retire_interval_tasks(m,screen_task_heap);
     check_outer_locks(m,{0x205588,0x2055a8,manager+0x48});
     (void)invoke_recovered(m,0x113148,manager,0,0,0,&services);
+    const auto context=m.read_u32(manager+0x40);
+    if(context && (context==m.read_u32(0x235f04) || context==m.read_u32(0x235f08)))
+        m.write_u32(manager+0x808,0);
     result.glyphs=std::move(glyphs.staged);
     result.last_page_clear=glyphs.last_clear;
     transaction.commit();

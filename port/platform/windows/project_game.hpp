@@ -8,6 +8,7 @@
 #include "../../core/card_volume.hpp"
 #include "../../core/title_selection.hpp"
 #include <string_view>
+#include <deque>
 
 namespace kx3::platform::windows {
 // An independently owned new-game session. No emulator RAM or save fixture
@@ -17,6 +18,7 @@ public:
     explicit ProjectGame(const std::filesystem::path& root, std::string_view scenario,
                          std::optional<std::uint32_t> clock_seed=std::nullopt);
     StoryFrameResult advance(std::optional<ChoiceInput> input = std::nullopt);
+    static StoryFrameResult play_frame(std::unique_ptr<ProjectGame>&,const std::filesystem::path& root,ChoiceInput input);
     TitleAction title_input(TitleSelection&,std::uint16_t,std::vector<SourceSoundEvent>&);
     void enter_label_for_probe(std::uint32_t selector,std::uint32_t name_file_offset);
     void enter_record_for_probe(std::uint32_t selector,std::uint32_t file_offset);
@@ -58,7 +60,13 @@ public:
     std::uint64_t logical_tick() const { return logical_tick_; }
 private:
     void save_impl(const std::filesystem::path&,bool resume_story,std::optional<std::uint32_t> target=std::nullopt,
-                   bool record_committed=false) const;
+                   bool record_committed=false,std::vector<std::uint8_t>* history=nullptr) const;
+    static std::unique_ptr<ProjectGame> decode_session(const std::filesystem::path&,std::string_view,std::span<const std::uint8_t>);
+    using DialoguePosition=std::array<std::uint32_t,3>;
+    std::optional<DialoguePosition> dialogue_wait() const;
+    struct Page {DialoguePosition position;std::vector<std::uint8_t> bytes;};
+    std::deque<Page> pages_;
+    bool back_down_=false;
     void export_record(std::span<const std::uint8_t>);
     void reconcile_loaded_record();
     void install_system_tables(const std::filesystem::path& root);

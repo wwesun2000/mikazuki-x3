@@ -172,8 +172,8 @@ extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_ac
     else if(kind==4){in.actor_index=index;in.actor_confirm=true;}
     else if(kind==5){
         if(name_entry_view(game->memory(),game->runtime().manager).open || system_menu_view(game->memory(),game->runtime().manager).open || game->actor_choice().open)return;
-        const int x=index&65535,y=(unsigned(index)>>16)&65535;auto option=source_choice_at(game->memory(),game->runtime().manager,x,y);
-        if(option){in.mouse_index=*option;in.mouse_confirm=true;}else if(mystery::active(game->memory())){int selected=mystery::option_at(game->memory(),x,y);if(selected>=0)mystery_target=unsigned(selected);return;}else in.held=0x2000;}
+        const int x=index&65535,y=(unsigned(index)>>16)&65535;auto option=language!=StoryLanguage::japanese?std::optional<u32>{}:source_choice_at(game->memory(),game->runtime().manager,x,y);
+        if(option){in.mouse_index=*option;in.mouse_confirm=true;}else if(mystery::active(game->memory())){int selected=mystery::option_at(game->memory(),x,y);if(selected>=0)mystery_target=unsigned(selected);return;}else {const auto& m=game->memory();const auto ctx=m.read_u32(game->runtime().manager+0x40);const auto method=m.read_u32(m.read_u32(ctx));if(method==0x11e748 || method==0x11e9d8)return;in.held=0x2000;}}
     else if(kind==6){const auto menu=system_menu_view(game->memory(),game->runtime().manager);if(menu.open&&(menu.screen==12||menu.screen==14)){original_card=true;actions.clear();}return;}
     else if(kind==7){const auto menu=system_menu_view(game->memory(),game->runtime().manager);if(menu.open&&menu.screen==10&&menu.interval_ready&&index>=1&&index<=5){interval_target=unsigned(index);interval_release=false;interval_confirm=false;}return;}
     else return;
@@ -192,7 +192,11 @@ extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_ti
         else if(menu.interval_ready){input.held=menu.interval_level<*interval_target?0x20:0x80;interval_release=true;}}
     if(mystery_target){const auto& m=game->memory();const int current=mystery::selected(m);if(input.held||current<0)mystery_target.reset();
         else if(!m.read_u16(0x238700)){if(current!=int(*mystery_target))input.held=0x8000;else{input.held=0x2000;mystery_target.reset();}}}
-    game->advance(input);
+    ProjectGame::play_frame(game,root,input);
+    if(game->logical_tick()==1 || game->logical_tick()%900==0){
+        try{game->save(root/"saves"/(program+"-suspend.kx3save"));}
+        catch(const std::exception& e){feedback=std::string("Recovery save: ")+e.what();}
+    }
     if(game->memory().read_u32(0x238680)){playing=false;game->suspend_audio_output();actions.clear();}
      }catch(const CardWriteError& e){failed_save_input=input;fail(e);}
       catch(const std::system_error& e){if(game->memory().read_u32(0x239fe8)&&game->memory().read_u32(0x239fa4)==1)failed_save_input=input;fail(e);}

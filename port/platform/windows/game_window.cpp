@@ -85,7 +85,7 @@ void fill(HDC dc,RECT r,COLORREF c){
 void line(HDC dc,int x,int y,int x2,int y2){MoveToEx(dc,x,y,nullptr);LineTo(dc,x2,y2);}
 // Coordinate space is the original 640x448 text surface displayed at 4:3.
 struct Layout { RECT rail,screen,settings; };
-enum class RailCommand { open, display, resume, source, save_slot, slot_page, original_card, retry_save, back, interval_pad, brightness_pad, inspect_hold, unavailable };
+enum class RailCommand { quit, open, display, resume, source, save_slot, slot_page, original_card, retry_save, back, interval_pad, brightness_pad, inspect_hold, unavailable };
 enum class Lobby { hidden,home,new_game,load_game,slots,new_note };
 struct RailRow { RailCommand command;unsigned value;std::wstring label;bool enabled,selected;RECT rect; };
 std::string utf8(std::wstring_view w){
@@ -394,7 +394,16 @@ struct Player {
         return folder/(std::string(edition)+"-"+std::to_string(index+1)+".kx3save");
     }
     std::filesystem::path slot_path(unsigned index)const{return edition_slot(program,index);}
+    std::filesystem::path recovery_path(std::string_view work)const{
+        return edition_slot(work,0).parent_path()/(std::string(work)+"-suspend.kx3save");
+    }
+    void checkpoint_session(){
+        if(verify || !game || lobby!=Lobby::hidden || !frontier.empty())return;
+        try{game->save(recovery_path(program));has_progress=true;}
+        catch(const std::exception& e){feedback=wide(e.what());}
+    }
     bool saved(std::string_view edition)const{
+        if(std::filesystem::is_regular_file(recovery_path(edition)))return true;
         for(unsigned i=0;i<pc_slots;++i)if(std::filesystem::is_regular_file(edition_slot(edition,i)))return true;
         const auto found=notes.find(std::string(edition));return found!=notes.end() && !found->second.empty();
     }
@@ -417,6 +426,7 @@ struct Player {
         if(lobby==Lobby::new_note)return i<=pc_slots;
         if(lobby==Lobby::slots){
             const auto& work=editions.rows[load_edition].program;
+            if(i==lobby_count()-1 && std::filesystem::is_regular_file(recovery_path(work)))return true;
             if(i<pc_slots)return std::filesystem::is_regular_file(edition_slot(work,i));
             const auto found=notes.find(work);return found!=notes.end() && i-pc_slots<found->second.size();
         }
@@ -429,9 +439,10 @@ struct Player {
             std::unique_ptr<ProjectGame> incoming;
             if(new_note)incoming=ProjectGame::new_note(root,chosen,record,*new_note,replace);
             else if(!slot)incoming=std::make_unique<ProjectGame>(root,chosen);
+            else if(*slot==1000)incoming=ProjectGame::load(root,chosen,recovery_path(chosen));
             else if(*slot<pc_slots)incoming=ProjectGame::load(root,chosen,edition_slot(chosen,*slot));
             else incoming=ProjectGame::load_note(root,chosen,record,notes.at(chosen).at(*slot-pc_slots));
-            if(!new_note && (!slot || *slot<pc_slots))incoming->set_system_record_file(record);
+            if(!new_note && (!slot || *slot<pc_slots || *slot==1000))incoming->set_system_record_file(record);
             game.swap(incoming);program.swap(chosen);
             try{read_presentation();if(!verify)game->enable_audio_output();}
             catch(...){game.swap(incoming);program.swap(chosen);read_presentation();throw;}
@@ -465,7 +476,7 @@ struct Player {
             start_edition(chosen,{},slot,replace);return;
         }
         case Lobby::load_game:lobby=Lobby::slots;load_edition=index;lobby_focus=0;break;
-        case Lobby::slots:start_edition(editions.rows[load_edition].program,index);return;
+        case Lobby::slots:start_edition(editions.rows[load_edition].program,index==lobby_count()-1 && std::filesystem::is_regular_file(recovery_path(editions.rows[load_edition].program))?1000:index);return;
         default:return;
         }
         if(!lobby_available(lobby_focus)){
@@ -514,7 +525,7 @@ struct Player {
         if(lobby==Lobby::new_note)return pc_slots+1;
         if(lobby!=Lobby::slots)return 3;
         const auto found=notes.find(editions.rows[load_edition].program);
-        return pc_slots+unsigned(found==notes.end()?0:found->second.size());
+        return unsigned(std::filesystem::is_regular_file(recovery_path(editions.rows[load_edition].program)))+pc_slots+unsigned(found==notes.end()?0:found->second.size());
     }
     void draw_title(HDC dc){
         RECT client{};GetClientRect(window,&client);fill(dc,client,rail_color);lobby_buttons.clear();
@@ -543,6 +554,7 @@ struct Player {
                           (occupied?ui(L" · 已有",L" · in use",L" · 使用中"):ui(L" · 空",L" · empty",L" · 空き"));
                 }
             }else if(lobby==Lobby::slots && unsigned(i)<pc_slots)label=std::wstring(ui(L"PC 存档 ",L"PC save ",L"PC セーブ "))+std::to_wstring(i+1);
+            else if(lobby==Lobby::slots && i==n-1 && std::filesystem::is_regular_file(recovery_path(editions.rows[load_edition].program)))label=ui(L"自动恢复",L"Resume last session",L"前回の続き");
             else if(lobby==Lobby::slots)label=std::wstring(ui(L"记忆卡存档 ",L"Memory card save ",L"メモリーカード "))+
                 std::to_wstring(notes.at(editions.rows[load_edition].program).at(i-pc_slots)+1);
             else label=edition_title(editions.rows[i].program);
@@ -662,6 +674,7 @@ struct Player {
                 const auto a=state.actions[i];
                 add(RailCommand::source,i,name(a),true,state.focus==i);
             }
+            add(RailCommand::quit,0,ui(L"直接退出",L"Quit game",L"ゲームを終了"));
             add(RailCommand::back,0,ui(L"返回游戏",L"Resume game",L"ゲームに戻る"));
         }else{
             if(!use_original_card && (state.screen==12 || (state.screen==14 && state.can_request_save))){
@@ -707,6 +720,7 @@ struct Player {
         const auto rows=rail_rows(view());if(index>=rows.size() || !rows[index].enabled)return;
         const auto& row=rows[index];
         switch(row.command){
+        case RailCommand::quit:PostMessageW(window,WM_CLOSE,0,0);break;
         case RailCommand::open:pressed|=0x1000;break;
         case RailCommand::interval_pad:case RailCommand::brightness_pad:pressed|=std::uint16_t(row.value);break;
         case RailCommand::inspect_hold:mouse_inspection=row.value!=0;break;
@@ -824,10 +838,11 @@ struct Player {
         pending_choice.reset();choice_confirm=false;
         if(failed_save_input){input=*failed_save_input;failed_save_input.reset();}
         try{
-            auto result=game->advance(input);
+            auto result=ProjectGame::play_frame(game,root,input);
             if(chapter_open() && game->memory().read_u32(0x235b4c)==1)has_progress=true;
             last_system_request=result.system_record_requested;
             ++frames;steps+=result.script_steps;
+            if(frames==1 || frames%900==0)checkpoint_session();
             if(input.original_card_menu && game->memory().read_u32(0x238680)){
                 use_original_card=false;open_title();return;
             }
@@ -1790,13 +1805,14 @@ LRESULT CALLBACK messages(HWND wnd,UINT msg,WPARAM wp,LPARAM lp){
                 if(hit){p->pending_choice=hit;p->choice_confirm=true;}
                 else{
                     const auto& m=p->game->memory();const auto ctx=m.read_u32(p->game->runtime().manager+0x40);
-                    if(m.read_u32(m.read_u32(ctx))!=0x11e748)p->pressed|=0x2000;
+                    const auto method=m.read_u32(m.read_u32(ctx));
+                    if(method!=0x11e748 && method!=0x11e9d8)p->pressed|=0x2000;
                 }
             }
             p->pressed_stage=false;p->pressed_choice.reset();if(GetCapture()==wnd)ReleaseCapture();return 0;
         }
         case WM_CAPTURECHANGED:p->display_press.reset();p->pressed_stage=false;p->pressed_choice.reset();p->rail_press.reset();p->chart_press.reset();p->name_press.reset();p->lobby_press.reset();p->actor_press.reset();p->mystery_press.reset();return 0;
-        case WM_CLOSE:DestroyWindow(wnd);return 0;
+        case WM_CLOSE:p->checkpoint_session();DestroyWindow(wnd);return 0;
         case WM_DESTROY:PostQuitMessage(p->failed?2:0);return 0;
         }
     }catch(const std::exception& e){
