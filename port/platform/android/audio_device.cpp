@@ -1,5 +1,6 @@
 #include "../windows/project_audio.hpp"
 #include <aaudio/AAudio.h>
+#include <android/log.h>
 #include <atomic>
 #include <condition_variable>
 #include <deque>
@@ -26,6 +27,11 @@ struct WaveOutput::Device {
         const auto opened=AAudioStreamBuilder_openStream(builder,&stream);AAudioStreamBuilder_delete(builder);check(opened,"Open audio");
         if(AAudioStream_getSampleRate(stream)!=48000 || AAudioStream_getChannelCount(stream)!=2 || AAudioStream_getFormat(stream)!=AAUDIO_FORMAT_PCM_I16)
             throw std::runtime_error("Audio device did not accept 48 kHz stereo PCM");
+        // Accumulate a small lead before starting the hardware clock.
+        {std::unique_lock lock(mutex);
+            changed.wait(lock,[&]{return closing || pending.size()>=8;});
+            if(closing)return;
+        }
         check(AAudioStream_requestStart(stream),"Start audio");
         for(;;){
             StereoBlock block;
@@ -41,13 +47,17 @@ struct WaveOutput::Device {
     }catch(...){std::lock_guard lock(mutex);failure=std::current_exception();changed.notify_all();}}
     ~Device(){
         {std::lock_guard lock(mutex);closing=true;}changed.notify_all();if(worker.joinable())worker.join();
-        if(stream){AAudioStream_requestStop(stream);AAudioStream_close(stream);}
+        if(stream){
+            __android_log_print(ANDROID_LOG_INFO,"MikazukiX3","Audio stream: %lld frames written, %d xruns",
+                static_cast<long long>(AAudioStream_getFramesWritten(stream)),AAudioStream_getXRunCount(stream));
+            AAudioStream_requestStop(stream);AAudioStream_close(stream);
+        }
     }
 };
 WaveOutput::WaveOutput():device_(std::make_unique<Device>()){device_->worker=std::thread(&Device::run,device_.get());}
 WaveOutput::~WaveOutput()=default;
 void WaveOutput::submit(const StereoBlock& b){auto& d=*device_;std::unique_lock lock(d.mutex);
-    d.changed.wait(lock,[&]{return d.pending.size()<4||d.failure||d.closing;});
+    d.changed.wait(lock,[&]{return d.pending.size()<8||d.failure||d.closing;});
     if(d.failure)std::rethrow_exception(d.failure);if(d.closing)throw std::runtime_error("Audio device is closing");
     d.pending.push_back(b);lock.unlock();d.changed.notify_all();}
 std::uint32_t WaveOutput::played_frames()const{std::lock_guard lock(device_->mutex);if(device_->failure)std::rethrow_exception(device_->failure);return device_->frames.load();}

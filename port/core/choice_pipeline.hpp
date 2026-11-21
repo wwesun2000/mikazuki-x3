@@ -33,6 +33,7 @@ struct ChoiceInput {
     bool name_confirm = false;
     std::int32_t actor_index = -1; // Index in 14B2A0's four-card row.
     bool actor_confirm = false;
+    bool read_previous = false; // Dedicated UI action, independent of directional navigation.
     bool original_card_menu = false; // Select the original card device instead of a PC snapshot.
 };
 struct ChoiceUpdate {
