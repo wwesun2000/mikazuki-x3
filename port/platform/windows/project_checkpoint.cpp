@@ -8,6 +8,8 @@
 #include "../../core/staff_roll.hpp"
 #include <bit>
 #include <charconv>
+#include <cstring>
+#include <unordered_set>
 #include <fstream>
 
 namespace kx3::platform::windows {
@@ -127,6 +129,30 @@ TextGlyphEvent read_glyph(Reader& r,const GuestMemory& memory,u32 manager,unsign
 void ProjectGame::save(const std::filesystem::path& destination) const {
     save_impl(destination,false);
 }
+void ProjectGame::recovery_save(const std::filesystem::path& path,bool background){
+    if(pending_recovery_.valid()){
+        if(background && pending_recovery_.wait_for(std::chrono::seconds(0))!=std::future_status::ready)return;
+        // An explicit exit always gets a fresh write attempt, even after a failed periodic save.
+        if(background)pending_recovery_.get();
+        else pending_recovery_.wait();
+    }
+    if(!background){save(path);return;}
+    std::vector<u8> metadata;
+    save_impl({},false,std::nullopt,false,&metadata);
+    auto snapshot=std::make_unique<CoreCheckpoint>();
+    snapshot->manager=runtime_.manager;snapshot->logical_tick=logical_tick_;
+    snapshot->memory.write_bytes(0,memory_.bytes(0,GuestMemory::size));
+    const auto header=magic.size()+4+scenario_.size();
+    pending_recovery_=std::async(std::launch::async,[path,header,metadata=std::move(metadata),snapshot=std::move(snapshot)]{
+        Writer out;
+        out.bytes.insert(out.bytes.end(),metadata.begin(),metadata.begin()+header);
+        out.blob(encode_checkpoint(*snapshot,identity()));
+        out.bytes.insert(out.bytes.end(),metadata.begin()+header,metadata.end());
+        const auto digest=source_bytes_sha256(out.bytes);
+        out.bytes.insert(out.bytes.end(),digest.begin(),digest.end());
+        replace_save_file_atomic(path,out.bytes);
+    });
+}
 void ProjectGame::save_from_menu(const std::filesystem::path& destination) const {
     const auto menu=system_menu_view(memory_,runtime_.manager);
     check(menu.open && menu.screen==14 && menu.can_request_save,"Original menu does not permit saving here");
@@ -146,16 +172,18 @@ void ProjectGame::save_impl(const std::filesystem::path& destination,bool resume
     // carries the explicit player choice of the original card across restarts.
     if(autosave_to_original_card_ && !target)w.bytes[6]=10;
     w.text(scenario_);
-    CoreCheckpoint core;
-    core.manager=runtime_.manager;core.logical_tick=logical_tick_;
-    core.memory.write_bytes(0,memory_.bytes(0,GuestMemory::size));
-    if(target)complete_auto_save_target(core.memory,core.manager,*target,true);
-    else if(resume_story)prepare_system_save_resume(core.memory,core.manager);
-    if(record_committed){
-        core.memory.write_u32(0x239fa0,0);core.memory.write_u32(0x239fa4,0);
-        core.memory.write_u32(0x239fb0,(core.memory.read_u32(0x239fb0)+1)%2);
+    if(!history){
+        CoreCheckpoint core;
+        core.manager=runtime_.manager;core.logical_tick=logical_tick_;
+        core.memory.write_bytes(0,memory_.bytes(0,GuestMemory::size));
+        if(target)complete_auto_save_target(core.memory,core.manager,*target,true);
+        else if(resume_story)prepare_system_save_resume(core.memory,core.manager);
+        if(record_committed){
+            core.memory.write_u32(0x239fa0,0);core.memory.write_u32(0x239fa4,0);
+            core.memory.write_u32(0x239fb0,(core.memory.read_u32(0x239fb0)+1)%2);
+        }
+        w.blob(encode_checkpoint(core,identity()));
     }
-    w.blob(encode_checkpoint(core,identity()));
     w.word(images_.prepared().size());
     for(const auto& [generation,asset]:images_.prepared()) {
         w.word(generation,8);write_plan(w,asset.plan);
@@ -163,7 +191,7 @@ void ProjectGame::save_impl(const std::filesystem::path& destination,bool resume
     w.word(images_.current_generation(),8);w.word(images_.next_generation(),8);w.word(images_.release_after_display(),1);
     w.word(images_.visible_member());w.word(images_.visible_frame());
     const auto state=backend_.checkpoint();
-    check(!state.pending_descriptor || core.memory.read_u32(0x20680c)==state.pending_descriptor,
+    check(!state.pending_descriptor || memory_.read_u32(0x20680c)==state.pending_descriptor,
           "Cannot save a scene worker with a stale pending descriptor");
     w.word(state.pending_descriptor);w.word(state.pending_generation,8);w.word(state.selected_generation,8);
     w.word(state.end_reported,1);
@@ -226,19 +254,61 @@ std::optional<ProjectGame::DialoguePosition> ProjectGame::dialogue_wait() const 
     return DialoguePosition{m.read_u32(script+0xd0),m.read_u32(script+0xd4),m.read_u32(script+0xd8)};
 }
 
+bool ProjectGame::can_read_previous() const {
+    if(pages_.empty() || system_menu_view(memory_,runtime_.manager).open)return false;
+    const auto pos=dialogue_wait();
+    return !pos || *pos!=pages_.back().position || pages_.size()>1;
+}
+
+void ProjectGame::remember_page(DialoguePosition position){
+    // In-session history shares unchanged RAM blocks, including all-zero blocks.
+    // Disk saves keep their independent checksum and versioned representation.
+    Page page{position,{},{},logical_tick_};
+    save_impl({},false,std::nullopt,false,&page.bytes);
+    static const auto zero=std::make_shared<const HistoryBlock>();
+    constexpr auto count=GuestMemory::size/sizeof(HistoryBlock);
+    page.blocks.reserve(count);
+    for(unsigned i=0;i<count;++i){
+        const auto source=memory_.bytes(i*sizeof(HistoryBlock),sizeof(HistoryBlock));
+        const auto& previous=pages_.empty()?zero:pages_.back().blocks[i];
+        if(!std::memcmp(previous->data(),source.data(),source.size()))page.blocks.push_back(previous);
+        else{
+            auto block=std::make_shared<HistoryBlock>();
+            std::memcpy(block->data(),source.data(),source.size());
+            page.blocks.push_back(std::move(block));
+        }
+    }
+    pages_.push_back(std::move(page));
+    std::unordered_set<const HistoryBlock*> unique;
+    std::size_t bytes=0,keep=0;
+    for(auto it=pages_.rbegin();it!=pages_.rend() && keep<32;++it){
+        bytes+=it->bytes.size()+it->blocks.size()*sizeof(it->blocks.front());
+        for(const auto& block:it->blocks)
+            if(unique.insert(block.get()).second)bytes+=sizeof(HistoryBlock);
+        if(keep>=2 && bytes>48u*1024*1024)break;
+        ++keep;
+    }
+    while(pages_.size()>keep)pages_.pop_front();
+}
+
 StoryFrameResult ProjectGame::play_frame(std::unique_ptr<ProjectGame>& game,const std::filesystem::path& root,ChoiceInput input){
     const auto page=game->dialogue_wait();
     const bool back=(input.held&0x10)!=0;
-    if(page && back){
+    if(input.read_previous || (page && back)){
         input.held &= ~0x10u;
-        if(!game->back_down_ && game->pages_.size()>1){
-            const auto& previous=game->pages_[game->pages_.size()-2];
-            auto restored=decode_session(root,game->scenario_,previous.bytes);
+        if((input.read_previous || !game->back_down_) && game->can_read_previous()){
+            const bool current=page && *page==game->pages_.back().position;
+            const auto& previous=game->pages_[game->pages_.size()-1-current];
+            auto restored=decode_session(root,game->scenario_,previous.bytes,&previous);
+            // A player-requested rewind always lands on a manual wait. 121E50
+            // stops auto via +808; 115C58 consumes +814 only while it is armed.
+            restored->memory_.write_u32(restored->runtime_.manager+0x808,0);
+            restored->memory_.write_u32(restored->runtime_.manager+0x814,0);
             restored->set_system_record_file(game->system_record_file_);
             restored->audio_enabled_=game->audio_enabled_;
-            game->pages_.pop_back();
+            if(current)game->pages_.pop_back();
             restored->pages_=std::move(game->pages_);
-            restored->back_down_=true;
+            restored->back_down_=back;
             game.swap(restored);
             return {};
         }
@@ -246,28 +316,26 @@ StoryFrameResult ProjectGame::play_frame(std::unique_ptr<ProjectGame>& game,cons
     game->back_down_=back;
     auto result=game->advance(input);
     const auto next=game->dialogue_wait();
-    if(next && (game->pages_.empty() || game->pages_.back().position!=*next)){
-        Page checkpoint{*next,{}};
-        game->save_impl({},false,std::nullopt,false,&checkpoint.bytes);
-        std::size_t total=checkpoint.bytes.size();
-        for(const auto& item:game->pages_)total+=item.bytes.size();
-        while(!game->pages_.empty() && total>48u*1024*1024){
-            total-=game->pages_.front().bytes.size();
-            game->pages_.pop_front();
-        }
-        game->pages_.push_back(std::move(checkpoint));
-    }
+    if(next && (game->pages_.empty() || game->pages_.back().position!=*next))game->remember_page(*next);
     return result;
 }
 
-std::unique_ptr<ProjectGame> ProjectGame::decode_session(const std::filesystem::path& root,std::string_view scenario,std::span<const u8> data){
+std::unique_ptr<ProjectGame> ProjectGame::decode_session(const std::filesystem::path& root,std::string_view scenario,std::span<const u8> data,const Page* page){
     Reader r{data};
     auto header=r.take(magic.size());
     const unsigned version=header[6];
     check(std::equal(header.begin(),header.begin()+6,magic.begin()) && version>=1 && version<=10 && !header[7],
           "Unsupported session save version");
     check(r.text(8)==scenario,"Save belongs to another original scenario");
-    auto core=decode_checkpoint(r.take(r.count(max_save_bytes)),identity());
+    auto core=[&]() -> CoreCheckpoint {
+        if(!page)return decode_checkpoint(r.take(r.count(max_save_bytes)),identity());
+        CoreCheckpoint restored;
+        for(unsigned i=0;i<page->blocks.size();++i)
+            restored.memory.write_bytes(i*sizeof(HistoryBlock),*page->blocks[i]);
+        restored.manager=restored.memory.read_u32(0x235e40);
+        restored.logical_tick=page->tick;
+        return restored;
+    }();
     auto game=std::make_unique<ProjectGame>(root,scenario);
     game->autosave_to_original_card_=version==10;
     check(core.manager==game->runtime_.manager && core.memory.read_u32(0x235e40)==core.manager,"Mismatched saved game manager");

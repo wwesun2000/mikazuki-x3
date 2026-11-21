@@ -9,6 +9,7 @@
 #include "../../core/title_selection.hpp"
 #include <string_view>
 #include <deque>
+#include <future>
 
 namespace kx3::platform::windows {
 // An independently owned new-game session. No emulator RAM or save fixture
@@ -19,6 +20,7 @@ public:
                          std::optional<std::uint32_t> clock_seed=std::nullopt);
     StoryFrameResult advance(std::optional<ChoiceInput> input = std::nullopt);
     static StoryFrameResult play_frame(std::unique_ptr<ProjectGame>&,const std::filesystem::path& root,ChoiceInput input);
+    bool can_read_previous() const;
     TitleAction title_input(TitleSelection&,std::uint16_t,std::vector<SourceSoundEvent>&);
     void enter_label_for_probe(std::uint32_t selector,std::uint32_t name_file_offset);
     void enter_record_for_probe(std::uint32_t selector,std::uint32_t file_offset);
@@ -47,6 +49,7 @@ public:
     std::int64_t output_submit_us() const {return output_submit_us_;}
     std::uint32_t played_audio_frames() const { return output_?output_->played_frames():0; }
     void save(const std::filesystem::path& destination) const;
+    void recovery_save(const std::filesystem::path&,bool background);
     void save_from_menu(const std::filesystem::path& destination) const;
     void save_auto_target(const std::filesystem::path& destination,std::uint32_t slot);
     static std::unique_ptr<ProjectGame> load(const std::filesystem::path& root,std::string_view scenario,
@@ -61,12 +64,22 @@ public:
 private:
     void save_impl(const std::filesystem::path&,bool resume_story,std::optional<std::uint32_t> target=std::nullopt,
                    bool record_committed=false,std::vector<std::uint8_t>* history=nullptr) const;
-    static std::unique_ptr<ProjectGame> decode_session(const std::filesystem::path&,std::string_view,std::span<const std::uint8_t>);
+
     using DialoguePosition=std::array<std::uint32_t,3>;
     std::optional<DialoguePosition> dialogue_wait() const;
-    struct Page {DialoguePosition position;std::vector<std::uint8_t> bytes;};
+    using HistoryBlock=std::array<std::uint8_t,16384>;
+    struct Page {
+        DialoguePosition position;
+        std::vector<std::uint8_t> bytes;
+        std::vector<std::shared_ptr<const HistoryBlock>> blocks;
+        std::uint64_t tick;
+    };
+    static std::unique_ptr<ProjectGame> decode_session(const std::filesystem::path&,std::string_view,
+                                                       std::span<const std::uint8_t>,const Page* page=nullptr);
+    void remember_page(DialoguePosition);
     std::deque<Page> pages_;
     bool back_down_=false;
+    std::future<void> pending_recovery_;
     void export_record(std::span<const std::uint8_t>);
     void reconcile_loaded_record();
     void install_system_tables(const std::filesystem::path& root);

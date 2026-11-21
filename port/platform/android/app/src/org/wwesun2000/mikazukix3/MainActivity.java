@@ -43,10 +43,16 @@ public final class MainActivity extends Activity {
     private final Runnable loop=new Runnable(){public void run(){
         if(!resumed||modal||!ready||!audioFocus||engineOwner!=MainActivity.this)return;
         try {
-            NativeBridge.tick(held);
+            final long period=16666667L;
+            long now=System.nanoTime();
+            // Each tick mixes 800 stereo frames. Share one draw across overdue ticks.
+            int due=(int)Math.min(4,1+Math.max(0,now-deadline)/period);
+            for(int i=0;i<due;i++)NativeBridge.tick(held);
+            deadline+=due*period;
+            if(now-deadline>4*period)deadline=now;
             refresh(true);
         }catch(Throwable e){showError(e);return;}
-        if(resumed&&!modal&&ready&&audioFocus&&engineOwner==MainActivity.this&&state.optBoolean("playing")){long now=System.nanoTime();deadline+=16666667L;if(now-deadline>66666668L)deadline=now+16666667L;worker.postDelayed(this,Math.max(1,(deadline-now)/1000000L));}
+        if(resumed&&!modal&&ready&&audioFocus&&engineOwner==MainActivity.this&&state.optBoolean("playing")){long now=System.nanoTime();worker.postDelayed(this,Math.max(0,(deadline-now)/1000000L));}
     }};
     private String text(String zh,String en,String ja){return language==1?zh:language==2?en:ja;}
     private void toast(String s){uiHandler.post(()->Toast.makeText(this,s,Toast.LENGTH_LONG).show());}
@@ -80,12 +86,8 @@ public final class MainActivity extends Activity {
     private void retryGame(){worker.removeCallbacks(loop);worker.post(()->{try{hostError="";NativeBridge.pause(false,false);NativeBridge.retry();deadline=System.nanoTime();loop.run();}catch(Throwable e){showError(e);}});}
     private void refresh(boolean pixels)throws Exception{
         synchronized(frameLock){
-            JSONObject next=new JSONObject(new String(NativeBridge.state(),StandardCharsets.UTF_8));
-            if(pixels&&next.optBoolean("playing")&&next.optString("error").isEmpty()){
-                NativeBridge.render(scene,letters,foreground,scanlines);
-                next=new JSONObject(new String(NativeBridge.state(),StandardCharsets.UTF_8));
-            }
-            state=next;
+            if(pixels)NativeBridge.render(scene,letters,foreground,scanlines);
+            state=new JSONObject(new String(NativeBridge.state(),StandardCharsets.UTF_8));
         }
         uiHandler.post(()->{if(state.optBoolean("playing")&&page.equals("home"))page="game";else if(!state.optBoolean("playing")&&page.equals("game"))page="home";view.invalidate();});
     }
@@ -123,7 +125,7 @@ public final class MainActivity extends Activity {
         Bitmap b=Bitmap.createBitmap(view.getWidth(),view.getHeight(),Bitmap.Config.ARGB_8888);JSONObject captured;synchronized(frameLock){view.draw(new Canvas(b));captured=state;}
         String loc=captured.optString("location","10-1-0-0"),lang=new String[]{"ja","zh-Hans","en"}[language],scale="smooth";
         String filename=loc+"-"+lang+"-"+scale+(scanlines?"-scan":"")+"-v"+System.currentTimeMillis()+".png";
-        String data=captured.toString();try{JSONObject diagnostic=new JSONObject(data);diagnostic.put("location",loc);diagnostic.put("uiPage",page);diagnostic.put("uiVersion","0.1.2-test");diagnostic.put("scanlines",scanlines);data=diagnostic.toString();}catch(JSONException ignored){}
+        String data=captured.toString();try{JSONObject diagnostic=new JSONObject(data);diagnostic.put("location",loc);diagnostic.put("uiPage",page);diagnostic.put("uiVersion","0.1.4-test");diagnostic.put("scanlines",scanlines);data=diagnostic.toString();}catch(JSONException ignored){}
         final String diagnostic=data;worker.post(()->{try{File d=new File(getFilesDir(),"diagnostics");d.mkdirs();try(FileOutputStream out=new FileOutputStream(new File(d,"latest-capture.json"))){out.write(diagnostic.getBytes(StandardCharsets.UTF_8));}}catch(IOException e){android.util.Log.w("MikazukiX3","Capture diagnostic could not be saved",e);}});
         if(Build.VERSION.SDK_INT>=29){ContentValues v=new ContentValues();v.put(MediaStore.Images.Media.DISPLAY_NAME,filename);v.put(MediaStore.Images.Media.MIME_TYPE,"image/png");v.put(MediaStore.Images.Media.RELATIVE_PATH,"Pictures/MikazukiX3");v.put(MediaStore.Images.Media.IS_PENDING,1);
             Uri uri=getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,v);if(uri==null){b.recycle();toast("Cannot create screenshot");return;}saveCapture(b,uri);
@@ -179,7 +181,7 @@ public final class MainActivity extends Activity {
             p.setColor(0x7006111b);c.drawRect(l,t,stage.left,b,p);c.drawRect(stage.right,t,r,b,p);
             p.setColor(0x506d898c);c.drawRect(stage.left-1,t,stage.left,b,p);c.drawRect(stage.right,t,stage.right+1,b,p);
             label(c,"MIKAZUKI",l+12*unit,t+25*unit,12*unit,gold);label(c,"×3  /  月夜",l+12*unit,t+44*unit,10*unit,muted);
-            String code=state.optString("location","10-1-0-0");p.setTypeface(Typeface.MONOSPACE);p.setTextSize(8*unit);while(p.measureText(code)>stage.left-l-12*unit&&p.getTextSize()>4*unit)p.setTextSize(p.getTextSize()-.5f);p.setColor(muted);c.drawText(code,l+6*unit,b-18*unit,p);label(c,"0.1.2-test",l+8*unit,b-5*unit,7*unit,muted);
+            String code=state.optString("location","10-1-0-0");p.setTypeface(Typeface.MONOSPACE);p.setTextSize(8*unit);while(p.measureText(code)>stage.left-l-12*unit&&p.getTextSize()>4*unit)p.setTextSize(p.getTextSize()-.5f);p.setColor(muted);c.drawText(code,l+6*unit,b-18*unit,p);label(c,"0.1.4-test",l+8*unit,b-5*unit,7*unit,muted);
             if(page.equals("settings")||page.equals("about")){settings(c,l,r,t,b);return;}
             if(!page.equals("game")){title(c,l,r,t,b);return;}
             p.setFilterBitmap(true);c.drawBitmap(scene,null,stage,p);c.drawBitmap(letters,null,stage,p);
@@ -218,7 +220,7 @@ public final class MainActivity extends Activity {
             if(open&&screen==0){button(c,rx,y+150*unit,rw,bh,text("直接退出","Quit game","ゲームを終了"),true,false,()->finish());JSONArray a=arr(menu,"actions");String[] labels={text("结局列表","Endings","結末一覧"),text("游戏设置","Game settings","環境設定"),text("回想","Recollection","回想"),text("结束并保存","Save & quit","終了・保存"),text("时间图","Timeline","時間表"),text("章节","Chapters","章一覧")};for(int i=0;i<a.length();++i){final int index=i;int id=a.optInt(i);button(c,lx,y+i*(bh+4*unit),lw,bh,labels[id],true,menu.optInt("focus")==i,()->action(2,index));}}
             else if(open&&!menu.optBoolean("originalCard")&&(screen==12||(screen==14&&menu.optBoolean("canSave")))){for(int i=0;i<5;++i){final int index=savePage*5+i;button(c,lx,y+i*46*unit,lw,bh,text("保存 ","Save ","保存 ")+(index+1),true,false,()->saveSlot(index));}button(c,lx,b-74*unit,lw,35*unit,savePage==0?text("槽位 6–10","Slots 6–10","スロット 6–10"):text("槽位 1–5","Slots 1–5","スロット 1–5"),true,false,()->{savePage=1-savePage;invalidate();});}
             else if(!open&&!name){railButton(c,lx,y,lw,bh,text("游戏菜单","Game menu","メニュー"),0,state.optBoolean("canMenu")||menu.optBoolean("autoStop"),()->action(0,0x1000),0);
-                railButton(c,lx,y+50*unit,lw,bh,text("回看文字","Read back","読み返し"),1,!state.optBoolean("actors")&&!state.optBoolean("mystery"),()->action(0,0x10),0);
+                railButton(c,lx,y+50*unit,lw,bh,text("回看文字","Read back","読み返し"),1,state.optBoolean("canReadPrevious")&&!state.optBoolean("actors")&&!state.optBoolean("mystery"),()->action(8,0),0);
                 railButton(c,lx,y+100*unit,lw,bh,menu.optBoolean("autoStop")?text("停止自动","Stop auto","自動停止"):text("自动推进","Auto advance","自動送り"),2,state.optBoolean("canMenu")||menu.optBoolean("autoStop"),()->action(0,menu.optBoolean("autoStop")?0x1000:8),0);
                 railButton(c,lx,y+150*unit,lw,bh,(held&0x200)!=0?text("返回剧情","Return to story","シナリオへ"):text("查看背景","View scene","背景を見る"),3,(held&0x200)!=0||state.optBoolean("canInspect"),()->{held^=0x200;invalidate();},0);
             }
@@ -270,6 +272,12 @@ public final class MainActivity extends Activity {
             case MotionEvent.ACTION_MOVE:if(Math.hypot(x-downX,y-downY)>18*density)dragged=true;if(touched!=null&&touched.hold!=0&&!touched.area.contains(x,y))held&=~touched.hold;return true;
             case MotionEvent.ACTION_CANCEL:held=0;touched=null;stageGesture=false;return true;
             case MotionEvent.ACTION_UP:Hit h=touched;touched=null;if(h!=null)held&=~h.hold;
+                if(h!=null && h.label.equals(text("回看文字","Read back","読み返し"))){
+                    if(!dragged && page.equals("game"))for(Hit live:hits){
+                        if(live.label.equals(h.label) && live.area.contains(x,y)){performClick();live.run.run();break;}
+                    }
+                    return true;
+                }
                 if(!touchContext.equals(context()))return true;
                 if(dragged){if(stageGesture&&Math.hypot(x-downX,y-downY)>32*density)swipe(x-downX,y-downY);}
                 else if(h!=null&&h.area.contains(x,y)&&h.hold==0){performClick();h.run.run();}

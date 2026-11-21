@@ -85,7 +85,7 @@ void fill(HDC dc,RECT r,COLORREF c){
 void line(HDC dc,int x,int y,int x2,int y2){MoveToEx(dc,x,y,nullptr);LineTo(dc,x2,y2);}
 // Coordinate space is the original 640x448 text surface displayed at 4:3.
 struct Layout { RECT rail,screen,settings; };
-enum class RailCommand { quit, open, display, resume, source, save_slot, slot_page, original_card, retry_save, back, interval_pad, brightness_pad, inspect_hold, unavailable };
+enum class RailCommand { quit, open, display, resume, source, save_slot, slot_page, original_card, retry_save, read_previous, back, interval_pad, brightness_pad, inspect_hold, unavailable };
 enum class Lobby { hidden,home,new_game,load_game,slots,new_note };
 struct RailRow { RailCommand command;unsigned value;std::wstring label;bool enabled,selected;RECT rect; };
 std::string utf8(std::wstring_view w){
@@ -223,7 +223,7 @@ struct Player {
     bool name_click=false;
     std::vector<std::pair<RECT,unsigned>> chart_cells;
     std::vector<std::pair<RECT,unsigned>> name_cells;
-    bool menu_click=false;
+    bool menu_click=false,read_previous=false;
     unsigned selected_slot=0;
     ProjectMixer title_mixer;
     std::unique_ptr<WaveOutput> title_output;
@@ -397,9 +397,9 @@ struct Player {
     std::filesystem::path recovery_path(std::string_view work)const{
         return edition_slot(work,0).parent_path()/(std::string(work)+"-suspend.kx3save");
     }
-    void checkpoint_session(){
+    void checkpoint_session(bool background=false){
         if(verify || !game || lobby!=Lobby::hidden || !frontier.empty())return;
-        try{game->save(recovery_path(program));has_progress=true;}
+        try{game->recovery_save(recovery_path(program),background);has_progress=true;}
         catch(const std::exception& e){feedback=wide(e.what());}
     }
     bool saved(std::string_view edition)const{
@@ -648,6 +648,7 @@ struct Player {
             const auto action=state.can_stop_auto?ui(L"停止自动推进  △",L"Stop auto  △",L"自動送り停止  △"):
                 ui(L"游戏菜单  △",L"Game menu  △",L"ゲームメニュー  △");
             add(RailCommand::open,0,action,frontier.empty() && (available || state.can_stop_auto));
+            add(RailCommand::read_previous,0,ui(L"回看文字",L"Read back",L"読み返し"),frontier.empty() && game->can_read_previous());
             add(RailCommand::display,0,ui(L"设置 · F1",L"Settings · F1",L"設定 · F1"));
             add(RailCommand::resume,0,ui(L"继续进度",L"Continue",L"つづきから"),has_progress);
             if(frontier.empty() && available)
@@ -729,6 +730,7 @@ struct Player {
         case RailCommand::original_card:use_original_card=true;clear_keys();InvalidateRect(window,nullptr,FALSE);break;
         case RailCommand::slot_page:selected_slot=row.value;InvalidateRect(window,nullptr,FALSE);break;
         case RailCommand::retry_save:retry_save();break;
+        case RailCommand::read_previous:read_previous=true;break;
         case RailCommand::back:pressed|=0x4000;break;
         case RailCommand::display:settings();break;
         case RailCommand::resume:continue_game();break;
@@ -813,6 +815,7 @@ struct Player {
         const auto screen=game->memory().read_u32(0x2388e8);
         if(use_original_card && (!game->memory().read_u32(0x2388cc) || (screen!=14 && screen!=12)))use_original_card=false;
         input.original_card_menu=use_original_card;
+        input.read_previous=std::exchange(read_previous,false);
         input.held=pressed;pressed=0;
         if(mouse_inspection)input.held|=0x200; // R2 remains down until the player leaves inspection.
         for(unsigned k=0;k<keys.size();++k)if(keys[k])input.held|=physical_key(k);
@@ -842,7 +845,7 @@ struct Player {
             if(chapter_open() && game->memory().read_u32(0x235b4c)==1)has_progress=true;
             last_system_request=result.system_record_requested;
             ++frames;steps+=result.script_steps;
-            if(frames==1 || frames%900==0)checkpoint_session();
+            if(frames==1 || frames%900==0)checkpoint_session(true);
             if(input.original_card_menu && game->memory().read_u32(0x238680)){
                 use_original_card=false;open_title();return;
             }

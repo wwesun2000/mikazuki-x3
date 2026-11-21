@@ -30,11 +30,17 @@ std::uint64_t take(std::span<const std::uint8_t> data, std::size_t& pos, unsigne
     return n;
 }
 std::uint32_t crc32(std::span<const std::uint8_t> data) {
+    static constexpr auto table=[]{
+        std::array<std::uint32_t,256> values{};
+        for(unsigned i=0;i<values.size();++i){
+            auto n=i;
+            for(unsigned bit=0;bit<8;++bit)n=(n>>1)^(0xedb88320u & (0u-(n&1u)));
+            values[i]=n;
+        }
+        return values;
+    }();
     std::uint32_t crc=0xffffffffu;
-    for (auto b:data) {
-        crc ^= b;
-        for (unsigned i=0;i<8;++i) crc=(crc>>1)^(0xedb88320u & (0u-(crc&1u)));
-    }
+    for(auto b:data)crc=(crc>>8)^table[(crc^b)&255u];
     return ~crc;
 }
 bool nonzero(std::span<const std::uint8_t> data) {

@@ -118,7 +118,7 @@ std::string snapshot(){
     if(game)for(const auto& e:source_title_selection(game->memory(),false).rows){if(comma)o<<',';comma=true;o<<js(e.program);}o<<"]";
     o<<",\"slots\":[";for(int i=0;i<10;++i){if(i)o<<',';o<<std::filesystem::is_regular_file(slot(program,i));}o<<"]";
     if(game&&playing){const auto& m=game->memory();const u32 manager=game->runtime().manager,script=m.read_u32(manager+0x38),font=m.read_u32(manager+0x3c);const auto menu=system_menu_view(m,manager);
-        o<<",\"tick\":"<<game->logical_tick()<<",\"canMenu\":"<<system_menu_available(m,manager).value_or(false)<<",\"canBright\":"<<brightness_control_available(m,manager).value_or(false)<<",\"canInspect\":"<<inspection_control_available(m,manager).value_or(false)<<",\"audioError\":"<<js(game->audio_output_error());
+        o<<",\"tick\":"<<game->logical_tick()<<",\"canReadPrevious\":"<<game->can_read_previous()<<",\"canMenu\":"<<system_menu_available(m,manager).value_or(false)<<",\"canBright\":"<<brightness_control_available(m,manager).value_or(false)<<",\"canInspect\":"<<inspection_control_available(m,manager).value_or(false)<<",\"audioError\":"<<js(game->audio_output_error());
         o<<",\"menu\":{\"open\":"<<menu.open<<",\"screen\":"<<menu.screen<<",\"focus\":"<<menu.focus<<",\"subfocus\":"<<menu.subfocus<<",\"settingsNotice\":"<<menu.settings_notice<<",\"canSave\":"<<menu.can_request_save<<",\"autoStop\":"<<menu.can_stop_auto<<",\"intervalReady\":"<<menu.interval_ready<<",\"interval\":"<<menu.interval_level<<",\"notice\":"<<js(system_text(menu.notice_text_address))<<",\"brightness\":"<<menu.brightness_level<<",\"brightOpen\":"<<menu.brightness_visible<<",\"actions\":[";
         for(unsigned i=0;i<menu.actions.size();++i){if(i)o<<',';o<<unsigned(menu.actions[i]);}o<<"],\"settings\":[";
         for(unsigned i=0;i<4;++i){if(i)o<<',';o<<menu.settings[i];}o<<"],\"originalCard\":"<<original_card<<'}';
@@ -174,6 +174,7 @@ extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_ac
         if(name_entry_view(game->memory(),game->runtime().manager).open || system_menu_view(game->memory(),game->runtime().manager).open || game->actor_choice().open)return;
         const int x=index&65535,y=(unsigned(index)>>16)&65535;auto option=language!=StoryLanguage::japanese?std::optional<u32>{}:source_choice_at(game->memory(),game->runtime().manager,x,y);
         if(option){in.mouse_index=*option;in.mouse_confirm=true;}else if(mystery::active(game->memory())){int selected=mystery::option_at(game->memory(),x,y);if(selected>=0)mystery_target=unsigned(selected);return;}else {const auto& m=game->memory();const auto ctx=m.read_u32(game->runtime().manager+0x40);const auto method=m.read_u32(m.read_u32(ctx));if(method==0x11e748 || method==0x11e9d8)return;in.held=0x2000;}}
+    else if(kind==8){in.read_previous=true;}
     else if(kind==6){const auto menu=system_menu_view(game->memory(),game->runtime().manager);if(menu.open&&(menu.screen==12||menu.screen==14)){original_card=true;actions.clear();}return;}
     else if(kind==7){const auto menu=system_menu_view(game->memory(),game->runtime().manager);if(menu.open&&menu.screen==10&&menu.interval_ready&&index>=1&&index<=5){interval_target=unsigned(index);interval_release=false;interval_confirm=false;}return;}
     else return;
@@ -194,7 +195,7 @@ extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_ti
         else if(!m.read_u16(0x238700)){if(current!=int(*mystery_target))input.held=0x8000;else{input.held=0x2000;mystery_target.reset();}}}
     ProjectGame::play_frame(game,root,input);
     if(game->logical_tick()==1 || game->logical_tick()%900==0){
-        try{game->save(root/"saves"/(program+"-suspend.kx3save"));}
+        try{game->recovery_save(root/"saves"/(program+"-suspend.kx3save"),true);}
         catch(const std::exception& e){feedback=std::string("Recovery save: ")+e.what();}
     }
     if(game->memory().read_u32(0x238680)){playing=false;game->suspend_audio_output();actions.clear();}
@@ -204,7 +205,7 @@ extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_ti
 extern "C" JNIEXPORT jbyteArray JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_state(JNIEnv* env,jclass){try{return bytes(env,snapshot());}catch(const std::exception& e){fail(e);return bytes(env,"{\"error\":"+js(error)+"}");}}
 extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_language(JNIEnv*,jclass,jint lang){if(lang>=0&&lang<=2)language=StoryLanguage(lang);}
 extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_pause(JNIEnv*,jclass,jboolean paused,jboolean checkpoint){audible=!paused;actions.clear();card_click.reset();interval_target.reset();if(!game)return;
-    if(paused){game->suspend_audio_output();if(checkpoint&&playing&&error.empty())try{game->save(root/"saves"/(program+"-suspend.kx3save"));}catch(const std::exception& e){feedback=std::string("Background checkpoint: ")+e.what();}}
+    if(paused){game->suspend_audio_output();if(checkpoint&&playing&&error.empty())try{game->recovery_save(root/"saves"/(program+"-suspend.kx3save"),false);}catch(const std::exception& e){feedback=std::string("Background checkpoint: ")+e.what();}}
     else if(playing&&error.empty())game->enable_audio_output();}
 extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_save(JNIEnv*,jclass,jint index){try{
     if(!game||!playing||index<0||index>=10)throw std::runtime_error("Invalid save request");const auto menu=system_menu_view(game->memory(),game->runtime().manager);
@@ -215,7 +216,7 @@ extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_sa
     }catch(const std::exception& e){feedback=e.what();}}
 extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_home(JNIEnv*,jclass){if(game)game->suspend_audio_output();playing=false;actions.clear();}
 extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_retry(JNIEnv*,jclass){error.clear();if(failed_save_input){actions.push_front(*failed_save_input);failed_save_input.reset();}if(game&&audible)game->enable_audio_output();}
-extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_render(JNIEnv* env,jclass,jobject scene,jobject layer,jobject foreground,jboolean scan){if(!game||!playing)return;try{
+extern "C" JNIEXPORT void JNICALL Java_org_wwesun2000_mikazukix3_NativeBridge_render(JNIEnv* env,jclass,jobject scene,jobject layer,jobject foreground,jboolean scan){if(!game||!playing||!error.empty())return;try{
     const auto& m=game->memory();RasterFrame frame{640,448,std::vector<std::uint8_t>(640*448*4)};
     if(auto src=game->scene_frame()){if(src->width!=640||src->height!=448)throw std::runtime_error("Unexpected scene size");frame=*src;}
     const auto shade=original_background_darkening(m).value_or(0);
