@@ -300,6 +300,10 @@ StoryFrameResult ProjectGame::play_frame(std::unique_ptr<ProjectGame>& game,cons
             const bool current=page && *page==game->pages_.back().position;
             const auto& previous=game->pages_[game->pages_.size()-1-current];
             auto restored=decode_session(root,game->scenario_,previous.bytes,&previous);
+            // A player-requested rewind always lands on a manual wait. 121E50
+            // stops auto via +808; 115C58 consumes +814 only while it is armed.
+            restored->memory_.write_u32(restored->runtime_.manager+0x808,0);
+            restored->memory_.write_u32(restored->runtime_.manager+0x814,0);
             restored->set_system_record_file(game->system_record_file_);
             restored->audio_enabled_=game->audio_enabled_;
             if(current)game->pages_.pop_back();

@@ -125,7 +125,7 @@ public final class MainActivity extends Activity {
         Bitmap b=Bitmap.createBitmap(view.getWidth(),view.getHeight(),Bitmap.Config.ARGB_8888);JSONObject captured;synchronized(frameLock){view.draw(new Canvas(b));captured=state;}
         String loc=captured.optString("location","10-1-0-0"),lang=new String[]{"ja","zh-Hans","en"}[language],scale="smooth";
         String filename=loc+"-"+lang+"-"+scale+(scanlines?"-scan":"")+"-v"+System.currentTimeMillis()+".png";
-        String data=captured.toString();try{JSONObject diagnostic=new JSONObject(data);diagnostic.put("location",loc);diagnostic.put("uiPage",page);diagnostic.put("uiVersion","0.1.3-test");diagnostic.put("scanlines",scanlines);data=diagnostic.toString();}catch(JSONException ignored){}
+        String data=captured.toString();try{JSONObject diagnostic=new JSONObject(data);diagnostic.put("location",loc);diagnostic.put("uiPage",page);diagnostic.put("uiVersion","0.1.4-test");diagnostic.put("scanlines",scanlines);data=diagnostic.toString();}catch(JSONException ignored){}
         final String diagnostic=data;worker.post(()->{try{File d=new File(getFilesDir(),"diagnostics");d.mkdirs();try(FileOutputStream out=new FileOutputStream(new File(d,"latest-capture.json"))){out.write(diagnostic.getBytes(StandardCharsets.UTF_8));}}catch(IOException e){android.util.Log.w("MikazukiX3","Capture diagnostic could not be saved",e);}});
         if(Build.VERSION.SDK_INT>=29){ContentValues v=new ContentValues();v.put(MediaStore.Images.Media.DISPLAY_NAME,filename);v.put(MediaStore.Images.Media.MIME_TYPE,"image/png");v.put(MediaStore.Images.Media.RELATIVE_PATH,"Pictures/MikazukiX3");v.put(MediaStore.Images.Media.IS_PENDING,1);
             Uri uri=getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,v);if(uri==null){b.recycle();toast("Cannot create screenshot");return;}saveCapture(b,uri);
@@ -181,7 +181,7 @@ public final class MainActivity extends Activity {
             p.setColor(0x7006111b);c.drawRect(l,t,stage.left,b,p);c.drawRect(stage.right,t,r,b,p);
             p.setColor(0x506d898c);c.drawRect(stage.left-1,t,stage.left,b,p);c.drawRect(stage.right,t,stage.right+1,b,p);
             label(c,"MIKAZUKI",l+12*unit,t+25*unit,12*unit,gold);label(c,"×3  /  月夜",l+12*unit,t+44*unit,10*unit,muted);
-            String code=state.optString("location","10-1-0-0");p.setTypeface(Typeface.MONOSPACE);p.setTextSize(8*unit);while(p.measureText(code)>stage.left-l-12*unit&&p.getTextSize()>4*unit)p.setTextSize(p.getTextSize()-.5f);p.setColor(muted);c.drawText(code,l+6*unit,b-18*unit,p);label(c,"0.1.3-test",l+8*unit,b-5*unit,7*unit,muted);
+            String code=state.optString("location","10-1-0-0");p.setTypeface(Typeface.MONOSPACE);p.setTextSize(8*unit);while(p.measureText(code)>stage.left-l-12*unit&&p.getTextSize()>4*unit)p.setTextSize(p.getTextSize()-.5f);p.setColor(muted);c.drawText(code,l+6*unit,b-18*unit,p);label(c,"0.1.4-test",l+8*unit,b-5*unit,7*unit,muted);
             if(page.equals("settings")||page.equals("about")){settings(c,l,r,t,b);return;}
             if(!page.equals("game")){title(c,l,r,t,b);return;}
             p.setFilterBitmap(true);c.drawBitmap(scene,null,stage,p);c.drawBitmap(letters,null,stage,p);
